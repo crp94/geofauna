@@ -1,0 +1,312 @@
+{
+  "iberian-lynx": {
+    "taxonKey": 2435261,
+    "occurrenceCount": 2627,
+    "url": "https://www.gbif.org/species/2435261"
+  },
+  "snow-leopard": {
+    "taxonKey": 5787213,
+    "occurrenceCount": 571,
+    "url": "https://www.gbif.org/species/5787213"
+  },
+  "giant-panda": {
+    "taxonKey": 2433399,
+    "occurrenceCount": 300,
+    "url": "https://www.gbif.org/species/2433399"
+  },
+  "jaguar": {
+    "taxonKey": 5219426,
+    "occurrenceCount": 145424,
+    "url": "https://www.gbif.org/species/5219426"
+  },
+  "polar-bear": {
+    "taxonKey": 2433451,
+    "occurrenceCount": 11044,
+    "url": "https://www.gbif.org/species/2433451"
+  },
+  "koala": {
+    "taxonKey": 2440012,
+    "occurrenceCount": 450150,
+    "url": "https://www.gbif.org/species/2440012"
+  },
+  "mountain-gorilla": {
+    "taxonKey": 4267319,
+    "occurrenceCount": 946,
+    "url": "https://www.gbif.org/species/4267319"
+  },
+  "cheetah": {
+    "taxonKey": 2435270,
+    "occurrenceCount": 10143,
+    "url": "https://www.gbif.org/species/2435270"
+  },
+  "capybara": {
+    "taxonKey": 5786666,
+    "occurrenceCount": 26515,
+    "url": "https://www.gbif.org/species/5786666"
+  },
+  "tasmanian-devil": {
+    "taxonKey": 2435451,
+    "occurrenceCount": 36979,
+    "url": "https://www.gbif.org/species/2435451"
+  },
+  "monarch-butterfly": {
+    "taxonKey": 5133088,
+    "occurrenceCount": 796136,
+    "url": "https://www.gbif.org/species/5133088"
+  },
+  "bengal-tiger": {
+    "taxonKey": 7059276,
+    "occurrenceCount": 4632,
+    "url": "https://www.gbif.org/species/7059276"
+  },
+  "african-bush-elephant": {
+    "taxonKey": 2435350,
+    "occurrenceCount": 29030,
+    "url": "https://www.gbif.org/species/2435350"
+  },
+  "red-panda": {
+    "taxonKey": 5219446,
+    "occurrenceCount": 791,
+    "url": "https://www.gbif.org/species/5219446"
+  },
+  "platypus": {
+    "taxonKey": 2433376,
+    "occurrenceCount": 29643,
+    "url": "https://www.gbif.org/species/2433376"
+  },
+  "red-kangaroo": {
+    "taxonKey": 12019022,
+    "occurrenceCount": 82440,
+    "url": "https://www.gbif.org/species/12019022"
+  },
+  "okapi": {
+    "taxonKey": 2441207,
+    "occurrenceCount": 310,
+    "url": "https://www.gbif.org/species/2441207"
+  },
+  "ring-tailed-lemur": {
+    "taxonKey": 2436412,
+    "occurrenceCount": 1596,
+    "url": "https://www.gbif.org/species/2436412"
+  },
+  "blue-whale": {
+    "taxonKey": 2440735,
+    "occurrenceCount": 31535,
+    "url": "https://www.gbif.org/species/2440735"
+  },
+  "bornean-orangutan": {
+    "taxonKey": 5219532,
+    "occurrenceCount": 7455,
+    "url": "https://www.gbif.org/species/5219532"
+  },
+  "sea-otter": {
+    "taxonKey": 2433670,
+    "occurrenceCount": 26419,
+    "url": "https://www.gbif.org/species/2433670"
+  },
+  "saiga-antelope": {
+    "taxonKey": 2441067,
+    "occurrenceCount": 964,
+    "url": "https://www.gbif.org/species/2441067"
+  },
+  "ethiopian-wolf": {
+    "taxonKey": 5219143,
+    "occurrenceCount": 208,
+    "url": "https://www.gbif.org/species/5219143"
+  },
+  "fossa": {
+    "taxonKey": 2433516,
+    "occurrenceCount": 0,
+    "url": "https://www.gbif.org/species/2433516"
+  },
+  "sunda-pangolin": {
+    "taxonKey": 5219628,
+    "occurrenceCount": 0,
+    "url": "https://www.gbif.org/species/5219628"
+  },
+  "giant-anteater": {
+    "taxonKey": 2436346,
+    "occurrenceCount": 11230,
+    "url": "https://www.gbif.org/species/2436346"
+  },
+  "quokka": {
+    "taxonKey": 2440110,
+    "occurrenceCount": 2708,
+    "url": "https://www.gbif.org/species/2440110"
+  },
+  "chimpanzee": {
+    "taxonKey": 5219534,
+    "occurrenceCount": 0,
+    "url": "https://www.gbif.org/species/5219534"
+  },
+  "walrus": {
+    "taxonKey": 5218819,
+    "occurrenceCount": 0,
+    "url": "https://www.gbif.org/species/5218819"
+  },
+  "narwhal": {
+    "taxonKey": 5220008,
+    "occurrenceCount": 1621,
+    "url": "https://www.gbif.org/species/5220008"
+  },
+  "european-bison": {
+    "taxonKey": 2441184,
+    "occurrenceCount": 5161,
+    "url": "https://www.gbif.org/species/2441184"
+  },
+  "american-bison": {
+    "taxonKey": 2441176,
+    "occurrenceCount": 0,
+    "url": "https://www.gbif.org/species/2441176"
+  },
+  "sloth-bear": {
+    "taxonKey": 2433395,
+    "occurrenceCount": 0,
+    "url": "https://www.gbif.org/species/2433395"
+  },
+  "spectacled-bear": {
+    "taxonKey": 2433401,
+    "occurrenceCount": 12655,
+    "url": "https://www.gbif.org/species/2433401"
+  },
+  "gray-wolf": {
+    "taxonKey": 5219173,
+    "occurrenceCount": 255002,
+    "url": "https://www.gbif.org/species/5219173"
+  },
+  "emperor-penguin": {
+    "taxonKey": 2481661,
+    "occurrenceCount": 0,
+    "url": "https://www.gbif.org/species/2481661"
+  },
+  "andean-condor": {
+    "taxonKey": 2481907,
+    "occurrenceCount": 0,
+    "url": "https://www.gbif.org/species/2481907"
+  },
+  "california-condor": {
+    "taxonKey": 2481920,
+    "occurrenceCount": 34148,
+    "url": "https://www.gbif.org/species/2481920"
+  },
+  "harpy-eagle": {
+    "taxonKey": 2480516,
+    "occurrenceCount": 7710,
+    "url": "https://www.gbif.org/species/2480516"
+  },
+  "shoebill": {
+    "taxonKey": 2480347,
+    "occurrenceCount": 0,
+    "url": "https://www.gbif.org/species/2480347"
+  },
+  "southern-cassowary": {
+    "taxonKey": 5231783,
+    "occurrenceCount": 0,
+    "url": "https://www.gbif.org/species/5231783"
+  },
+  "north-island-brown-kiwi": {
+    "taxonKey": 2495144,
+    "occurrenceCount": 3413,
+    "url": "https://www.gbif.org/species/2495144"
+  },
+  "kakapo": {
+    "taxonKey": 2479236,
+    "occurrenceCount": 575,
+    "url": "https://www.gbif.org/species/2479236"
+  },
+  "atlantic-puffin": {
+    "taxonKey": 2481353,
+    "occurrenceCount": 0,
+    "url": "https://www.gbif.org/species/2481353"
+  },
+  "resplendent-quetzal": {
+    "taxonKey": 2496723,
+    "occurrenceCount": 0,
+    "url": "https://www.gbif.org/species/2496723"
+  },
+  "hoatzin": {
+    "taxonKey": 2496202,
+    "occurrenceCount": 63314,
+    "url": "https://www.gbif.org/species/2496202"
+  },
+  "western-capercaillie": {
+    "taxonKey": 2473577,
+    "occurrenceCount": 240726,
+    "url": "https://www.gbif.org/species/2473577"
+  },
+  "peregrine-falcon": {
+    "taxonKey": 2481047,
+    "occurrenceCount": 2927650,
+    "url": "https://www.gbif.org/species/2481047"
+  },
+  "snowy-owl": {
+    "taxonKey": 5959143,
+    "occurrenceCount": 0,
+    "url": "https://www.gbif.org/species/5959143"
+  },
+  "kea": {
+    "taxonKey": 2479593,
+    "occurrenceCount": 15511,
+    "url": "https://www.gbif.org/species/2479593"
+  },
+  "komodo-dragon": {
+    "taxonKey": 2470854,
+    "occurrenceCount": 1353,
+    "url": "https://www.gbif.org/species/2470854"
+  },
+  "marine-iguana": {
+    "taxonKey": 5224602,
+    "occurrenceCount": 0,
+    "url": "https://www.gbif.org/species/5224602"
+  },
+  "galapagos-giant-tortoise": {
+    "taxonKey": 9527499,
+    "occurrenceCount": 0,
+    "url": "https://www.gbif.org/species/9527499"
+  },
+  "leatherback-sea-turtle": {
+    "taxonKey": 9789983,
+    "occurrenceCount": 55666,
+    "url": "https://www.gbif.org/species/9789983"
+  },
+  "nile-crocodile": {
+    "taxonKey": 2441341,
+    "occurrenceCount": 11772,
+    "url": "https://www.gbif.org/species/2441341"
+  },
+  "saltwater-crocodile": {
+    "taxonKey": 2441333,
+    "occurrenceCount": 0,
+    "url": "https://www.gbif.org/species/2441333"
+  },
+  "tuatara": {
+    "taxonKey": 5227650,
+    "occurrenceCount": 2120,
+    "url": "https://www.gbif.org/species/5227650"
+  },
+  "gila-monster": {
+    "taxonKey": 2460817,
+    "occurrenceCount": 4283,
+    "url": "https://www.gbif.org/species/2460817"
+  },
+  "axolotl": {
+    "taxonKey": 2431950,
+    "occurrenceCount": 973,
+    "url": "https://www.gbif.org/species/2431950"
+  },
+  "golden-poison-frog": {
+    "taxonKey": 5218020,
+    "occurrenceCount": 0,
+    "url": "https://www.gbif.org/species/5218020"
+  },
+  "chinese-giant-salamander": {
+    "taxonKey": 2432037,
+    "occurrenceCount": 569,
+    "url": "https://www.gbif.org/species/2432037"
+  },
+  "wild-yak": {
+    "taxonKey": 5787030,
+    "occurrenceCount": 62,
+    "url": "https://www.gbif.org/species/5787030"
+  }
+}

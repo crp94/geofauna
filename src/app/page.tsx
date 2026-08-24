@@ -506,6 +506,15 @@ export default function HomePage() {
           <p>
             Powered by open data from the{" "}
             <a
+              href="https://www.gbif.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-emerald-400 hover:underline"
+            >
+              GBIF
+            </a>
+            ,{" "}
+            <a
               href="https://www.iucnredlist.org"
               target="_blank"
               rel="noopener noreferrer"

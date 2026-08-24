@@ -127,14 +127,29 @@ function createRangeMask(
   };
 }
 
+const outputDir = path.resolve(__dirname, "../data");
+if (!fs.existsSync(outputDir)) {
+  fs.mkdirSync(outputDir, { recursive: true });
+}
+
+// Load GBIF enrichment cache if available
+const gbifEnrichmentPath = path.join(outputDir, "gbif-enrichment.json");
+const gbifMap: Record<string, { taxonKey: number; occurrenceCount?: number; url?: string }> = fs.existsSync(gbifEnrichmentPath)
+  ? JSON.parse(fs.readFileSync(gbifEnrichmentPath, "utf-8"))
+  : {};
+
 // Compile and save all 62 scholarly species
-console.log(`Compiling ${allScholarlySpecies.length} curated species entries...`);
+console.log(`Compiling ${allScholarlySpecies.length} curated species entries with GBIF validation...`);
 const finalSpeciesList: Species[] = allScholarlySpecies.map((s) => {
   const { rangeConfig, ...rest } = s;
   const { rle, areaKm2, bounds } = createRangeMask(rangeConfig);
+  const gbifInfo = gbifMap[s.id];
 
   return {
     ...rest,
+    gbifTaxonKey: gbifInfo?.taxonKey,
+    gbifOccurrenceCount: gbifInfo?.occurrenceCount,
+    gbifUrl: gbifInfo?.url || (gbifInfo?.taxonKey ? `https://www.gbif.org/species/${gbifInfo.taxonKey}` : undefined),
     range: {
       bounds,
       gridDimensions: [GRID_WIDTH, GRID_HEIGHT],
@@ -145,11 +160,6 @@ const finalSpeciesList: Species[] = allScholarlySpecies.map((s) => {
     },
   };
 });
-
-const outputDir = path.resolve(__dirname, "../data");
-if (!fs.existsSync(outputDir)) {
-  fs.mkdirSync(outputDir, { recursive: true });
-}
 
 // Write curated-species.json
 const speciesOutputPath = path.join(outputDir, "curated-species.json");

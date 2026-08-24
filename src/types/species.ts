@@ -79,6 +79,9 @@ export type Species = {
   clues: LocalizedString[];
   image: SpeciesImage;
   range: SpeciesRange;
+  gbifTaxonKey?: number;
+  gbifOccurrenceCount?: number;
+  gbifUrl?: string;
 };
 
 export type ScoreResult = {

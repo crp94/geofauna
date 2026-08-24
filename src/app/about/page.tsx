@@ -82,7 +82,13 @@ export default function AboutPage() {
             <li className="flex items-start gap-2">
               <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" />
               <div>
-                <strong>IUCN Red List of Threatened Species:</strong> Spatial range geometries, population trends, and extinction risk criteria (2024/2026 releases).
+                <strong>GBIF (Global Biodiversity Information Facility):</strong> Over 2.8 billion georeferenced specimen occurrence records and taxonomic registries used for spatial validation and specimen cross-referencing.
+              </div>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" />
+              <div>
+                <strong>IUCN Red List of Threatened Species:</strong> Spatial range geometries, population trends, and extinction risk criteria.
               </div>
             </li>
             <li className="flex items-start gap-2">

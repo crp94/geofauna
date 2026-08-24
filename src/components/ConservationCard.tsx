@@ -13,6 +13,8 @@ import {
   ThermometerSnowflake,
   History,
   Activity,
+  Database,
+  ExternalLink,
 } from "lucide-react";
 import { IUCNStatus, Language, Species } from "../types/species";
 import { getIUCNLabel, getTranslation } from "../lib/i18n";
@@ -314,6 +316,42 @@ export const ConservationCard: React.FC<ConservationCardProps> = ({
           </div>
         )}
       </div>
+
+      {/* GBIF Scientific Occurrence Infrastructure & Authority */}
+      {species.gbifTaxonKey && (
+        <div className="rounded-xl border border-emerald-500/30 bg-emerald-500/5 p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+          <div className="flex items-center gap-3">
+            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-emerald-500/20 text-emerald-400">
+              <Database className="h-5 w-5" />
+            </div>
+            <div>
+              <div className="flex items-center gap-2">
+                <span className="text-xs font-black uppercase tracking-wider text-emerald-400">
+                  GBIF Occurrence Registry
+                </span>
+                <span className="text-[10px] rounded-md bg-emerald-500/20 px-1.5 py-0.5 font-bold text-emerald-300">
+                  Taxon #{species.gbifTaxonKey}
+                </span>
+              </div>
+              <p className="text-xs text-slate-300 mt-0.5">
+                {species.gbifOccurrenceCount
+                  ? `${species.gbifOccurrenceCount.toLocaleString()} georeferenced museum specimens & verified research records.`
+                  : "Verified global biodiversity records cataloged in international repositories."}
+              </p>
+            </div>
+          </div>
+
+          <a
+            href={species.gbifUrl || `https://www.gbif.org/species/${species.gbifTaxonKey}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-1.5 rounded-xl border border-emerald-500/40 bg-emerald-500/10 px-3.5 py-2 text-xs font-bold text-emerald-300 transition-colors hover:bg-emerald-500/20 hover:text-white shrink-0"
+          >
+            <span>Explore on GBIF</span>
+            <ExternalLink className="h-3.5 w-3.5" />
+          </a>
+        </div>
+      )}
     </div>
   );
 };
