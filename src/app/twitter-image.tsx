@@ -15,25 +15,18 @@ async function loadFrauncesFont(): Promise<ArrayBuffer> {
 }
 
 /**
- * See opengraph-image.tsx for why this is wrapped in a fallback: /public
- * isn't part of this module's graph the way ./fonts is, so the relative
- * fetch(new URL(...)) traversal can fail once bundled for edge — in that
- * case we render a wordmark-only composition instead of erroring the route.
+ * See opengraph-image.tsx for why this reads a small pre-shrunk copy from
+ * ./og-assets rather than fetching the full-size /public/brand PNG.
  */
-async function loadLogoDataUri(): Promise<string | null> {
-  try {
-    const res = await fetch(new URL("../../public/brand/geofauna-logo.png", import.meta.url));
-    if (!res.ok) return null;
-    const buf = await res.arrayBuffer();
-    const bytes = new Uint8Array(buf);
-    let binary = "";
-    for (let i = 0; i < bytes.byteLength; i++) {
-      binary += String.fromCharCode(bytes[i]);
-    }
-    return `data:image/png;base64,${btoa(binary)}`;
-  } catch {
-    return null;
+async function loadLogoDataUri(): Promise<string> {
+  const res = await fetch(new URL("./og-assets/logo.png", import.meta.url));
+  const buf = await res.arrayBuffer();
+  const bytes = new Uint8Array(buf);
+  let binary = "";
+  for (let i = 0; i < bytes.byteLength; i++) {
+    binary += String.fromCharCode(bytes[i]);
   }
+  return `data:image/png;base64,${btoa(binary)}`;
 }
 
 export default async function TwitterImage() {
@@ -116,14 +109,12 @@ export default async function TwitterImage() {
             padding: "60px 100px",
           }}
         >
-          {logoDataUri ? (
-            <img
-              src={logoDataUri}
-              width={140}
-              height={140}
-              style={{ marginBottom: 28 }}
-            />
-          ) : null}
+          <img
+            src={logoDataUri}
+            width={140}
+            height={140}
+            style={{ marginBottom: 28 }}
+          />
 
           <div
             style={{

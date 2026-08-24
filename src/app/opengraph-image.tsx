@@ -15,26 +15,22 @@ async function loadFrauncesFont(): Promise<ArrayBuffer> {
 }
 
 /**
- * The brand logo lives in /public, which isn't part of the edge function's
- * module graph the way ./fonts is — Next only special-cases relative
- * `fetch(new URL(...))` calls for files reachable from this module. If the
- * public-directory traversal can't be resolved in the deployed bundle, we
- * fall back to a wordmark-only composition instead of failing the route.
+ * A 280x280 pre-shrunk copy of public/brand/geofauna-logo.png (~28KB vs.
+ * the ~261KB source, which alone pushed this Edge Function's bundle over
+ * Vercel's 1MB limit). Lives beside ./fonts rather than under /public: that
+ * traversal is reliably part of this module's graph, the same way the font
+ * file is, whereas the original /public/brand path needed a try/catch
+ * fallback because it wasn't guaranteed to resolve once bundled for edge.
  */
-async function loadLogoDataUri(): Promise<string | null> {
-  try {
-    const res = await fetch(new URL("../../public/brand/geofauna-logo.png", import.meta.url));
-    if (!res.ok) return null;
-    const buf = await res.arrayBuffer();
-    const bytes = new Uint8Array(buf);
-    let binary = "";
-    for (let i = 0; i < bytes.byteLength; i++) {
-      binary += String.fromCharCode(bytes[i]);
-    }
-    return `data:image/png;base64,${btoa(binary)}`;
-  } catch {
-    return null;
+async function loadLogoDataUri(): Promise<string> {
+  const res = await fetch(new URL("./og-assets/logo.png", import.meta.url));
+  const buf = await res.arrayBuffer();
+  const bytes = new Uint8Array(buf);
+  let binary = "";
+  for (let i = 0; i < bytes.byteLength; i++) {
+    binary += String.fromCharCode(bytes[i]);
   }
+  return `data:image/png;base64,${btoa(binary)}`;
 }
 
 function Chip({ label, color, soft }: { label: string; color: string; soft: string }) {
@@ -136,14 +132,12 @@ export default async function Image() {
             padding: "60px 100px",
           }}
         >
-          {logoDataUri ? (
-            <img
-              src={logoDataUri}
-              width={140}
-              height={140}
-              style={{ marginBottom: 28 }}
-            />
-          ) : null}
+          <img
+            src={logoDataUri}
+            width={140}
+            height={140}
+            style={{ marginBottom: 28 }}
+          />
 
           <div
             style={{

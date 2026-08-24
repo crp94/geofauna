@@ -10,6 +10,7 @@ import {
   decodeRle,
   lonLatToGrid,
   paintGeodesicCircle,
+  unionMasks,
 } from "../lib/maskCompression";
 import { createRobinsonProjection, lonLatToScreen } from "../lib/projection";
 import {
@@ -122,6 +123,16 @@ export const MapCanvas: React.FC<MapCanvasProps> = ({
 
   const landMask = useMemo(() => decodeRle(landMaskData.rle), []);
   const groundTruthMask = useMemo(() => decodeRle(species.range.rleMask), [species.range.rleMask]);
+
+  // A cell must always be paintable when it's part of the current species'
+  // true range, even if the land mask's stricter cell-center test misses it
+  // (e.g. small islands absent from the land polygon data). This does not
+  // leak new information: groundTruthMask is already present in the bundled
+  // catalog data the client loads for every species.
+  const paintableLandMask = useMemo(
+    () => unionMasks(landMask, groundTruthMask),
+    [landMask, groundTruthMask]
+  );
 
   const palette: MapPalette = useMemo(
     () => ({
@@ -637,11 +648,11 @@ export const MapCanvas: React.FC<MapCanvasProps> = ({
         lat,
         brushRadiusKm,
         paintVal,
-        landMask,
+        paintableLandMask,
         snapToLand && species.realm !== "Marine"
       );
     },
-    [tool, brushRadiusKm, landMask, snapToLand, species.realm]
+    [tool, brushRadiusKm, paintableLandMask, snapToLand, species.realm]
   );
 
   /**

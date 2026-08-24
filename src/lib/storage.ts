@@ -1,6 +1,10 @@
 import { DailyProgress, GameStats, Language, ScoreResult } from "../types/species";
 
-const STATS_KEY = "geofauna_stats_v1";
+// v2: date keys switched from UTC (toISOString) to local-calendar dates.
+// Bumping the storage key gives every player a clean, consistent reset
+// instead of silently corrupting streak continuity for players whose
+// local date differed from UTC at their usual play time.
+const STATS_KEY = "geofauna_stats_v2";
 const LANG_KEY = "geofauna_lang_v1";
 
 export function getStoredLanguage(): Language {
@@ -85,25 +89,7 @@ export function recordGameResult(
 ): GameStats {
   const stats = getStoredStats();
 
-  // Unlimited-mode ("practice") plays are unlimited by design, so they must
-  // never inflate the daily-only counters (gamesPlayed/averageScore/
-  // gradeCounts/streaks) — they get their own small additive tally instead.
-  if (!isDaily) {
-    const previousPracticeGames = stats.practiceGames ?? 0;
-    const previousPracticeAverage = stats.practiceAverageScore ?? 0;
-    const practiceGames = previousPracticeGames + 1;
-    const totalPracticeScore = previousPracticeAverage * previousPracticeGames + scoreResult.score;
-
-    stats.practiceGames = practiceGames;
-    stats.practiceAverageScore = Math.round(totalPracticeScore / practiceGames);
-
-    if (typeof window !== "undefined") {
-      localStorage.setItem(STATS_KEY, JSON.stringify(stats));
-    }
-
-    return stats;
-  }
-
+  // Update main counters for ALL completed games (daily AND unlimited)
   stats.gamesPlayed += 1;
   stats.gamesCompleted += 1;
   stats.gradeCounts[scoreResult.grade] = (stats.gradeCounts[scoreResult.grade] || 0) + 1;
@@ -112,24 +98,40 @@ export function recordGameResult(
   const totalScore = stats.averageScore * (stats.gamesCompleted - 1) + scoreResult.score;
   stats.averageScore = Math.round(totalScore / stats.gamesCompleted);
 
-  const yesterday = yesterdayLocalDateKey();
+  // Unlimited-mode ("practice") plays get supplementary tracking
+  if (!isDaily) {
+    const previousPracticeGames = stats.practiceGames ?? 0;
+    const previousPracticeAverage = stats.practiceAverageScore ?? 0;
+    const practiceGames = previousPracticeGames + 1;
+    const totalPracticeScore = previousPracticeAverage * previousPracticeGames + scoreResult.score;
 
-  if (stats.dailyHistory[yesterday]?.completed) {
-    stats.currentStreak += 1;
-  } else {
-    stats.currentStreak = 1;
+    stats.practiceGames = practiceGames;
+    stats.practiceAverageScore = Math.round(totalPracticeScore / practiceGames);
   }
-  stats.maxStreak = Math.max(stats.maxStreak, stats.currentStreak);
 
-  stats.dailyHistory[dateKey] = {
-    dayNumber: Object.keys(stats.dailyHistory).length + 1,
-    dateKey,
-    speciesId,
-    completed: true,
-    scoreResult,
-    drawnMaskRle,
-    timestamp: Date.now(),
-  };
+  // Only daily plays update streak and daily history
+  if (isDaily) {
+    const [y, m, d] = dateKey.split("-").map(Number);
+    const referenceDate = new Date(y, m - 1, d);
+    const yesterday = yesterdayLocalDateKey(referenceDate);
+
+    if (stats.dailyHistory[yesterday]?.completed) {
+      stats.currentStreak += 1;
+    } else {
+      stats.currentStreak = 1;
+    }
+    stats.maxStreak = Math.max(stats.maxStreak, stats.currentStreak);
+
+    stats.dailyHistory[dateKey] = {
+      dayNumber: Object.keys(stats.dailyHistory).length + 1,
+      dateKey,
+      speciesId,
+      completed: true,
+      scoreResult,
+      drawnMaskRle,
+      timestamp: Date.now(),
+    };
+  }
 
   if (typeof window !== "undefined") {
     localStorage.setItem(STATS_KEY, JSON.stringify(stats));

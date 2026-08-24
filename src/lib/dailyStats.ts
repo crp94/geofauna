@@ -26,11 +26,6 @@ export async function submitDailyScore(day: string, score: number): Promise<void
   try {
     const flagKey = submittedFlagKey(day);
     alreadySubmitted = window.localStorage.getItem(flagKey) === "1";
-    if (!alreadySubmitted) {
-      // Set the dedupe flag before the network call so a slow/failed
-      // request can't race a second submission for the same day.
-      window.localStorage.setItem(flagKey, "1");
-    }
   } catch {
     // localStorage unavailable (private mode, disabled storage, etc.) —
     // fall through and still attempt the submission once, best-effort.
@@ -38,14 +33,24 @@ export async function submitDailyScore(day: string, score: number): Promise<void
   if (alreadySubmitted) return;
 
   try {
-    await fetch("/api/daily-score", {
+    const response = await fetch("/api/daily-score", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ day, band: scoreToBand(score) }),
       signal: AbortSignal.timeout(4000),
     });
+    if (response.ok) {
+      try {
+        const flagKey = submittedFlagKey(day);
+        window.localStorage.setItem(flagKey, "1");
+      } catch {
+        // localStorage unavailable — best-effort, the submission went through
+        // so at least once it's done.
+      }
+    }
   } catch {
     // Best-effort — swallow network errors, aborts, and timeouts.
+    // The flag was never set, so a later call (e.g. on next visit) can retry.
   }
 }
 

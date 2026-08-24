@@ -183,7 +183,21 @@ function calculateSymmetricProximity(
   fnArea: number
 ): { score: number; meanDistanceKm: number } {
   if (fpArea === 0 && fnArea === 0) return { score: 100, meanDistanceKm: 0 };
-  if (fpArea === 0 || fnArea === 0) return { score: 0, meanDistanceKm: MAX_PROXIMITY_DISTANCE_KM };
+  // A one-sided mismatch (fpArea>0 xor fnArea>0) is NOT degenerate: both
+  // distance transforms remain well-defined as long as their respective
+  // seed mask (groundTruthMask for FP lookups, predictedMask for FN
+  // lookups) has at least one set cell. Only bail to the worst-case value
+  // when the seed mask actually needed is empty -- e.g. a wholly-empty
+  // prediction, so there is no meaningful "distance to the guess" to
+  // report for missed cells. This was previously conflated with "one side
+  // has zero mismatch area", which incorrectly forced a near-perfect,
+  // one-cell-off guess to the same worst-case proximity as a guess with no
+  // overlap at all.
+  const groundTruthEmpty = groundTruthMask.every((v) => v === 0);
+  const predictedEmpty = predictedMask.every((v) => v === 0);
+  if ((fpArea > 0 && groundTruthEmpty) || (fnArea > 0 && predictedEmpty)) {
+    return { score: 0, meanDistanceKm: MAX_PROXIMITY_DISTANCE_KM };
+  }
 
   const distanceToTruth = distanceTransform(groundTruthMask);
   const distanceToPrediction = distanceTransform(predictedMask);

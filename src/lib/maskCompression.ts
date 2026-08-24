@@ -172,3 +172,14 @@ export function paintGeodesicCircle(
     mask[cIdx] = value;
   }
 }
+
+/**
+ * Union two same-length masks: result[i] = 1 if a[i] or b[i] is 1.
+ */
+export function unionMasks(a: Uint8Array, b: Uint8Array): Uint8Array {
+  const out = new Uint8Array(a.length);
+  for (let i = 0; i < a.length; i++) {
+    out[i] = a[i] === 1 || b[i] === 1 ? 1 : 0;
+  }
+  return out;
+}

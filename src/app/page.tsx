@@ -233,14 +233,14 @@ export default function HomePage() {
 
   // Date Keys — local calendar date, never UTC, so rollover matches the
   // player's own midnight.
-  const todayKey = useMemo(() => toLocalDateKey(new Date()), []);
-  const dayNumber = useMemo(() => computeDayNumber(new Date()), []);
+  const [todayKey, setTodayKey] = useState(() => toLocalDateKey(new Date()));
+  const [dayNumber, setDayNumber] = useState(() => computeDayNumber(new Date()));
 
   // Stable id-sorted pool: the shuffle schedule is keyed to this order, so
   // it survives the catalog JSON being reordered, and catalog growth only
   // changes cycles that haven't happened yet.
   const speciesSortedById = useMemo(
-    () => [...speciesList].sort((a, b) => a.id.localeCompare(b.id)),
+    () => [...speciesList].sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0)),
     [speciesList]
   );
 
@@ -286,7 +286,7 @@ export default function HomePage() {
   // Load Daily state on mode / date change
   const loadDailyProgress = useCallback(() => {
     const progress = getDailyProgress(todayKey);
-    if (progress && progress.completed && progress.scoreResult) {
+    if (progress && progress.completed && progress.scoreResult && progress.speciesId === dailySpecies.id) {
       setIsSolved(true);
       setScoreResult(progress.scoreResult);
       if (progress.drawnMaskRle) {
@@ -298,7 +298,7 @@ export default function HomePage() {
       setUserMask(new Uint8Array(TOTAL_CELLS));
       setUndoStack([]);
     }
-  }, [todayKey]);
+  }, [todayKey, dailySpecies.id]);
 
   useEffect(() => {
     if (mode === "daily") {
@@ -320,13 +320,18 @@ export default function HomePage() {
       return;
     }
     const update = () => {
+      const freshKey = toLocalDateKey(new Date());
+      if (freshKey !== todayKey) {
+        setTodayKey(freshKey);
+        setDayNumber(computeDayNumber(new Date()));
+      }
       const now = new Date();
       setCountdownText(formatCountdown(getNextLocalMidnight(now).getTime() - now.getTime()));
     };
     update();
     const intervalId = window.setInterval(update, 60000);
     return () => window.clearInterval(intervalId);
-  }, [mode, isSolved]);
+  }, [mode, isSolved, todayKey]);
 
   // Mask Update with Undo Management
   const handleUpdateMask = (newMask: Uint8Array) => {
@@ -556,6 +561,7 @@ export default function HomePage() {
       </div>
 
       {/* Header */}
+      {/* dayNumber may briefly mismatch server/client render on first paint (static page + live local date); this is expected and self-corrects via the interval effect above. */}
       <Header
         mode={mode}
         onSelectMode={handleSelectMode}
