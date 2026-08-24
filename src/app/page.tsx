@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useState, useEffect, useMemo, useCallback } from "react";
+import React, { useState, useEffect, useMemo, useCallback, useRef } from "react";
+import confetti from "canvas-confetti";
 import speciesCatalog from "../data/curated-species.json";
 import {
   DifficultyTier,
@@ -33,10 +34,23 @@ import {
   setStoredLanguage,
 } from "../lib/storage";
 import { getTranslation } from "../lib/i18n";
-import { Filter, Shuffle, Sparkles, Trophy } from "lucide-react";
+import { playScoreReveal } from "../lib/sound";
+import {
+  Award,
+  Check,
+  ChevronDown,
+  Copy,
+  Filter,
+  Share2,
+  Shuffle,
+  Sparkles,
+  Trophy,
+  ArrowRight,
+} from "lucide-react";
 
 export default function HomePage() {
   const speciesList = speciesCatalog as unknown as Species[];
+  const mapSectionRef = useRef<HTMLDivElement>(null);
 
   // App State
   const [lang, setLang] = useState<Language>("en");
@@ -59,6 +73,7 @@ export default function HomePage() {
   const [showStatsModal, setShowStatsModal] = useState<boolean>(false);
   const [showRulesModal, setShowRulesModal] = useState<boolean>(false);
   const [showLangModal, setShowLangModal] = useState<boolean>(false);
+  const [copied, setCopied] = useState<boolean>(false);
   const [stats, setStats] = useState(getStoredStats());
 
   // Date Keys
@@ -143,7 +158,17 @@ export default function HomePage() {
 
     setScoreResult(result);
     setIsSolved(true);
-    setShowScoreModal(true);
+
+    // Play score fanfare audio & confetti on good scores
+    playScoreReveal(result.grade);
+    if (result.grade === "S" || result.grade === "A") {
+      confetti({
+        particleCount: 70,
+        spread: 60,
+        origin: { y: 0.7 },
+        colors: ["#10B981", "#34D399", "#06B6D4", "#F59E0B"],
+      });
+    }
 
     const rle = encodeRle(userMask);
     const updatedStats = recordGameResult(
@@ -154,6 +179,31 @@ export default function HomePage() {
       mode === "daily"
     );
     setStats(updatedStats);
+
+    // Scroll smoothly to map and score
+    setTimeout(() => {
+      mapSectionRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
+    }, 100);
+  };
+
+  // Share result to clipboard
+  const handleShare = () => {
+    if (!scoreResult) return;
+    const localizedName = currentSpecies.commonName[lang] || currentSpecies.commonName.en;
+    const squaresCount = Math.round(scoreResult.score / 200);
+    const greenSquares = "🟩".repeat(squaresCount);
+    const whiteSquares = "⬜".repeat(5 - squaresCount);
+
+    const shareText =
+      mode === "daily"
+        ? `🐾 GeoFauna #${dayNumber} · ${localizedName}\n🎯 Score: ${scoreResult.score}/1000 (Grade ${scoreResult.grade})\n${greenSquares}${whiteSquares} (IoU: ${scoreResult.iou}%)\nhttps://geofauna.carlosrodriguezpardo.es`
+        : `🐾 GeoFauna · ${localizedName}\n🎯 Score: ${scoreResult.score}/1000 (Grade ${scoreResult.grade})\n${greenSquares}${whiteSquares} (IoU: ${scoreResult.iou}%)\nhttps://geofauna.carlosrodriguezpardo.es`;
+
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(shareText);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2500);
+    }
   };
 
   // Unlimited Mode: Next Random Species
@@ -175,6 +225,8 @@ export default function HomePage() {
     setUserMask(new Uint8Array(TOTAL_CELLS));
     setUndoStack([]);
     setShowScoreModal(false);
+
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const hasDrawn = useMemo(() => {
@@ -187,6 +239,21 @@ export default function HomePage() {
   const changeLanguage = (newLang: Language) => {
     setLang(newLang);
     setStoredLanguage(newLang);
+  };
+
+  const getGradeColor = (grade: ScoreResult["grade"]) => {
+    switch (grade) {
+      case "S":
+        return "text-emerald-400 border-emerald-500/50 bg-emerald-500/10";
+      case "A":
+        return "text-emerald-300 border-emerald-500/40 bg-emerald-500/10";
+      case "B":
+        return "text-cyan-400 border-cyan-500/40 bg-cyan-500/10";
+      case "C":
+        return "text-amber-400 border-amber-500/40 bg-amber-500/10";
+      case "D":
+        return "text-rose-400 border-rose-500/40 bg-rose-500/10";
+    }
   };
 
   return (
@@ -254,23 +321,25 @@ export default function HomePage() {
         <SpeciesHero species={currentSpecies} lang={lang} isSolved={isSolved} />
 
         {/* 2. Map Canvas Toolbar */}
-        <MapToolbar
-          tool={tool}
-          onSelectTool={setTool}
-          brushRadiusKm={brushRadiusKm}
-          onSelectRadius={setBrushRadiusKm}
-          snapToLand={snapToLand}
-          onToggleSnap={() => setSnapToLand(!snapToLand)}
-          onUndo={handleUndo}
-          onClear={handleClear}
-          onSubmit={handleSubmit}
-          canUndo={undoStack.length > 0}
-          hasDrawn={hasDrawn}
-          isSolved={isSolved}
-          lang={lang}
-        />
+        <div ref={mapSectionRef}>
+          <MapToolbar
+            tool={tool}
+            onSelectTool={setTool}
+            brushRadiusKm={brushRadiusKm}
+            onSelectRadius={setBrushRadiusKm}
+            snapToLand={snapToLand}
+            onToggleSnap={() => setSnapToLand(!snapToLand)}
+            onUndo={handleUndo}
+            onClear={handleClear}
+            onSubmit={handleSubmit}
+            canUndo={undoStack.length > 0}
+            hasDrawn={hasDrawn}
+            isSolved={isSolved}
+            lang={lang}
+          />
+        </div>
 
-        {/* 3. Interactive Robinson Map Canvas */}
+        {/* 3. Interactive Robinson Map Canvas (Kept in full view!) */}
         <MapCanvas
           species={currentSpecies}
           tool={tool}
@@ -283,34 +352,114 @@ export default function HomePage() {
           lang={lang}
         />
 
-        {/* 4. Resolved Result Notification Banner */}
+        {/* 4. Evaluated Result Scoreboard (Directly visible on the page, keeping the map in full view!) */}
         {isSolved && scoreResult && (
-          <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-emerald-500/40 bg-emerald-500/10 p-4 backdrop-blur-md">
-            <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-500 text-slate-950 font-black text-lg shadow-md">
-                {scoreResult.grade}
+          <div className="rounded-3xl border border-emerald-500/40 bg-surface p-5 sm:p-6 shadow-2xl space-y-5 animate-fade-in">
+            {/* Top Score Bar */}
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between border-b border-surface-border pb-4">
+              <div className="flex items-center gap-3">
+                <span
+                  className={`inline-flex items-center gap-1.5 rounded-2xl border px-3 py-1.5 text-xs font-black uppercase tracking-wider ${getGradeColor(
+                    scoreResult.grade
+                  )}`}
+                >
+                  <Award className="h-4 w-4" />
+                  <span>Grade {scoreResult.grade}</span>
+                </span>
+                <div>
+                  <h2 className="text-2xl sm:text-3xl font-black text-white">
+                    {scoreResult.score}{" "}
+                    <span className="text-sm font-semibold text-slate-400">/ 1000</span>
+                  </h2>
+                  <p className="text-xs text-emerald-400 font-medium">
+                    Native distribution contrasted against your prediction
+                  </p>
+                </div>
               </div>
-              <div>
-                <p className="font-extrabold text-white sm:text-lg">
-                  Spatial Accuracy: {scoreResult.score} / 1000 ({scoreResult.iou}% IoU)
-                </p>
-                <p className="text-xs text-emerald-300">
-                  Inspecting native distribution vs. prediction on the Robinson projection.
-                </p>
+
+              {/* Action Buttons */}
+              <div className="flex flex-wrap items-center gap-2">
+                <button
+                  type="button"
+                  onClick={handleShare}
+                  className="flex items-center gap-1.5 rounded-xl bg-emerald-500 px-4 py-2.5 text-xs sm:text-sm font-extrabold text-slate-950 transition-colors hover:bg-emerald-400 shadow-md shadow-emerald-500/20"
+                >
+                  {copied ? <Check className="h-4 w-4" /> : <Share2 className="h-4 w-4" />}
+                  <span>{copied ? getTranslation(lang, "copied") : getTranslation(lang, "share")}</span>
+                </button>
+
+                {mode === "unlimited" && (
+                  <button
+                    type="button"
+                    onClick={handleNextUnlimited}
+                    className="flex items-center gap-1.5 rounded-xl border border-surface-border bg-surface-subtle px-4 py-2.5 text-xs sm:text-sm font-bold text-slate-200 transition-colors hover:bg-surface-elevated hover:text-white"
+                  >
+                    <span>{getTranslation(lang, "playAgain")}</span>
+                    <ArrowRight className="h-4 w-4" />
+                  </button>
+                )}
               </div>
             </div>
 
-            <button
-              type="button"
-              onClick={() => setShowScoreModal(true)}
-              className="rounded-xl bg-emerald-500 px-4 py-2 text-xs sm:text-sm font-extrabold text-slate-950 transition-colors hover:bg-emerald-400"
-            >
-              View Score Card & Share
-            </button>
+            {/* Diagnostic Metrics Grid */}
+            <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-4">
+              <div className="rounded-xl border border-surface-border bg-surface-subtle p-3 text-center">
+                <span className="text-[11px] font-bold text-slate-400 uppercase">IoU Overlap</span>
+                <p className="mt-0.5 text-lg font-black text-emerald-400">{scoreResult.iou}%</p>
+              </div>
+
+              <div className="rounded-xl border border-surface-border bg-surface-subtle p-3 text-center">
+                <span className="text-[11px] font-bold text-slate-400 uppercase">Precision</span>
+                <p className="mt-0.5 text-lg font-black text-cyan-400">{scoreResult.precision}%</p>
+              </div>
+
+              <div className="rounded-xl border border-surface-border bg-surface-subtle p-3 text-center">
+                <span className="text-[11px] font-bold text-slate-400 uppercase">Recall</span>
+                <p className="mt-0.5 text-lg font-black text-indigo-400">{scoreResult.recall}%</p>
+              </div>
+
+              <div className="rounded-xl border border-surface-border bg-surface-subtle p-3 text-center">
+                <span className="text-[11px] font-bold text-slate-400 uppercase">Proximity Bonus</span>
+                <p className="mt-0.5 text-lg font-black text-amber-400">+{scoreResult.proximityBonus}</p>
+              </div>
+            </div>
+
+            {/* Geographic Area Summary */}
+            <div className="rounded-xl border border-surface-border bg-surface-subtle p-3.5 text-xs text-slate-300 grid grid-cols-1 sm:grid-cols-3 gap-2">
+              <div className="flex items-center justify-between sm:justify-start sm:gap-2">
+                <span className="flex items-center gap-1 text-emerald-400 font-medium">
+                  <span className="h-2 w-2 rounded-sm bg-emerald-500" />
+                  <span>Hit:</span>
+                </span>
+                <span className="font-mono font-bold text-slate-200">
+                  {scoreResult.truePositiveAreaKm2.toLocaleString()} km²
+                </span>
+              </div>
+
+              <div className="flex items-center justify-between sm:justify-start sm:gap-2">
+                <span className="flex items-center gap-1 text-amber-400 font-medium">
+                  <span className="h-2 w-2 rounded-sm bg-amber-500" />
+                  <span>Overestimated:</span>
+                </span>
+                <span className="font-mono font-bold text-slate-200">
+                  {scoreResult.falsePositiveAreaKm2.toLocaleString()} km²
+                </span>
+              </div>
+
+              <div className="flex items-center justify-between sm:justify-start sm:gap-2">
+                <span className="flex items-center gap-1 text-sky-400 font-medium">
+                  <span className="h-2 w-2 rounded-sm bg-sky-400" />
+                  <span>Missed:</span>
+                </span>
+                <span className="font-mono font-bold text-slate-200">
+                  {scoreResult.falseNegativeAreaKm2.toLocaleString()} km²
+                </span>
+              </div>
+            </div>
           </div>
         )}
 
-        {/* 5. Conservation Deep Dive Card (Revealed upon solving or exploring) */}
+        {/* 5. Conservation Deep Dive Card (Revealed upon solving) */}
         {isSolved && <ConservationCard species={currentSpecies} lang={lang} />}
       </main>
 

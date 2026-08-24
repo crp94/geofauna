@@ -41,9 +41,9 @@
       }
     ],
     "climateVulnerability": {
-      "en": "Severe drought and heatwaves in southern Iberia threaten European rabbit populations, which comprise 80-90% of its specialized diet.",
-      "es": "Las sequías severas y olas de calor en el sur de Iberia amenazan las poblaciones de conejo de monte, su presa básica.",
-      "it": "Siccità e ondate di calore nella penisola iberica meridionale minacciano le popolazioni di coniglio selvatico."
+      "en": "Severe drought and heatwaves in southern Mediterranean scrublands threaten European rabbit populations, which comprise 80-90% of its specialized diet.",
+      "es": "Las sequías severas y olas de calor en el matorral mediterráneo amenazan las poblaciones de conejo de monte, su presa básica.",
+      "it": "Siccità e ondate di calore nella macchia mediterranea minacciano le popolazioni di coniglio selvatico."
     },
     "keyThreats": [
       {
@@ -62,33 +62,33 @@
       "it": "Specialista assoluto: coniglio selvatico."
     },
     "keystoneRole": {
-      "en": "Apex predator of the Mediterranean scrubland; regulates meso-carnivores.",
-      "es": "Superdepredador del monte mediterráneo; controla mesocarnívoros.",
+      "en": "Apex predator of Mediterranean scrubland and dehesas; regulates meso-carnivores.",
+      "es": "Superdepredador del monte mediterráneo y dehesas; controla mesocarnívoros.",
       "it": "Superpredatore della macchia mediterranea."
     },
     "conservationActions": {
-      "en": "LIFE Lynx-Connect captive breeding, reintroduction across Andalusia, Extremadura, and Portugal.",
-      "es": "Cría en cautividad LIFE Lynx-Connect y reintroducciones en Andalucía, Extremadura y Portugal.",
-      "it": "Programma LIFE Lynx-Connect di riproduzione e reintroduzioni."
+      "en": "Captive breeding and landscape corridor reintroduction across Mediterranean oak woodlands.",
+      "es": "Cría en cautividad y reintroducciones en encinares y alcornocales.",
+      "it": "Programma di riproduzione e reintroduzioni nei boschi di querce."
     },
     "historicalContraction": {
       "percentageLoss": 85,
       "description": {
-        "en": "Once widespread across the entirety of Spain and Portugal; collapsed to two isolated nuclei by 2000.",
-        "es": "Históricamente distribuido por toda la península ibérica; colapsó en dos núcleos hacia el año 2000.",
-        "it": "Un tempo diffuso in tutta la penisola iberica, ridotto a due nuclei verso il 2000."
+        "en": "Once widespread across the southwestern Mediterranean basin; collapsed to two isolated nuclei by 2000.",
+        "es": "Históricamente distribuido por toda la península; colapsó en dos núcleos hacia el año 2000.",
+        "it": "Un tempo diffuso nel bacino mediterraneo sudoccidentale, ridotto a due nuclei verso il 2000."
       }
     },
     "clues": [
       {
-        "en": "Endemic to the Iberian Peninsula, thriving in Mediterranean scrubland and dehesas.",
-        "es": "Endémico de la Península Ibérica, habita en el monte mediterráneo y dehesas.",
-        "it": "Endemico della Penisola Iberica, vive nella macchia mediterranea e nelle dehesas."
+        "en": "Solitary ambush hunter specialized on wild lagomorphs, stalking through dense Mediterranean maquis and cork oak savannahs.",
+        "es": "Cazador solitario especializado en lagomorfos silvestres, acechando en monte bajo y dehesas de encinas y alcornoques.",
+        "it": "Cacciatore solitario specializzato in lagomorfi selvatici, attivo nella macchia a lecci e sughere."
       },
       {
-        "en": "Famous for its black ear tufts and pronounced facial ruff/beard.",
-        "es": "Famoso por sus pinceles en las orejas y sus pronunciadas patillas/barbas.",
-        "it": "Famoso per i ciuffi neri sulle orecchie e la folta barba facciale."
+        "en": "Distinguished from boreal relatives by a heavily spotted pelt, pronounced facial beard-like ruffs, and prominent ear tufts.",
+        "es": "Se distingue de sus parientes boreales por su pelaje intensamente moteado, marcadas patillas y pinceles auriculares.",
+        "it": "Distinto dai parenti boreali per il mantello a macchie dense, basette pronunciate e ciuffi auricolari."
       }
     ],
     "image": {
@@ -150,9 +150,9 @@
       }
     ],
     "climateVulnerability": {
-      "en": "Climate warming is pushing the alpine tree line upward, fragmenting high-altitude montane habitats across the Himalayas.",
-      "es": "El calentamiento global empuja el límite arbóreo alpino hacia arriba en el Himalaya.",
-      "it": "Il riscaldamento globale sposta il limite degli alberi verso l'alto nell'Himalaya."
+      "en": "Climate warming is pushing the alpine tree line upward, fragmenting high-altitude montane habitats.",
+      "es": "El calentamiento global empuja el límite arbóreo alpino hacia arriba en los macizos montañosos.",
+      "it": "Il riscaldamento globale sposta il limite degli alberi verso l'alto nelle alte vette montane."
     },
     "keyThreats": [
       {
@@ -160,7 +160,7 @@
         "impact": "high",
         "description": {
           "en": "Pastoralists kill leopards in response to livestock predation.",
-          "es": "Pastores matan leopardos en represalia por ataques a ganado.",
+          "es": "Pastores matan felinos en represalia por ataques a rebaños.",
           "it": "Uccisioni per ritorsione da parte dei pastori."
         }
       }
@@ -171,9 +171,9 @@
       "it": "Ungulati d'alta quota: bharal e stambecco siberiano."
     },
     "keystoneRole": {
-      "en": "Apex predator and indicator of Central Asian mountain water towers.",
-      "es": "Superdepredador e indicador de las cuencas de alta montaña de Asia Central.",
-      "it": "Superpredatore degli ecosistemi montani dell'Asia centrale."
+      "en": "Apex predator and indicator of high-altitude montane watershed health.",
+      "es": "Superdepredador e indicador del estado de las cuencas glaciares de alta montaña.",
+      "it": "Superpredatore degli ecosistemi montani d'alta quota."
     },
     "conservationActions": {
       "en": "Community-based livestock insurance and predator-proof corrals.",
@@ -182,14 +182,14 @@
     },
     "clues": [
       {
-        "en": "Known as the 'Ghost of the Mountains', inhabiting altitudes from 3,000 to 5,500 m in Central Asia.",
-        "es": "Conocido como el 'Fantasma de las Montañas', habita entre 3.000 y 5.500 m en Asia Central.",
-        "it": "Chiamato il 'Fantasma delle Montagne', abita tra i 3.000 e i 5.500 metri in Asia centrale."
+        "en": "Adapted to steep, rocky terrain at altitudes from 3,000 to 5,500 meters, with wide, fur-cushioned paws that act as natural snowshoes.",
+        "es": "Adaptado a laderas rocosas escarpadas entre 3.000 y 5.500 m, con patas anchas y acolchadas de pelo que actúan como raquetas de nieve.",
+        "it": "Adattato a dirupi rocciosi tra 3.000 e 5.500 m, con zampe larghe e pelose che fungono da racchette da neve."
       },
       {
-        "en": "Has an exceptionally long, thick tail used for balance on cliffs and wrapped around the face for warmth.",
-        "es": "Posee una cola muy larga y gruesa que usa para el equilibrio en riscos y para abrigarse.",
-        "it": "Ha una coda lunghissima e folta usata per bilanciarsi sui dirupi."
+        "en": "Features an exceptionally long, thick tail nearly matching its body length, used for balance when leaping and wrapped around the face for warmth.",
+        "es": "Posee una cola extremadamente larga y gruesa que equilibra saltos en riscos y cubre su hocico contra el frío extremo.",
+        "it": "Dotato di una coda lunghissima e folta usata per bilanciare i balzi e coprirsi il muso dal gelo."
       }
     ],
     "image": {
@@ -251,18 +251,18 @@
       }
     ],
     "climateVulnerability": {
-      "en": "Warming models project up to 35% bamboo range loss in Sichuan by 2070.",
-      "es": "Se proyectan pérdidas de hasta el 35% del hábitat de bambú en Sichuan para 2070.",
-      "it": "I modelli prevedono una perdita del 35% dell'habitat di bambù nel Sichuan."
+      "en": "Warming models project significant loss in montane bamboo understories due to synchronous flowering die-offs.",
+      "es": "Se proyectan pérdidas en el sotobosque de bambú por floraciones sincrónicas y estrés térmico.",
+      "it": "I modelli prevedono una riduzione del bambù di sottobosco dovuta al riscaldamento."
     },
     "keyThreats": [
       {
         "threat": "Habitat fragmentation",
         "impact": "high",
         "description": {
-          "en": "Roads and infrastructure isolate 33 sub-populations across Sichuan, Shaanxi, and Gansu.",
-          "es": "Carreteras e infraestructuras aíslan 33 subpoblaciones en Sichuan, Shaanxi y Gansu.",
-          "it": "Infrastrutture che dividono la popolazione in oltre 30 nuclei isolati."
+          "en": "Roads and infrastructure isolate small sub-populations across mist-shrouded montane ridges.",
+          "es": "Carreteras e infraestructuras aíslan subpoblaciones en crestas montañosas neblinosas.",
+          "it": "Infrastrutture che frammentano le popolazioni in creste isolate."
         }
       }
     ],
@@ -272,20 +272,20 @@
       "it": "99% bambù, consumando 12-38 kg al giorno."
     },
     "conservationActions": {
-      "en": "Giant Panda National Park established across 27,000 km² in China.",
-      "es": "Parque Nacional del Panda Gigante establecido en 27.000 km².",
-      "it": "Parco Nazionale del Panda Gigante su 27.000 km²."
+      "en": "Protected ecological corridors linking fragmented montane forest reserves.",
+      "es": "Corredores ecológicos protegidos conectando reservas forestales de montaña.",
+      "it": "Corridoi ecologici che collegano le riserve forestali montane."
     },
     "clues": [
       {
-        "en": "Endemic to temperate bamboo forests in mountain ranges of central-southwestern China.",
-        "es": "Endémico de bosques de bambú en montañas del centro-suroeste de China.",
-        "it": "Endemico delle foreste di bambù nelle montagne della Cina centro-occidentale."
+        "en": "Strictly herbivorous member of the bear family whose digestive system retains carnivore-like morphology, requiring 12+ hours of daily feeding.",
+        "es": "Miembro estrictamente herbívoro de la familia de los osos cuyo tracto digestivo conserva anatomía carnívora, exigiendo más de 12 horas de ingesta diaria.",
+        "it": "Urside quasi esclusivamente erbivoro con apparato digerente carnivoro, costretto a nutrirsi per oltre 12 ore al giorno."
       },
       {
-        "en": "Has an enlarged radial sesamoid bone acting as a 'pseudo-thumb' to grasp bamboo stalks.",
-        "es": "Posee un hueso sesamoideo radial hipertrofiado como 'falso pulgar' para sujetar bambú.",
-        "it": "Ha un 'falso pollice' osseo specializzato per afferrare i fusti di bambù."
+        "en": "Possesses a specialized wrist bone (enlarged radial sesamoid) functioning as a 'pseudo-thumb' to strip tough fibrous stalks.",
+        "es": "Posee un hueso modificado en la muñeca (sesamoideo radial) que actúa como 'falso pulgar' para manipular tallos fibrosos.",
+        "it": "Dotato di un 'falso pollice' osseo al polso per afferrare e sbucciare fusti legnosi."
       }
     ],
     "image": {
@@ -347,18 +347,18 @@
       }
     ],
     "climateVulnerability": {
-      "en": "Megafires in the Amazon and Pantanal destroy core riparian forest habitat.",
-      "es": "Megaincendios en la Amazonía y Pantanal destruyen hábitats ribereños.",
-      "it": "Incendi in Amazzonia e Pantanal distruggono gli habitat fluviali."
+      "en": "Extreme drought and megafires destroy core riparian floodplain forest and wetland refuges.",
+      "es": "Sequías extremas y megaincendios destruyen selvas en galería y humedales de llanura aluvial.",
+      "it": "Incendi e siccità distruggono le foreste a galleria e le zone umide."
     },
     "keyThreats": [
       {
         "threat": "Deforestation",
         "impact": "high",
         "description": {
-          "en": "Conversion of tropical forests and savannas to cattle pasture and soy crops.",
-          "es": "Conversión de selvas y sabanas a pastos ganaderos y soja.",
-          "it": "Deforestazione per pascoli e soia."
+          "en": "Conversion of tropical forests and savannas to intensive agriculture and ranching.",
+          "es": "Conversión de selvas y sabanas a pastos ganaderos y monocultivos.",
+          "it": "Deforestazione per pascoli e monocolture intensive."
         }
       }
     ],
@@ -369,14 +369,14 @@
     },
     "clues": [
       {
-        "en": "The largest big cat in the Americas, with a rosette-patterned coat and great swimming ability.",
-        "es": "El mayor felino de América, con manchas de rosetas y gran habilidad nadadora.",
-        "it": "Il più grande felino delle Americhe, con manto a rosette e abile nuotatore."
+        "en": "Heavily built apex felid with an affinity for water, actively swimming to ambush semi-aquatic reptiles and large rodents.",
+        "es": "Felino robusto con gran afinidad por el agua, nadando para emboscar reptiles acorazados y grandes roedores en llanuras inundables.",
+        "it": "Robusto felino con spiccata affinità per l'acqua, abile nuotatore e predatore di rettili corazzati."
       },
       {
-        "en": "Possesses a bite powerful enough to pierce caiman armor and turtle shells.",
-        "es": "Posee una mordedura tan potente que perfora caparazones de tortugas y cráneos de caimanes.",
-        "it": "Ha un morso potente in grado di perforare la corazza dei caimani."
+        "en": "Unlike other big cats that bite the throat, it uses an exceptionally crushing bite to pierce the temporal bones of the skull and turtle carapaces.",
+        "es": "A diferencia de otros grandes félidos que asfixian la garganta, muerde directamente los huesos craneales y caparazones óseos.",
+        "it": "A differenza di altri grandi felini, perfora direttamente le ossa del cranio o i carapaci delle prede."
       }
     ],
     "image": {
@@ -438,18 +438,18 @@
       }
     ],
     "climateVulnerability": {
-      "en": "Rapid Arctic sea-ice loss reduces hunting platforms for ringed seals.",
-      "es": "La pérdida de hielo marino reduce plataformas de caza de focas.",
-      "it": "La perdita di ghiaccio marino riduce la caccia alle foche."
+      "en": "Rapid ocean warming and seasonal pack-ice retreat lengthens nutritional fasting periods.",
+      "es": "El retroceso del hielo marino alarga periodos de ayuno forzado en tierra firme.",
+      "it": "La riduzione dei ghiacci marini prolunga i digiuni obbligati."
     },
     "keyThreats": [
       {
         "threat": "Sea ice loss",
         "impact": "high",
         "description": {
-          "en": "Summer sea ice decline lengthens nutritional fasting periods.",
-          "es": "El retroceso del hielo estival alarga periodos de ayuno forzado.",
-          "it": "Lo scioglimento estivo prolunga i digiuni forzati."
+          "en": "Loss of marine hunting platforms over continental shelf waters.",
+          "es": "Pérdida de plataformas de caza sobre la plataforma continental marina.",
+          "it": "Perdita delle piattaforme di caccia sulla banchisa marina."
         }
       }
     ],
@@ -460,14 +460,14 @@
     },
     "clues": [
       {
-        "en": "Inhabits circumpolar Arctic sea ice, spending most of its life on frozen ocean waters.",
-        "es": "Habita el hielo marino circumpolar del Ártico cazando focas en el océano helado.",
-        "it": "Abita la banchisa polare artica cacciando sull'oceano ghiacciato."
+        "en": "Classified ecologically as a marine mammal, spending the majority of its annual life cycle hunting on frozen ocean pack ice.",
+        "es": "Clasificado ecológicamente como mamífero marino, pasando la mayor parte del año cazando sobre la banquisa helada marina.",
+        "it": "Classificato come mammifero marino, trascorre gran parte dell'anno cacciando sulla banchisa polare."
       },
       {
-        "en": "Has black skin beneath translucent hollow fur that traps solar heat.",
-        "es": "Su piel es negra bajo un pelaje translúcido y hueco que atrapa el calor solar.",
-        "it": "Ha la pelle nera sotto una pelliccia traslucida."
+        "en": "Possesses pitch-black skin beneath a dense coat of pigment-free, hollow guard hairs that channel radiant solar energy.",
+        "es": "Posee piel completamente negra bajo un pelaje translúcido y hueco que canaliza y retiene la radiación térmica.",
+        "it": "Ha la pelle nera sotto una pelliccia priva di pigmento e cava che trattiene il calore."
       }
     ],
     "image": {
@@ -529,18 +529,18 @@
       }
     ],
     "climateVulnerability": {
-      "en": "Catastrophic bushfires and heatwaves kill tens of thousands across eastern Australia.",
-      "es": "Megaincendios y olas de calor diezman poblaciones en el este australiano.",
-      "it": "Incendi e ondate di calore distruggono le popolazioni in Australia orientale."
+      "en": "Elevated atmospheric CO2 reduces nutritional protein in leaves while increasing toxic tannins; severe heatwaves trigger canopy dehydration.",
+      "es": "El aumento de CO2 reduce las proteínas en hojas e incrementa taninos tóxicos; las olas de calor deshidratan las copas arbóreas.",
+      "it": "L'aumento di CO2 riduce i nutrienti nelle foglie ed espone a disidratazione da ondate di calore."
     },
     "keyThreats": [
       {
         "threat": "Bushfires & habitat loss",
         "impact": "high",
         "description": {
-          "en": "Clearing of eucalyptus woodlands in Queensland and New South Wales.",
-          "es": "Tala de bosques de eucalipto en Queensland y Nueva Gales del Sur.",
-          "it": "Deforestazione dei boschi di eucalipto."
+          "en": "High-intensity canopy fires and land clearing for pastoral development.",
+          "es": "Megaincendios de copas y fragmentación de bosques abiertos de eucalipto.",
+          "it": "Incendi boschivi e deforestazione per terreni agricoli."
         }
       }
     ],
@@ -551,14 +551,14 @@
     },
     "clues": [
       {
-        "en": "Endemic to the eucalyptus forests of eastern and southeastern Australia.",
-        "es": "Endémico de los bosques de eucalipto del este y sureste de Australia.",
-        "it": "Endemico delle foreste di eucalipto dell'Australia orientale."
+        "en": "Specialized folivore with an enlarged 2-meter digestive caecum harboring specialized bacteria to detoxify aromatic oils and phenolic compounds.",
+        "es": "Folívoro especializado con un ciego digestivo de 2 metros que alberga bacterias para degradar aceites aromáticos y fenoles tóxicos.",
+        "it": "Folivoro specializzato con un cieco di 2 metri per digerire composti fenolici e oli tossici."
       },
       {
-        "en": "An arboreal marsupial that sleeps up to 18-20 hours a day.",
-        "es": "Marsupial arborícola que duerme hasta 18-20 horas al día.",
-        "it": "Marsupiale arboricolo che dorme fino a 20 ore al giorno."
+        "en": "Arboreal marsupial with two opposable digits on front paws and fused second/third digits on hind feet for fur grooming, sleeping up to 20 hours daily.",
+        "es": "Marsupial arborícola con dos pulgares oponibles en manos delanteras y dedos fusionados en patas traseras, durmiendo hasta 20 h al día.",
+        "it": "Marsupiale arboricolo con due dita opponibili sulle zampe anteriori, dorme fino a 20 ore al giorno."
       }
     ],
     "image": {
@@ -624,18 +624,18 @@
       }
     ],
     "climateVulnerability": {
-      "en": "Confined to volcanic cloud forest mountain summits in the Albertine Rift.",
-      "es": "Confinado a cumbres volcánicas de bosque nublado en la falla Albertina.",
-      "it": "Limitato alle cime vulcaniche della faglia Albertina."
+      "en": "Confined to volcanic cloud forest mountain summits; warming temperatures push optimal vegetation zones higher up isolated slopes.",
+      "es": "Confinado a cumbres volcánicas de bosque nublado; el calor desplaza la vegetación óptima hacia zonas más reducidas.",
+      "it": "Limitato alle vette vulcaniche di foresta nebulosa, vulnerabile allo spostamento altitudinale della vegetazione."
     },
     "keyThreats": [
       {
         "threat": "Human encroachment",
         "impact": "high",
         "description": {
-          "en": "Dense human agricultural boundaries surrounding Virunga and Bwindi.",
-          "es": "Fronteras agrícolas densas rodeando Virunga y Bwindi.",
-          "it": "Pressione agricola ai margini delle riserve."
+          "en": "Dense agricultural borders surrounding steep protected volcanic park slopes.",
+          "es": "Fronteras agrícolas densas rodeando las laderas volcánicas protegidas.",
+          "it": "Pressione agricola ai margini delle riserve vulcaniche."
         }
       }
     ],
@@ -646,14 +646,14 @@
     },
     "clues": [
       {
-        "en": "Lives exclusively in two small high-altitude montane cloud forest areas in Rwanda, Uganda, and DR Congo.",
-        "es": "Vive exclusivamente en dos pequeñas áreas montañosas en Ruanda, Uganda y RD Congo.",
-        "it": "Vive in due piccole aree montuose in Ruanda, Uganda e RD Congo."
+        "en": "The largest living primate subspecies, inhabiting high-elevation montane cloud forests between 2,200 and 4,000 meters.",
+        "es": "La subespecie de primate vivo más grande, habitando bosques nublados de alta montaña entre 2.200 y 4.000 metros.",
+        "it": "La più grande sottospecie di primate vivente, abitatrice di foreste montane nebulose tra 2.200 e 4.000 metri."
       },
       {
-        "en": "Has thicker fur than other gorillas to endure freezing night temperatures at high altitude.",
-        "es": "Tiene pelaje más largo y denso para soportar el frío nocturno de montaña.",
-        "it": "Ha pelliccia più folta per sopportare il freddo d'alta quota."
+        "en": "Grows thicker, longer, and jet-black hair compared to lowland relatives to insulate against near-freezing summit nights.",
+        "es": "Desarrolla pelaje más largo, denso y negro azabache que sus congéneres de tierras bajas para soportar el frío nocturno.",
+        "it": "Sviluppa una pelliccia più lunga e scura rispetto ai parenti di pianura per isolarsi dalle notti gelide."
       }
     ],
     "image": {
@@ -711,8 +711,8 @@
       }
     ],
     "climateVulnerability": {
-      "en": "Rising midday temperatures in African savannas restrict hunting windows and increase energy expenditure.",
-      "es": "El aumento de temperaturas diurnas en la sabana reduce las horas hábiles de caza.",
+      "en": "Rising midday temperatures in arid savannas restrict hunting windows and increase energetic competition with nocturnal apex carnivores.",
+      "es": "El aumento de temperaturas diurnas reduce las horas de caza e incrementa competencia con carnívoros nocturnos.",
       "it": "L'aumento delle temperature riduce i tempi utili di caccia nella savana."
     },
     "keyThreats": [
@@ -720,9 +720,9 @@
         "threat": "Habitat fragmentation & cub poaching",
         "impact": "high",
         "description": {
-          "en": "77% of cheetah range falls outside protected areas, leading to conflict with pastoralists and illegal pet trafficking in the Horn of Africa.",
-          "es": "El 77% de su rango está fuera de parques protegidos, generando conflicto ganadero y tráfico de cachorros.",
-          "it": "Frammentazione dell'habitat e bracconaggio di cuccioli per il commercio illegale."
+          "en": "Wide-ranging home territories overlap heavily with un-fenced pastoral lands.",
+          "es": "Sus amplios territorios de campeo coinciden con tierras ganaderas abiertas.",
+          "it": "Ampi territori sovrapposti ad aree di pascolo non protette."
         }
       }
     ],
@@ -734,18 +734,18 @@
     "keystoneRole": {
       "en": "High-speed diurnal predator of open savanna and dry woodland ecosystems.",
       "es": "Superdepredador diurno de alta velocidad en sabanas abiertas.",
-      "it": "Predatore diurno ad alta velocità della savana africana."
+      "it": "Predatore diurno ad alta velocità della savana."
     },
     "clues": [
       {
-        "en": "The fastest terrestrial animal on Earth, accelerating from 0 to 100 km/h in under 3 seconds.",
-        "es": "El animal terrestre más rápido del planeta, capaz de acelerar de 0 a 100 km/h en menos de 3 segundos.",
-        "it": "Il più veloce mammifero terrestre, capace di superare i 100 km/h."
+        "en": "Morphologically specialized for high-speed diurnal coursing, with semi-retractile claws functioning like athletic cleats and an enlarged respiratory tract.",
+        "es": "Especializado morfológicamente en carreras diurnas de alta velocidad, con garras semi-retráctiles tipo clavos de atletismo y vías respiratorias ampliadas.",
+        "it": "Morfologicamente specializzato per scatti ad altissima velocità, con artigli semi-retrattili che fungono da tacchetti."
       },
       {
-        "en": "Recognizable by distinctive black 'tear tracks' running from the inside corners of its eyes to its mouth.",
-        "es": "Inconfundible por las características 'líneas de lágrimas' negras desde el lagrimal hasta la boca.",
-        "it": "Caratterizzato dalle tipiche 'strisce di lacrime' nere sul muso."
+        "en": "Features prominent black facial 'tear marks' extending from the inner eye corners to deflect blinding daytime solar glare.",
+        "es": "Presenta características líneas negras lagrimales que absorben y desvían el resplandor solar diurno.",
+        "it": "Caratterizzato da strie nere sotto gli occhi che riducono il riverbero della luce solare."
       }
     ],
     "image": {
@@ -808,8 +808,8 @@
         "threat": "Commercial hunting for leather & meat",
         "impact": "low",
         "description": {
-          "en": "Regulated sustainable ranching harvest in the Venezuelan Llanos.",
-          "es": "Caza comercial regulada y aprovechamiento en los Llanos venezolanos.",
+          "en": "Regulated harvest and ranching around wetland borders.",
+          "es": "Aprovechamiento regulado en zonas húmedas y sabanas inundables.",
           "it": "Caccia commerciale regolamentata per pelle e carne."
         }
       }
@@ -821,14 +821,14 @@
     },
     "clues": [
       {
-        "en": "The world's largest living rodent, native to wetlands and savannas of South America east of the Andes.",
-        "es": "El roedor viviente más grande del mundo, autóctono de los humedales y ríos de Sudamérica al este de los Andes.",
-        "it": "Il più grande roditore vivente al mondo, originario del Sudamerica."
+        "en": "The world's largest living rodent, highly adapted to life in and around tropical wetland basins, lakes, and seasonal floodplains.",
+        "es": "El roedor viviente más voluminoso, altamente adaptado a la vida en humedales tropicales, lagunas y esteros inundables.",
+        "it": "Il più grande roditore vivente, strettamente legato a zone umide tropicali, paludi e fiumi."
       },
       {
-        "en": "Semi-aquatic social giant with webbed toes, able to stay submerged underwater for up to 5 minutes.",
-        "es": "Gigante semiacuático con dedos palmeados capaz de sumergirse bajo el agua hasta 5 minutos.",
-        "it": "Animale semi-acquatico e gregario con zampe palmate."
+        "en": "Features slightly webbed feet and facial sensory organs (eyes, ears, nostrils) aligned high on the head for swimming stealth.",
+        "es": "Posee pies parcialmente palmeados y órganos sensoriales (ojos, orejas, nariz) alineados en la parte superior de la cabeza para nadar sumergido.",
+        "it": "Presenta zampe parzialmente palmate e occhi, narici e orecchie allineati in alto sulla testa per nuotare a pelo d'acqua."
       }
     ],
     "image": {
@@ -892,18 +892,18 @@
       }
     ],
     "climateVulnerability": {
-      "en": "Warmer dry summers in eastern Tasmania accelerate roadkill rotting and alter wallaby carrion dynamics.",
-      "es": "Veranos más cálidos y secos en Tasmania alteran la disponibilidad de carroñas de ualabíes.",
-      "it": "Estati più calde e secche alterano la disponibilità di carcasse."
+      "en": "Hotter, drier summers alter carrion breakdown rates and increase bushfire hazards in coastal scrub.",
+      "es": "Veranos más calurosos y secos aceleran descomposición de carroñas e incendios en matorral costero.",
+      "it": "Estati più calde e secche alterano la decomposizione delle carcasse e aumentano il rischio di incendi."
     },
     "keyThreats": [
       {
         "threat": "Devil Facial Tumour Disease (DFTD)",
         "impact": "high",
         "description": {
-          "en": "A 100% fatal transmissible cancer passed via biting during mating and communal feeding, causing up to 80% population decline.",
-          "es": "Cáncer facial transmisible por mordeduras que ha provocado desplomes de más del 80% de la población.",
-          "it": "Tumore facciale trasmissibile tramite morsi che causa altissima mortalità."
+          "en": "A fatal transmissible clonal cell line cancer spread by biting during communal feeding and mating.",
+          "es": "Cáncer facial transmisible por mordeduras durante alimentación comunal y apareamiento.",
+          "it": "Tumore facciale clonale trasmissibile tramite morsi durante i pasti comuni."
         }
       }
     ],
@@ -914,14 +914,14 @@
     },
     "clues": [
       {
-        "en": "The world's largest surviving carnivorous marsupial, endemic strictly to the island of Tasmania.",
-        "es": "El marsupial carnívoro vivo más grande del mundo, estrictamente endémico de la isla de Tasmania.",
-        "it": "Il più grande marsupiale carnivoro vivente, endemico della Tasmania."
+        "en": "The world's largest extant carnivorous marsupial, nocturnal and stocky with a specialized bite force quotient exceeding that of most larger predators.",
+        "es": "El marsupial carnívoro vivo más grande, de hábitos nocturnos y con una fuerza de mordida relativa superior a la de la mayoría de grandes depredadores.",
+        "it": "Il più grande marsupiale carnivoro vivente, notturno e con un morso proporzionalmente tra i più potenti del regno animale."
       },
       {
-        "en": "Known for its ferocious screech, pungent odor, and a bite force quotient among the highest of any mammal.",
-        "es": "Famoso por sus chillidos espeluznantes, olor fétido y una fuerza de mordida demoledora capaz de triturar huesos.",
-        "it": "Celebre per le grida stridenti e un morso straordinariamente potente in grado di spezzare ossa."
+        "en": "Characterized by pitch-black fur with an irregular white chest crescent, producing piercing guttural screeches and a strong musk when agitated.",
+        "es": "Se caracteriza por pelaje negro azabache con medialuna blanca en el pecho, emitiendo chillidos guturales y un fuerte almizcle.",
+        "it": "Caratterizzato da pelliccia nera con una mezzaluna bianca sul petto e grida stridenti quando eccitato."
       }
     ],
     "image": {
@@ -963,7 +963,7 @@
     "difficulty": "regional",
     "iucnStatus": "VU",
     "populationTrend": "decreasing",
-    "populationEstimate": "~Millions (eastern & western migratory populations)",
+    "populationEstimate": "~Millions (migratory populations)",
     "populationHistory": [
       {
         "year": 1995,
@@ -984,18 +984,18 @@
       }
     ],
     "climateVulnerability": {
-      "en": "Severe winter storms in the high-altitude Oyamel fir forests of Michoacán (Mexico) freeze millions of overwintering butterflies; summer droughts desiccate milkweed.",
-      "es": "Tormentas invernales anómalas en los bosques de oyamel de Michoacán congelan millones de mariposas.",
-      "it": "Tempeste invernali nelle foreste di oyamel in Messico provocano gelate letali."
+      "en": "Unseasonable winter cold snaps and storms in high-altitude fir microclimates cause severe freezing mortality.",
+      "es": "Heladas extemporáneas y tormentas en microclimas de bosque de abetos causan alta mortandad.",
+      "it": "Gelate anomale e tempeste nei boschi montani provocano elevata mortalità invernale."
     },
     "keyThreats": [
       {
-        "threat": "Herbicide eradication of milkweed",
+        "threat": "Herbicide eradication of larval host plants",
         "impact": "high",
         "description": {
-          "en": "Agricultural glyphosate use across the US Midwest Corn Belt wipes out larval host milkweed (Asclepias).",
-          "es": "Uso masivo de herbicidas en el cinturón agrícola de EE.UU. que erradica el algodoncillo (Asclepias), planta nutricia de sus orugas.",
-          "it": "Uso di erbicidi che distrugge le piante di asclepiade lungo le rotte migratorie."
+          "en": "Agricultural herbicide spraying eliminating milkweed (Asclepias) species along breeding flyways.",
+          "es": "Uso de herbicidas que erradica el algodoncillo (Asclepias), planta nutricia de sus orugas.",
+          "it": "Uso di erbicidi che distrugge le piante di asclepiade lungo le rotte riproduttive."
         }
       }
     ],
@@ -1006,14 +1006,14 @@
     },
     "clues": [
       {
-        "en": "Famous for its extraordinary multi-generational annual migration of up to 4,500 km across North America.",
-        "es": "Famosa por su extraordinaria migración multigeneracional de hasta 4.500 km a lo largo de Norteamérica.",
-        "it": "Celebre per la migrazione annuale di oltre 4.000 km attraverso il Nord America."
+        "en": "Caterpillars sequester toxic cardenolides (cardiac glycosides) from their host plants, rendering both larvae and bright orange adults unpalatable to birds.",
+        "es": "Las orugas acumulan cardenólidos tóxicos de sus plantas nutricias, haciendo que orugas y adultos naranjas resulten venenosos para las aves.",
+        "it": "I bruchi accumulano glicosidi cardioattivi tossici dalle piante nutrici, rendendo adulti e larve sgradevoli ai predatori."
       },
       {
-        "en": "Millions overwinter densely clustered in the highland Oyamel fir forests of central Mexico.",
-        "es": "Millones de ejemplares hibernan apiñados en los bosques templados de oyamel del centro de México.",
-        "it": "Milioni di individui svernano nelle foreste montane di oyamel del Messico centrale."
+        "en": "Undertakes extraordinary multi-thousand kilometer annual migrations across vast continental flyways using a time-compensated solar compass in its antennae.",
+        "es": "Emprende una migración anual de miles de kilómetros orientándose con un compás solar con compensación horaria en sus antenas.",
+        "it": "Compie migrazioni di migliaia di chilometri orientandosi grazie a una bussola solare biologica nelle antenne."
       }
     ],
     "image": {
