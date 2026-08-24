@@ -92,11 +92,11 @@
       }
     ],
     "image": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Lince_ib%C3%A9rico_%28Lynx_pardinus%29%2C_Parque_Nacional_de_Do%C3%B1ana%2C_Espa%C3%B1a.jpg/1280px-Lince_ib%C3%A9rico_%28Lynx_pardinus%29%2C_Parque_Nacional_de_Do%C3%B1ana%2C_Espa%C3%B1a.jpg",
-      "photographer": "Arturo de Frias Marques",
+      "url": "/images/species/iberian-lynx.jpg",
+      "photographer": "Diego Delso",
       "license": "CC BY-SA 4.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lince_ib%C3%A9rico_(Lynx_pardinus),_Parque_Nacional_de_Do%C3%B1ana,_Espa%C3%B1a.jpg",
-      "alt": "Iberian Lynx in Doñana National Park"
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lince_ib%C3%A9rico_(Lynx_pardinus),_Almuradiel,_Ciudad_Real,_Espa%C3%B1a,_2021-12-19,_DD_07.jpg",
+      "alt": "Iberian Lynx in wild Mediterranean habitat"
     },
     "range": {
       "bounds": [
@@ -193,11 +193,11 @@
       }
     ],
     "image": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Snow_leopard_portrait.jpg/1280px-Snow_leopard_portrait.jpg",
+      "url": "/images/species/snow-leopard.jpg",
       "photographer": "Bernard Landgraf",
       "license": "CC BY-SA 3.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Snow_leopard_portrait.jpg",
-      "alt": "Snow leopard close portrait"
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Irbis4.JPG",
+      "alt": "Snow leopard on mountain rocks"
     },
     "range": {
       "bounds": [
@@ -289,7 +289,7 @@
       }
     ],
     "image": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Grosser_Panda.JPG/1280px-Grosser_Panda.JPG",
+      "url": "/images/species/giant-panda.jpg",
       "photographer": "J. Patrick Fischer",
       "license": "CC BY-SA 3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grosser_Panda.JPG",
@@ -380,11 +380,11 @@
       }
     ],
     "image": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Standing_jaguar.jpg/1280px-Standing_jaguar.jpg",
+      "url": "/images/species/jaguar.jpg",
       "photographer": "Charles J. Sharp",
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Standing_jaguar.jpg",
-      "alt": "Jaguar in Pantanal"
+      "alt": "Jaguar standing in wetland forest"
     },
     "range": {
       "bounds": [
@@ -471,7 +471,7 @@
       }
     ],
     "image": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Polar_Bear_-_Alaska_%28cropped%29.jpg/1280px-Polar_Bear_-_Alaska_%28cropped%29.jpg",
+      "url": "/images/species/polar-bear.jpg",
       "photographer": "Alan D. Wilson",
       "license": "CC BY-SA 3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Polar_Bear_-_Alaska_(cropped).jpg",
@@ -562,11 +562,11 @@
       }
     ],
     "image": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Koala_climbing_tree.jpg/1280px-Koala_climbing_tree.jpg",
+      "url": "/images/species/koala.jpg",
       "photographer": "Diliff",
       "license": "CC BY-SA 3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Koala_climbing_tree.jpg",
-      "alt": "Koala climbing tree"
+      "alt": "Koala climbing eucalyptus tree"
     },
     "range": {
       "bounds": [
@@ -657,7 +657,7 @@
       }
     ],
     "image": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Mountain_Gorilla_%28Gorilla_beringei_beringei%29_male.jpg/1280px-Mountain_Gorilla_%28Gorilla_beringei_beringei%29_male.jpg",
+      "url": "/images/species/mountain-gorilla.jpg",
       "photographer": "Charles J. Sharp",
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mountain_Gorilla_(Gorilla_beringei_beringei)_male.jpg",
@@ -749,11 +749,11 @@
       }
     ],
     "image": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Cheetah_running.jpg/1280px-Cheetah_running.jpg",
+      "url": "/images/species/cheetah.jpg",
       "photographer": "Frederic Salein",
       "license": "CC BY-SA 2.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cheetah_running.jpg",
-      "alt": "Cheetah running in Maasai Mara"
+      "alt": "Cheetah running in savanna grassland"
     },
     "range": {
       "bounds": [
@@ -832,7 +832,7 @@
       }
     ],
     "image": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Capybara_%28Hydrochoerus_hydrochaeris%29.JPG/1280px-Capybara_%28Hydrochoerus_hydrochaeris%29.JPG",
+      "url": "/images/species/capybara.jpg",
       "photographer": "Charles J. Sharp",
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Capybara_(Hydrochoerus_hydrochaeris).JPG",
@@ -925,7 +925,7 @@
       }
     ],
     "image": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Tasmanian_Devil_%28Sarcophilus_harrisii%29.jpg/1280px-Tasmanian_Devil_%28Sarcophilus_harrisii%29.jpg",
+      "url": "/images/species/tasmanian-devil.jpg",
       "photographer": "JJ Harrison",
       "license": "CC BY-SA 3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tasmanian_Devil_(Sarcophilus_harrisii).jpg",
@@ -1002,7 +1002,7 @@
     "diet": {
       "en": "Larvae feed exclusively on toxic milkweed (Asclepias); adults drink floral nectar.",
       "es": "Las orugas se alimentan exclusivamente de algodoncillo tóxico; los adultos liban néctar de flores.",
-      "it": "I bruchi si nutrono solo di asclepiade; gli adulti di nettare floreale."
+      "it": "I bruchi si nutrono solo di asclepiade; gli大人 de néctar floral."
     },
     "clues": [
       {
@@ -1017,7 +1017,7 @@
       }
     ],
     "image": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Monarch_In_May.jpg/1280px-Monarch_In_May.jpg",
+      "url": "/images/species/monarch-butterfly.jpg",
       "photographer": "Kenneth Dwain Harrelson",
       "license": "CC BY-SA 3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Monarch_In_May.jpg",
