@@ -504,7 +504,7 @@ export default function HomePage() {
             GeoFauna · Open-Biodiversity Species Distribution Deduction Game
           </p>
           <p>
-            Powered by open data from the{" "}
+            Powered by open data from{" "}
             <a
               href="https://www.gbif.org"
               target="_blank"
@@ -512,6 +512,15 @@ export default function HomePage() {
               className="text-emerald-400 hover:underline"
             >
               GBIF
+            </a>
+            ,{" "}
+            <a
+              href="https://www.inaturalist.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-teal-400 hover:underline"
+            >
+              iNaturalist
             </a>
             ,{" "}
             <a

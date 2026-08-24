@@ -82,6 +82,9 @@ export type Species = {
   gbifTaxonKey?: number;
   gbifOccurrenceCount?: number;
   gbifUrl?: string;
+  inaturalistTaxonId?: number;
+  inaturalistObservationCount?: number;
+  inaturalistUrl?: string;
 };
 
 export type ScoreResult = {

@@ -132,24 +132,33 @@ if (!fs.existsSync(outputDir)) {
   fs.mkdirSync(outputDir, { recursive: true });
 }
 
-// Load GBIF enrichment cache if available
+// Load GBIF & iNaturalist enrichment caches
 const gbifEnrichmentPath = path.join(outputDir, "gbif-enrichment.json");
 const gbifMap: Record<string, { taxonKey: number; occurrenceCount?: number; url?: string }> = fs.existsSync(gbifEnrichmentPath)
   ? JSON.parse(fs.readFileSync(gbifEnrichmentPath, "utf-8"))
   : {};
 
+const inatEnrichmentPath = path.join(outputDir, "inaturalist-enrichment.json");
+const inatMap: Record<string, { taxonId: number; observationCount?: number; url?: string }> = fs.existsSync(inatEnrichmentPath)
+  ? JSON.parse(fs.readFileSync(inatEnrichmentPath, "utf-8"))
+  : {};
+
 // Compile and save all 62 scholarly species
-console.log(`Compiling ${allScholarlySpecies.length} curated species entries with GBIF validation...`);
+console.log(`Compiling ${allScholarlySpecies.length} curated species entries with GBIF & iNaturalist validation...`);
 const finalSpeciesList: Species[] = allScholarlySpecies.map((s) => {
   const { rangeConfig, ...rest } = s;
   const { rle, areaKm2, bounds } = createRangeMask(rangeConfig);
   const gbifInfo = gbifMap[s.id];
+  const inatInfo = inatMap[s.id];
 
   return {
     ...rest,
     gbifTaxonKey: gbifInfo?.taxonKey,
     gbifOccurrenceCount: gbifInfo?.occurrenceCount,
     gbifUrl: gbifInfo?.url || (gbifInfo?.taxonKey ? `https://www.gbif.org/species/${gbifInfo.taxonKey}` : undefined),
+    inaturalistTaxonId: inatInfo?.taxonId,
+    inaturalistObservationCount: inatInfo?.observationCount,
+    inaturalistUrl: inatInfo?.url || (inatInfo?.taxonId ? `https://www.inaturalist.org/taxa/${inatInfo.taxonId}` : undefined),
     range: {
       bounds,
       gridDimensions: [GRID_WIDTH, GRID_HEIGHT],

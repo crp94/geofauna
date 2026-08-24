@@ -1,0 +1,312 @@
+{
+  "iberian-lynx": {
+    "taxonId": 41975,
+    "observationCount": 1093,
+    "url": "https://www.inaturalist.org/taxa/41975"
+  },
+  "snow-leopard": {
+    "taxonId": 74831,
+    "observationCount": 1160,
+    "url": "https://www.inaturalist.org/taxa/74831"
+  },
+  "giant-panda": {
+    "taxonId": 41659,
+    "observationCount": 1407,
+    "url": "https://www.inaturalist.org/taxa/41659"
+  },
+  "jaguar": {
+    "taxonId": 41970,
+    "observationCount": 8592,
+    "url": "https://www.inaturalist.org/taxa/41970"
+  },
+  "polar-bear": {
+    "taxonId": 41644,
+    "observationCount": 3927,
+    "url": "https://www.inaturalist.org/taxa/41644"
+  },
+  "koala": {
+    "taxonId": 42983,
+    "observationCount": 45336,
+    "url": "https://www.inaturalist.org/taxa/42983"
+  },
+  "mountain-gorilla": {
+    "taxonId": 147661,
+    "observationCount": 1233,
+    "url": "https://www.inaturalist.org/taxa/147661"
+  },
+  "cheetah": {
+    "taxonId": 41955,
+    "observationCount": 7325,
+    "url": "https://www.inaturalist.org/taxa/41955"
+  },
+  "capybara": {
+    "taxonId": 74442,
+    "observationCount": 18031,
+    "url": "https://www.inaturalist.org/taxa/74442"
+  },
+  "tasmanian-devil": {
+    "taxonId": 40232,
+    "observationCount": 1974,
+    "url": "https://www.inaturalist.org/taxa/40232"
+  },
+  "monarch-butterfly": {
+    "taxonId": 48662,
+    "observationCount": 523111,
+    "url": "https://www.inaturalist.org/taxa/48662"
+  },
+  "bengal-tiger": {
+    "taxonId": 130793,
+    "observationCount": 3106,
+    "url": "https://www.inaturalist.org/taxa/130793"
+  },
+  "african-bush-elephant": {
+    "taxonId": 43694,
+    "observationCount": 30044,
+    "url": "https://www.inaturalist.org/taxa/43694"
+  },
+  "red-panda": {
+    "taxonId": 41653,
+    "observationCount": 2101,
+    "url": "https://www.inaturalist.org/taxa/41653"
+  },
+  "platypus": {
+    "taxonId": 43236,
+    "observationCount": 5024,
+    "url": "https://www.inaturalist.org/taxa/43236"
+  },
+  "red-kangaroo": {
+    "taxonId": 1453439,
+    "observationCount": 2851,
+    "url": "https://www.inaturalist.org/taxa/1453439"
+  },
+  "okapi": {
+    "taxonId": 42155,
+    "observationCount": 503,
+    "url": "https://www.inaturalist.org/taxa/42155"
+  },
+  "ring-tailed-lemur": {
+    "taxonId": 43617,
+    "observationCount": 3736,
+    "url": "https://www.inaturalist.org/taxa/43617"
+  },
+  "blue-whale": {
+    "taxonId": 41553,
+    "observationCount": 2477,
+    "url": "https://www.inaturalist.org/taxa/41553"
+  },
+  "bornean-orangutan": {
+    "taxonId": 43582,
+    "observationCount": 3424,
+    "url": "https://www.inaturalist.org/taxa/43582"
+  },
+  "sea-otter": {
+    "taxonId": 41860,
+    "observationCount": 18159,
+    "url": "https://www.inaturalist.org/taxa/41860"
+  },
+  "saiga-antelope": {
+    "taxonId": 42378,
+    "observationCount": 609,
+    "url": "https://www.inaturalist.org/taxa/42378"
+  },
+  "ethiopian-wolf": {
+    "taxonId": 42045,
+    "observationCount": 179,
+    "url": "https://www.inaturalist.org/taxa/42045"
+  },
+  "fossa": {
+    "taxonId": 41578,
+    "observationCount": 362,
+    "url": "https://www.inaturalist.org/taxa/41578"
+  },
+  "sunda-pangolin": {
+    "taxonId": 43364,
+    "observationCount": 289,
+    "url": "https://www.inaturalist.org/taxa/43364"
+  },
+  "giant-anteater": {
+    "taxonId": 47107,
+    "observationCount": 3233,
+    "url": "https://www.inaturalist.org/taxa/47107"
+  },
+  "quokka": {
+    "taxonId": 42955,
+    "observationCount": 2153,
+    "url": "https://www.inaturalist.org/taxa/42955"
+  },
+  "chimpanzee": {
+    "taxonId": 43577,
+    "observationCount": 2241,
+    "url": "https://www.inaturalist.org/taxa/43577"
+  },
+  "walrus": {
+    "taxonId": 41766,
+    "observationCount": 1812,
+    "url": "https://www.inaturalist.org/taxa/41766"
+  },
+  "narwhal": {
+    "taxonId": 41459,
+    "observationCount": 114,
+    "url": "https://www.inaturalist.org/taxa/41459"
+  },
+  "european-bison": {
+    "taxonId": 1696537,
+    "observationCount": 2057,
+    "url": "https://www.inaturalist.org/taxa/1696537"
+  },
+  "american-bison": {
+    "taxonId": 42241,
+    "observationCount": 459700,
+    "url": "https://www.inaturalist.org/taxa/42241"
+  },
+  "sloth-bear": {
+    "taxonId": 41651,
+    "observationCount": 1278,
+    "url": "https://www.inaturalist.org/taxa/41651"
+  },
+  "spectacled-bear": {
+    "taxonId": 41657,
+    "observationCount": 1886,
+    "url": "https://www.inaturalist.org/taxa/41657"
+  },
+  "gray-wolf": {
+    "taxonId": 42048,
+    "observationCount": 22894,
+    "url": "https://www.inaturalist.org/taxa/42048"
+  },
+  "emperor-penguin": {
+    "taxonId": 3820,
+    "observationCount": 628,
+    "url": "https://www.inaturalist.org/taxa/3820"
+  },
+  "andean-condor": {
+    "taxonId": 4747,
+    "observationCount": 8086,
+    "url": "https://www.inaturalist.org/taxa/4747"
+  },
+  "california-condor": {
+    "taxonId": 4778,
+    "observationCount": 7090,
+    "url": "https://www.inaturalist.org/taxa/4778"
+  },
+  "harpy-eagle": {
+    "taxonId": 5321,
+    "observationCount": 1617,
+    "url": "https://www.inaturalist.org/taxa/5321"
+  },
+  "shoebill": {
+    "taxonId": 4338,
+    "observationCount": 603,
+    "url": "https://www.inaturalist.org/taxa/4338"
+  },
+  "southern-cassowary": {
+    "taxonId": 20500,
+    "observationCount": 3472,
+    "url": "https://www.inaturalist.org/taxa/20500"
+  },
+  "north-island-brown-kiwi": {
+    "taxonId": 20496,
+    "observationCount": 586,
+    "url": "https://www.inaturalist.org/taxa/20496"
+  },
+  "kakapo": {
+    "taxonId": 1584019,
+    "observationCount": 71,
+    "url": "https://www.inaturalist.org/taxa/1584019"
+  },
+  "atlantic-puffin": {
+    "taxonId": 4504,
+    "observationCount": 17195,
+    "url": "https://www.inaturalist.org/taxa/4504"
+  },
+  "resplendent-quetzal": {
+    "taxonId": 20856,
+    "observationCount": 4687,
+    "url": "https://www.inaturalist.org/taxa/20856"
+  },
+  "hoatzin": {
+    "taxonId": 1626,
+    "observationCount": 4274,
+    "url": "https://www.inaturalist.org/taxa/1626"
+  },
+  "western-capercaillie": {
+    "taxonId": 1026,
+    "observationCount": 4699,
+    "url": "https://www.inaturalist.org/taxa/1026"
+  },
+  "peregrine-falcon": {
+    "taxonId": 4647,
+    "observationCount": 61479,
+    "url": "https://www.inaturalist.org/taxa/4647"
+  },
+  "snowy-owl": {
+    "taxonId": 144594,
+    "observationCount": 12565,
+    "url": "https://www.inaturalist.org/taxa/144594"
+  },
+  "kea": {
+    "taxonId": 18941,
+    "observationCount": 4441,
+    "url": "https://www.inaturalist.org/taxa/18941"
+  },
+  "komodo-dragon": {
+    "taxonId": 39449,
+    "observationCount": 2687,
+    "url": "https://www.inaturalist.org/taxa/39449"
+  },
+  "marine-iguana": {
+    "taxonId": 35347,
+    "observationCount": 10595,
+    "url": "https://www.inaturalist.org/taxa/35347"
+  },
+  "galapagos-giant-tortoise": {
+    "taxonId": 539452,
+    "observationCount": 6221,
+    "url": "https://www.inaturalist.org/taxa/539452"
+  },
+  "leatherback-sea-turtle": {
+    "taxonId": 39677,
+    "observationCount": 2192,
+    "url": "https://www.inaturalist.org/taxa/39677"
+  },
+  "nile-crocodile": {
+    "taxonId": 341972,
+    "observationCount": 10527,
+    "url": "https://www.inaturalist.org/taxa/341972"
+  },
+  "saltwater-crocodile": {
+    "taxonId": 26068,
+    "observationCount": 10252,
+    "url": "https://www.inaturalist.org/taxa/26068"
+  },
+  "tuatara": {
+    "taxonId": 200834,
+    "observationCount": 2657,
+    "url": "https://www.inaturalist.org/taxa/200834"
+  },
+  "gila-monster": {
+    "taxonId": 35003,
+    "observationCount": 3755,
+    "url": "https://www.inaturalist.org/taxa/35003"
+  },
+  "axolotl": {
+    "taxonId": 26777,
+    "observationCount": 2861,
+    "url": "https://www.inaturalist.org/taxa/26777"
+  },
+  "golden-poison-frog": {
+    "taxonId": 21217,
+    "observationCount": 454,
+    "url": "https://www.inaturalist.org/taxa/21217"
+  },
+  "chinese-giant-salamander": {
+    "taxonId": 1688535,
+    "observationCount": 118,
+    "url": "https://www.inaturalist.org/taxa/1688535"
+  },
+  "wild-yak": {
+    "taxonId": 890122,
+    "observationCount": 66,
+    "url": "https://www.inaturalist.org/taxa/890122"
+  }
+}

@@ -15,6 +15,7 @@ import {
   Activity,
   Database,
   ExternalLink,
+  Camera,
 } from "lucide-react";
 import { IUCNStatus, Language, Species } from "../types/species";
 import { getIUCNLabel, getTranslation } from "../lib/i18n";
@@ -317,41 +318,86 @@ export const ConservationCard: React.FC<ConservationCardProps> = ({
         )}
       </div>
 
-      {/* GBIF Scientific Occurrence Infrastructure & Authority */}
-      {species.gbifTaxonKey && (
-        <div className="rounded-xl border border-emerald-500/30 bg-emerald-500/5 p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-          <div className="flex items-center gap-3">
-            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-emerald-500/20 text-emerald-400">
-              <Database className="h-5 w-5" />
-            </div>
-            <div>
-              <div className="flex items-center gap-2">
-                <span className="text-xs font-black uppercase tracking-wider text-emerald-400">
-                  GBIF Occurrence Registry
-                </span>
-                <span className="text-[10px] rounded-md bg-emerald-500/20 px-1.5 py-0.5 font-bold text-emerald-300">
-                  Taxon #{species.gbifTaxonKey}
-                </span>
-              </div>
-              <p className="text-xs text-slate-300 mt-0.5">
-                {species.gbifOccurrenceCount
-                  ? `${species.gbifOccurrenceCount.toLocaleString()} georeferenced museum specimens & verified research records.`
-                  : "Verified global biodiversity records cataloged in international repositories."}
-              </p>
-            </div>
-          </div>
+      {/* Open Biodiversity Registries: GBIF & iNaturalist */}
+      <div className="space-y-3">
+        <span className="text-xs font-bold uppercase tracking-wider text-slate-400">
+          Open Biodiversity Registries & Citizen Science
+        </span>
 
-          <a
-            href={species.gbifUrl || `https://www.gbif.org/species/${species.gbifTaxonKey}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-1.5 rounded-xl border border-emerald-500/40 bg-emerald-500/10 px-3.5 py-2 text-xs font-bold text-emerald-300 transition-colors hover:bg-emerald-500/20 hover:text-white shrink-0"
-          >
-            <span>Explore on GBIF</span>
-            <ExternalLink className="h-3.5 w-3.5" />
-          </a>
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+          {/* GBIF Card */}
+          {species.gbifTaxonKey && (
+            <div className="rounded-xl border border-emerald-500/30 bg-emerald-500/5 p-4 flex flex-col justify-between gap-3">
+              <div className="flex items-start gap-3">
+                <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-emerald-500/20 text-emerald-400">
+                  <Database className="h-4.5 w-4.5" />
+                </div>
+                <div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs font-black uppercase tracking-wider text-emerald-400">
+                      GBIF Registry
+                    </span>
+                    <span className="text-[10px] rounded-md bg-emerald-500/20 px-1.5 py-0.5 font-bold text-emerald-300">
+                      Taxon #{species.gbifTaxonKey}
+                    </span>
+                  </div>
+                  <p className="text-xs text-slate-300 mt-1">
+                    {species.gbifOccurrenceCount
+                      ? `${species.gbifOccurrenceCount.toLocaleString()} georeferenced museum & field records`
+                      : "Verified international museum specimen records"}
+                  </p>
+                </div>
+              </div>
+
+              <a
+                href={species.gbifUrl || `https://www.gbif.org/species/${species.gbifTaxonKey}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-1.5 rounded-xl border border-emerald-500/40 bg-emerald-500/10 px-3 py-1.5 text-xs font-bold text-emerald-300 transition-colors hover:bg-emerald-500/20 hover:text-white"
+              >
+                <span>Explore on GBIF</span>
+                <ExternalLink className="h-3.5 w-3.5" />
+              </a>
+            </div>
+          )}
+
+          {/* iNaturalist Card */}
+          {species.inaturalistTaxonId && (
+            <div className="rounded-xl border border-teal-500/30 bg-teal-500/5 p-4 flex flex-col justify-between gap-3">
+              <div className="flex items-start gap-3">
+                <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-teal-500/20 text-teal-400">
+                  <Camera className="h-4.5 w-4.5" />
+                </div>
+                <div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs font-black uppercase tracking-wider text-teal-400">
+                      iNaturalist
+                    </span>
+                    <span className="text-[10px] rounded-md bg-teal-500/20 px-1.5 py-0.5 font-bold text-teal-300">
+                      Taxon #{species.inaturalistTaxonId}
+                    </span>
+                  </div>
+                  <p className="text-xs text-slate-300 mt-1">
+                    {species.inaturalistObservationCount
+                      ? `${species.inaturalistObservationCount.toLocaleString()} research-grade citizen observations`
+                      : "Community naturalist sightings and field photos"}
+                  </p>
+                </div>
+              </div>
+
+              <a
+                href={species.inaturalistUrl || `https://www.inaturalist.org/taxa/${species.inaturalistTaxonId}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-1.5 rounded-xl border border-teal-500/40 bg-teal-500/10 px-3 py-1.5 text-xs font-bold text-teal-300 transition-colors hover:bg-teal-500/20 hover:text-white"
+              >
+                <span>View on iNaturalist</span>
+                <ExternalLink className="h-3.5 w-3.5" />
+              </a>
+            </div>
+          )}
         </div>
-      )}
+      </div>
     </div>
   );
 };

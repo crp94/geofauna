@@ -83,6 +83,9 @@
     "gbifTaxonKey": 2435261,
     "gbifOccurrenceCount": 2627,
     "gbifUrl": "https://www.gbif.org/species/2435261",
+    "inaturalistTaxonId": 41975,
+    "inaturalistObservationCount": 1093,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/41975",
     "range": {
       "bounds": [
         -8.5,
@@ -177,6 +180,9 @@
     "gbifTaxonKey": 5787213,
     "gbifOccurrenceCount": 571,
     "gbifUrl": "https://www.gbif.org/species/5787213",
+    "inaturalistTaxonId": 74831,
+    "inaturalistObservationCount": 1160,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/74831",
     "range": {
       "bounds": [
         68.5,
@@ -271,6 +277,9 @@
     "gbifTaxonKey": 2433399,
     "gbifOccurrenceCount": 300,
     "gbifUrl": "https://www.gbif.org/species/2433399",
+    "inaturalistTaxonId": 41659,
+    "inaturalistObservationCount": 1407,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/41659",
     "range": {
       "bounds": [
         101.5,
@@ -365,6 +374,9 @@
     "gbifTaxonKey": 5219426,
     "gbifOccurrenceCount": 145424,
     "gbifUrl": "https://www.gbif.org/species/5219426",
+    "inaturalistTaxonId": 41970,
+    "inaturalistObservationCount": 8592,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/41970",
     "range": {
       "bounds": [
         -94.5,
@@ -459,6 +471,9 @@
     "gbifTaxonKey": 2433451,
     "gbifOccurrenceCount": 11044,
     "gbifUrl": "https://www.gbif.org/species/2433451",
+    "inaturalistTaxonId": 41644,
+    "inaturalistObservationCount": 3927,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/41644",
     "range": {
       "bounds": [
         -179.5,
@@ -553,6 +568,9 @@
     "gbifTaxonKey": 2440012,
     "gbifOccurrenceCount": 450150,
     "gbifUrl": "https://www.gbif.org/species/2440012",
+    "inaturalistTaxonId": 42983,
+    "inaturalistObservationCount": 45336,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/42983",
     "range": {
       "bounds": [
         137.5,
@@ -651,6 +669,9 @@
     "gbifTaxonKey": 4267319,
     "gbifOccurrenceCount": 946,
     "gbifUrl": "https://www.gbif.org/species/4267319",
+    "inaturalistTaxonId": 147661,
+    "inaturalistObservationCount": 1233,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/147661",
     "range": {
       "bounds": [
         29.5,
@@ -741,6 +762,9 @@
     "gbifTaxonKey": 2435270,
     "gbifOccurrenceCount": 10143,
     "gbifUrl": "https://www.gbif.org/species/2435270",
+    "inaturalistTaxonId": 41955,
+    "inaturalistObservationCount": 7325,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/41955",
     "range": {
       "bounds": [
         12.5,
@@ -827,6 +851,9 @@
     "gbifTaxonKey": 5786666,
     "gbifOccurrenceCount": 26515,
     "gbifUrl": "https://www.gbif.org/species/5786666",
+    "inaturalistTaxonId": 74442,
+    "inaturalistObservationCount": 18031,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/74442",
     "range": {
       "bounds": [
         -74.5,
@@ -923,6 +950,9 @@
     "gbifTaxonKey": 2435451,
     "gbifOccurrenceCount": 36979,
     "gbifUrl": "https://www.gbif.org/species/2435451",
+    "inaturalistTaxonId": 40232,
+    "inaturalistObservationCount": 1974,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/40232",
     "range": {
       "bounds": [
         145.5,
@@ -1018,6 +1048,9 @@
     "gbifTaxonKey": 5133088,
     "gbifOccurrenceCount": 796136,
     "gbifUrl": "https://www.gbif.org/species/5133088",
+    "inaturalistTaxonId": 48662,
+    "inaturalistObservationCount": 523111,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/48662",
     "range": {
       "bounds": [
         -124.5,
@@ -1112,6 +1145,9 @@
     "gbifTaxonKey": 7059276,
     "gbifOccurrenceCount": 4632,
     "gbifUrl": "https://www.gbif.org/species/7059276",
+    "inaturalistTaxonId": 130793,
+    "inaturalistObservationCount": 3106,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/130793",
     "range": {
       "bounds": [
         69.5,
@@ -1206,6 +1242,9 @@
     "gbifTaxonKey": 2435350,
     "gbifOccurrenceCount": 29030,
     "gbifUrl": "https://www.gbif.org/species/2435350",
+    "inaturalistTaxonId": 43694,
+    "inaturalistObservationCount": 30044,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/43694",
     "range": {
       "bounds": [
         10.5,
@@ -1296,6 +1335,9 @@
     "gbifTaxonKey": 5219446,
     "gbifOccurrenceCount": 791,
     "gbifUrl": "https://www.gbif.org/species/5219446",
+    "inaturalistTaxonId": 41653,
+    "inaturalistObservationCount": 2101,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/41653",
     "range": {
       "bounds": [
         80.5,
@@ -1390,6 +1432,9 @@
     "gbifTaxonKey": 2433376,
     "gbifOccurrenceCount": 29643,
     "gbifUrl": "https://www.gbif.org/species/2433376",
+    "inaturalistTaxonId": 43236,
+    "inaturalistObservationCount": 5024,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/43236",
     "range": {
       "bounds": [
         140.5,
@@ -1484,6 +1529,9 @@
     "gbifTaxonKey": 12019022,
     "gbifOccurrenceCount": 82440,
     "gbifUrl": "https://www.gbif.org/species/12019022",
+    "inaturalistTaxonId": 1453439,
+    "inaturalistObservationCount": 2851,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/1453439",
     "range": {
       "bounds": [
         115.5,
@@ -1578,6 +1626,9 @@
     "gbifTaxonKey": 2441207,
     "gbifOccurrenceCount": 310,
     "gbifUrl": "https://www.gbif.org/species/2441207",
+    "inaturalistTaxonId": 42155,
+    "inaturalistObservationCount": 503,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/42155",
     "range": {
       "bounds": [
         25.5,
@@ -1672,6 +1723,9 @@
     "gbifTaxonKey": 2436412,
     "gbifOccurrenceCount": 1596,
     "gbifUrl": "https://www.gbif.org/species/2436412",
+    "inaturalistTaxonId": 43617,
+    "inaturalistObservationCount": 3736,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/43617",
     "range": {
       "bounds": [
         43.5,
@@ -1767,6 +1821,9 @@
     "gbifTaxonKey": 2440735,
     "gbifOccurrenceCount": 31535,
     "gbifUrl": "https://www.gbif.org/species/2440735",
+    "inaturalistTaxonId": 41553,
+    "inaturalistObservationCount": 2477,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/41553",
     "range": {
       "bounds": [
         -179.5,
@@ -1862,6 +1919,9 @@
     "gbifTaxonKey": 5219532,
     "gbifOccurrenceCount": 7455,
     "gbifUrl": "https://www.gbif.org/species/5219532",
+    "inaturalistTaxonId": 43582,
+    "inaturalistObservationCount": 3424,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/43582",
     "range": {
       "bounds": [
         109.5,
@@ -1952,6 +2012,9 @@
     "gbifTaxonKey": 2433670,
     "gbifOccurrenceCount": 26419,
     "gbifUrl": "https://www.gbif.org/species/2433670",
+    "inaturalistTaxonId": 41860,
+    "inaturalistObservationCount": 18159,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/41860",
     "range": {
       "bounds": [
         -179.5,
@@ -2042,6 +2105,9 @@
     "gbifTaxonKey": 2441067,
     "gbifOccurrenceCount": 964,
     "gbifUrl": "https://www.gbif.org/species/2441067",
+    "inaturalistTaxonId": 42378,
+    "inaturalistObservationCount": 609,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/42378",
     "range": {
       "bounds": [
         46.5,
@@ -2132,6 +2198,9 @@
     "gbifTaxonKey": 5219143,
     "gbifOccurrenceCount": 208,
     "gbifUrl": "https://www.gbif.org/species/5219143",
+    "inaturalistTaxonId": 42045,
+    "inaturalistObservationCount": 179,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/42045",
     "range": {
       "bounds": [
         36.5,
@@ -2222,6 +2291,9 @@
     "gbifTaxonKey": 2433516,
     "gbifOccurrenceCount": 0,
     "gbifUrl": "https://www.gbif.org/species/2433516",
+    "inaturalistTaxonId": 41578,
+    "inaturalistObservationCount": 362,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/41578",
     "range": {
       "bounds": [
         43.5,
@@ -2312,6 +2384,9 @@
     "gbifTaxonKey": 5219628,
     "gbifOccurrenceCount": 0,
     "gbifUrl": "https://www.gbif.org/species/5219628",
+    "inaturalistTaxonId": 43364,
+    "inaturalistObservationCount": 289,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/43364",
     "range": {
       "bounds": [
         95.5,
@@ -2402,6 +2477,9 @@
     "gbifTaxonKey": 2436346,
     "gbifOccurrenceCount": 11230,
     "gbifUrl": "https://www.gbif.org/species/2436346",
+    "inaturalistTaxonId": 47107,
+    "inaturalistObservationCount": 3233,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/47107",
     "range": {
       "bounds": [
         -84.5,
@@ -2492,6 +2570,9 @@
     "gbifTaxonKey": 2440110,
     "gbifOccurrenceCount": 2708,
     "gbifUrl": "https://www.gbif.org/species/2440110",
+    "inaturalistTaxonId": 42955,
+    "inaturalistObservationCount": 2153,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/42955",
     "range": {
       "bounds": [
         115.5,
@@ -2586,6 +2667,9 @@
     "gbifTaxonKey": 5219534,
     "gbifOccurrenceCount": 0,
     "gbifUrl": "https://www.gbif.org/species/5219534",
+    "inaturalistTaxonId": 43577,
+    "inaturalistObservationCount": 2241,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/43577",
     "range": {
       "bounds": [
         -13.5,
@@ -2676,6 +2760,9 @@
     "gbifTaxonKey": 5218819,
     "gbifOccurrenceCount": 0,
     "gbifUrl": "https://www.gbif.org/species/5218819",
+    "inaturalistTaxonId": 41766,
+    "inaturalistObservationCount": 1812,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/41766",
     "range": {
       "bounds": [
         -179.5,
@@ -2766,6 +2853,9 @@
     "gbifTaxonKey": 5220008,
     "gbifOccurrenceCount": 1621,
     "gbifUrl": "https://www.gbif.org/species/5220008",
+    "inaturalistTaxonId": 41459,
+    "inaturalistObservationCount": 114,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/41459",
     "range": {
       "bounds": [
         -99.5,
@@ -2862,6 +2952,9 @@
     "gbifTaxonKey": 2441184,
     "gbifOccurrenceCount": 5161,
     "gbifUrl": "https://www.gbif.org/species/2441184",
+    "inaturalistTaxonId": 1696537,
+    "inaturalistObservationCount": 2057,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/1696537",
     "range": {
       "bounds": [
         19.5,
@@ -2957,6 +3050,9 @@
     "gbifTaxonKey": 2441176,
     "gbifOccurrenceCount": 0,
     "gbifUrl": "https://www.gbif.org/species/2441176",
+    "inaturalistTaxonId": 42241,
+    "inaturalistObservationCount": 459700,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/42241",
     "range": {
       "bounds": [
         -119.5,
@@ -3047,6 +3143,9 @@
     "gbifTaxonKey": 2433395,
     "gbifOccurrenceCount": 0,
     "gbifUrl": "https://www.gbif.org/species/2433395",
+    "inaturalistTaxonId": 41651,
+    "inaturalistObservationCount": 1278,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/41651",
     "range": {
       "bounds": [
         69.5,
@@ -3137,6 +3236,9 @@
     "gbifTaxonKey": 2433401,
     "gbifOccurrenceCount": 12655,
     "gbifUrl": "https://www.gbif.org/species/2433401",
+    "inaturalistTaxonId": 41657,
+    "inaturalistObservationCount": 1886,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/41657",
     "range": {
       "bounds": [
         -79.5,
@@ -3227,6 +3329,9 @@
     "gbifTaxonKey": 5219173,
     "gbifOccurrenceCount": 255002,
     "gbifUrl": "https://www.gbif.org/species/5219173",
+    "inaturalistTaxonId": 42048,
+    "inaturalistObservationCount": 22894,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/42048",
     "range": {
       "bounds": [
         -167.5,
@@ -3317,6 +3422,9 @@
     "gbifTaxonKey": 2481661,
     "gbifOccurrenceCount": 0,
     "gbifUrl": "https://www.gbif.org/species/2481661",
+    "inaturalistTaxonId": 3820,
+    "inaturalistObservationCount": 628,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/3820",
     "range": {
       "bounds": [
         -179.5,
@@ -3407,6 +3515,9 @@
     "gbifTaxonKey": 2481907,
     "gbifOccurrenceCount": 0,
     "gbifUrl": "https://www.gbif.org/species/2481907",
+    "inaturalistTaxonId": 4747,
+    "inaturalistObservationCount": 8086,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/4747",
     "range": {
       "bounds": [
         -77.5,
@@ -3503,6 +3614,9 @@
     "gbifTaxonKey": 2481920,
     "gbifOccurrenceCount": 34148,
     "gbifUrl": "https://www.gbif.org/species/2481920",
+    "inaturalistTaxonId": 4778,
+    "inaturalistObservationCount": 7090,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/4778",
     "range": {
       "bounds": [
         -121.5,
@@ -3593,6 +3707,9 @@
     "gbifTaxonKey": 2480516,
     "gbifOccurrenceCount": 7710,
     "gbifUrl": "https://www.gbif.org/species/2480516",
+    "inaturalistTaxonId": 5321,
+    "inaturalistObservationCount": 1617,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/5321",
     "range": {
       "bounds": [
         -84.5,
@@ -3683,6 +3800,9 @@
     "gbifTaxonKey": 2480347,
     "gbifOccurrenceCount": 0,
     "gbifUrl": "https://www.gbif.org/species/2480347",
+    "inaturalistTaxonId": 4338,
+    "inaturalistObservationCount": 603,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/4338",
     "range": {
       "bounds": [
         26.5,
@@ -3778,6 +3898,9 @@
     "gbifTaxonKey": 5231783,
     "gbifOccurrenceCount": 0,
     "gbifUrl": "https://www.gbif.org/species/5231783",
+    "inaturalistTaxonId": 20500,
+    "inaturalistObservationCount": 3472,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/20500",
     "range": {
       "bounds": [
         130.5,
@@ -3869,6 +3992,9 @@
     "gbifTaxonKey": 2495144,
     "gbifOccurrenceCount": 3413,
     "gbifUrl": "https://www.gbif.org/species/2495144",
+    "inaturalistTaxonId": 20496,
+    "inaturalistObservationCount": 586,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/20496",
     "range": {
       "bounds": [
         173.5,
@@ -3965,6 +4091,9 @@
     "gbifTaxonKey": 2479236,
     "gbifOccurrenceCount": 575,
     "gbifUrl": "https://www.gbif.org/species/2479236",
+    "inaturalistTaxonId": 1584019,
+    "inaturalistObservationCount": 71,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/1584019",
     "range": {
       "bounds": [
         167.5,
@@ -4056,6 +4185,9 @@
     "gbifTaxonKey": 2481353,
     "gbifOccurrenceCount": 0,
     "gbifUrl": "https://www.gbif.org/species/2481353",
+    "inaturalistTaxonId": 4504,
+    "inaturalistObservationCount": 17195,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/4504",
     "range": {
       "bounds": [
         -69.5,
@@ -4146,6 +4278,9 @@
     "gbifTaxonKey": 2496723,
     "gbifOccurrenceCount": 0,
     "gbifUrl": "https://www.gbif.org/species/2496723",
+    "inaturalistTaxonId": 20856,
+    "inaturalistObservationCount": 4687,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/20856",
     "range": {
       "bounds": [
         -93.5,
@@ -4232,6 +4367,9 @@
     "gbifTaxonKey": 2496202,
     "gbifOccurrenceCount": 63314,
     "gbifUrl": "https://www.gbif.org/species/2496202",
+    "inaturalistTaxonId": 1626,
+    "inaturalistObservationCount": 4274,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/1626",
     "range": {
       "bounds": [
         -75.5,
@@ -4322,6 +4460,9 @@
     "gbifTaxonKey": 2473577,
     "gbifOccurrenceCount": 240726,
     "gbifUrl": "https://www.gbif.org/species/2473577",
+    "inaturalistTaxonId": 1026,
+    "inaturalistObservationCount": 4699,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/1026",
     "range": {
       "bounds": [
         -4.5,
@@ -4417,6 +4558,9 @@
     "gbifTaxonKey": 2481047,
     "gbifOccurrenceCount": 2927650,
     "gbifUrl": "https://www.gbif.org/species/2481047",
+    "inaturalistTaxonId": 4647,
+    "inaturalistObservationCount": 61479,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/4647",
     "range": {
       "bounds": [
         -179.5,
@@ -4508,6 +4652,9 @@
     "gbifTaxonKey": 5959143,
     "gbifOccurrenceCount": 0,
     "gbifUrl": "https://www.gbif.org/species/5959143",
+    "inaturalistTaxonId": 144594,
+    "inaturalistObservationCount": 12565,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/144594",
     "range": {
       "bounds": [
         -179.5,
@@ -4598,6 +4745,9 @@
     "gbifTaxonKey": 2479593,
     "gbifOccurrenceCount": 15511,
     "gbifUrl": "https://www.gbif.org/species/2479593",
+    "inaturalistTaxonId": 18941,
+    "inaturalistObservationCount": 4441,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/18941",
     "range": {
       "bounds": [
         167.5,
@@ -4689,6 +4839,9 @@
     "gbifTaxonKey": 2470854,
     "gbifOccurrenceCount": 1353,
     "gbifUrl": "https://www.gbif.org/species/2470854",
+    "inaturalistTaxonId": 39449,
+    "inaturalistObservationCount": 2687,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/39449",
     "range": {
       "bounds": [
         120.5,
@@ -4780,6 +4933,9 @@
     "gbifTaxonKey": 5224602,
     "gbifOccurrenceCount": 0,
     "gbifUrl": "https://www.gbif.org/species/5224602",
+    "inaturalistTaxonId": 35347,
+    "inaturalistObservationCount": 10595,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/35347",
     "range": {
       "bounds": [
         -91.5,
@@ -4875,6 +5031,9 @@
     "gbifTaxonKey": 9527499,
     "gbifOccurrenceCount": 0,
     "gbifUrl": "https://www.gbif.org/species/9527499",
+    "inaturalistTaxonId": 539452,
+    "inaturalistObservationCount": 6221,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/539452",
     "range": {
       "bounds": [
         -180,
@@ -4965,6 +5124,9 @@
     "gbifTaxonKey": 9789983,
     "gbifOccurrenceCount": 55666,
     "gbifUrl": "https://www.gbif.org/species/9789983",
+    "inaturalistTaxonId": 39677,
+    "inaturalistObservationCount": 2192,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/39677",
     "range": {
       "bounds": [
         -179.5,
@@ -5056,6 +5218,9 @@
     "gbifTaxonKey": 2441341,
     "gbifOccurrenceCount": 11772,
     "gbifUrl": "https://www.gbif.org/species/2441341",
+    "inaturalistTaxonId": 341972,
+    "inaturalistObservationCount": 10527,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/341972",
     "range": {
       "bounds": [
         -16.5,
@@ -5147,6 +5312,9 @@
     "gbifTaxonKey": 2441333,
     "gbifOccurrenceCount": 0,
     "gbifUrl": "https://www.gbif.org/species/2441333",
+    "inaturalistTaxonId": 26068,
+    "inaturalistObservationCount": 10252,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/26068",
     "range": {
       "bounds": [
         80.5,
@@ -5238,6 +5406,9 @@
     "gbifTaxonKey": 5227650,
     "gbifOccurrenceCount": 2120,
     "gbifUrl": "https://www.gbif.org/species/5227650",
+    "inaturalistTaxonId": 200834,
+    "inaturalistObservationCount": 2657,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/200834",
     "range": {
       "bounds": [
         173.5,
@@ -5328,6 +5499,9 @@
     "gbifTaxonKey": 2460817,
     "gbifOccurrenceCount": 4283,
     "gbifUrl": "https://www.gbif.org/species/2460817",
+    "inaturalistTaxonId": 35003,
+    "inaturalistObservationCount": 3755,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/35003",
     "range": {
       "bounds": [
         -115.5,
@@ -5420,6 +5594,9 @@
     "gbifTaxonKey": 2431950,
     "gbifOccurrenceCount": 973,
     "gbifUrl": "https://www.gbif.org/species/2431950",
+    "inaturalistTaxonId": 26777,
+    "inaturalistObservationCount": 2861,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/26777",
     "range": {
       "bounds": [
         -99.5,
@@ -5510,6 +5687,9 @@
     "gbifTaxonKey": 5218020,
     "gbifOccurrenceCount": 0,
     "gbifUrl": "https://www.gbif.org/species/5218020",
+    "inaturalistTaxonId": 21217,
+    "inaturalistObservationCount": 454,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/21217",
     "range": {
       "bounds": [
         -77.5,
@@ -5601,6 +5781,9 @@
     "gbifTaxonKey": 2432037,
     "gbifOccurrenceCount": 569,
     "gbifUrl": "https://www.gbif.org/species/2432037",
+    "inaturalistTaxonId": 1688535,
+    "inaturalistObservationCount": 118,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/1688535",
     "range": {
       "bounds": [
         102.5,
@@ -5691,6 +5874,9 @@
     "gbifTaxonKey": 5787030,
     "gbifOccurrenceCount": 62,
     "gbifUrl": "https://www.gbif.org/species/5787030",
+    "inaturalistTaxonId": 890122,
+    "inaturalistObservationCount": 66,
+    "inaturalistUrl": "https://www.inaturalist.org/taxa/890122",
     "range": {
       "bounds": [
         78.5,

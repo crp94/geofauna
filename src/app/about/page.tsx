@@ -86,6 +86,12 @@ export default function AboutPage() {
               </div>
             </li>
             <li className="flex items-start gap-2">
+              <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-400" />
+              <div>
+                <strong>iNaturalist:</strong> Community-driven citizen science network with over 200 million research-grade field observations and living species distributions.
+              </div>
+            </li>
+            <li className="flex items-start gap-2">
               <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" />
               <div>
                 <strong>IUCN Red List of Threatened Species:</strong> Spatial range geometries, population trends, and extinction risk criteria.
