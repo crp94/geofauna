@@ -5,14 +5,24 @@ const LANG_KEY = "geofauna_lang_v1";
 
 export function getStoredLanguage(): Language {
   if (typeof window === "undefined") return "en";
+
+  // Check URL search params first (?lang=en | ?lang=es | ?lang=it)
+  try {
+    const params = new URLSearchParams(window.location.search);
+    const paramLang = params.get("lang");
+    if (paramLang === "es" || paramLang === "it" || paramLang === "en") {
+      localStorage.setItem(LANG_KEY, paramLang);
+      return paramLang;
+    }
+  } catch {}
+
+  // Check saved localStorage preference
   const saved = localStorage.getItem(LANG_KEY);
   if (saved === "es" || saved === "it" || saved === "en") {
     return saved;
   }
-  // Try navigator language
-  const navLang = navigator.language?.toLowerCase() || "";
-  if (navLang.startsWith("es")) return "es";
-  if (navLang.startsWith("it")) return "it";
+
+  // Default to English
   return "en";
 }
 
