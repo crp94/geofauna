@@ -2,7 +2,7 @@
 
 import React, { useRef, useEffect, useState, useCallback } from "react";
 import * as topojson from "topojson-client";
-import { geoGraticule10, GeoPath, GeoProjection } from "d3-geo";
+import { geoGraticule10 } from "d3-geo";
 import { Language, Species, ScoreResult } from "../types/species";
 import { getTranslation } from "../lib/i18n";
 import {
@@ -70,9 +70,9 @@ export const MapCanvas: React.FC<MapCanvasProps> = ({
     const handleResize = () => {
       if (containerRef.current) {
         const rect = containerRef.current.getBoundingClientRect();
-        const width = Math.floor(rect.width);
+        const width = Math.max(320, Math.floor(rect.width));
         // Robinson projection has an aspect ratio of approx 2.05:1
-        const height = Math.floor(Math.min(600, Math.max(280, width * 0.52)));
+        const height = Math.max(200, Math.floor(Math.min(620, Math.max(260, width * 0.52))));
         setDimensions({ width, height });
       }
     };
@@ -90,7 +90,7 @@ export const MapCanvas: React.FC<MapCanvasProps> = ({
     if (!ctx) return;
 
     const { width, height } = dimensions;
-    const dpr = window.devicePixelRatio || 1;
+    const dpr = typeof window !== "undefined" ? window.devicePixelRatio || 1 : 1;
 
     canvas.width = width * dpr;
     canvas.height = height * dpr;
@@ -100,15 +100,16 @@ export const MapCanvas: React.FC<MapCanvasProps> = ({
     ctx.fillStyle = "#060A11";
     ctx.fillRect(0, 0, width, height);
 
-    const { projection, pathGenerator } = createRobinsonProjection(width, height);
+    // Pass `ctx` so that pathGenerator directly issues canvas draw commands!
+    const { projection, pathGenerator } = createRobinsonProjection(width, height, ctx);
 
     // 2. Draw Sphere Background (Ocean)
     ctx.beginPath();
     pathGenerator({ type: "Sphere" });
-    ctx.fillStyle = "#091322";
+    ctx.fillStyle = "#0A1424";
     ctx.fill();
     ctx.lineWidth = 1.5;
-    ctx.strokeStyle = "#1A2B47";
+    ctx.strokeStyle = "#1E365D";
     ctx.stroke();
 
     // 3. Draw Graticules (Lat/Lon grid lines)
@@ -116,7 +117,7 @@ export const MapCanvas: React.FC<MapCanvasProps> = ({
     ctx.beginPath();
     pathGenerator(graticule);
     ctx.lineWidth = 0.5;
-    ctx.strokeStyle = "rgba(40, 65, 100, 0.4)";
+    ctx.strokeStyle = "rgba(45, 75, 120, 0.35)";
     ctx.stroke();
 
     // Equator highlight
@@ -132,7 +133,7 @@ export const MapCanvas: React.FC<MapCanvasProps> = ({
       ],
     });
     ctx.lineWidth = 0.8;
-    ctx.strokeStyle = "rgba(16, 185, 129, 0.35)";
+    ctx.strokeStyle = "rgba(16, 185, 129, 0.4)";
     ctx.stroke();
 
     // 4. Draw Landmasses from TopoJSON
@@ -143,10 +144,10 @@ export const MapCanvas: React.FC<MapCanvasProps> = ({
 
     ctx.beginPath();
     pathGenerator(landFeature);
-    ctx.fillStyle = "#111E33";
+    ctx.fillStyle = "#112238";
     ctx.fill();
-    ctx.lineWidth = 0.75;
-    ctx.strokeStyle = "#1D3254";
+    ctx.lineWidth = 0.8;
+    ctx.strokeStyle = "#1F385C";
     ctx.stroke();
 
     // 5. Draw Country Boundaries
@@ -157,8 +158,8 @@ export const MapCanvas: React.FC<MapCanvasProps> = ({
 
     ctx.beginPath();
     pathGenerator(countriesFeature);
-    ctx.lineWidth = 0.35;
-    ctx.strokeStyle = "rgba(30, 55, 90, 0.5)";
+    ctx.lineWidth = 0.4;
+    ctx.strokeStyle = "rgba(40, 70, 110, 0.45)";
     ctx.stroke();
 
     // 6. Draw User Painted Range (Before Submission)
@@ -170,12 +171,11 @@ export const MapCanvas: React.FC<MapCanvasProps> = ({
             const [lon, lat] = gridToLonLat(x, y);
             const pt = lonLatToScreen(projection, lon, lat);
             if (pt) {
-              // Calculate screen pixel cell size
               const ptNext = lonLatToScreen(projection, lon + 1, lat - 1);
-              const cellW = Math.max(2, ptNext ? Math.abs(ptNext[0] - pt[0]) + 1.2 : 3);
-              const cellH = Math.max(2, ptNext ? Math.abs(ptNext[1] - pt[1]) + 1.2 : 3);
+              const cellW = Math.max(2.5, ptNext ? Math.abs(ptNext[0] - pt[0]) + 1.2 : 3.5);
+              const cellH = Math.max(2.5, ptNext ? Math.abs(ptNext[1] - pt[1]) + 1.2 : 3.5);
 
-              ctx.fillStyle = "rgba(6, 182, 212, 0.65)"; // Cyan user paint
+              ctx.fillStyle = "rgba(6, 182, 212, 0.75)"; // Vibrant Cyan
               ctx.fillRect(pt[0] - cellW / 2, pt[1] - cellH / 2, cellW, cellH);
             }
           }
@@ -198,8 +198,8 @@ export const MapCanvas: React.FC<MapCanvasProps> = ({
           if (!pt) continue;
 
           const ptNext = lonLatToScreen(projection, lon + 1, lat - 1);
-          const cellW = Math.max(2, ptNext ? Math.abs(ptNext[0] - pt[0]) + 1.2 : 3);
-          const cellH = Math.max(2, ptNext ? Math.abs(ptNext[1] - pt[1]) + 1.2 : 3);
+          const cellW = Math.max(2.5, ptNext ? Math.abs(ptNext[0] - pt[0]) + 1.2 : 3.5);
+          const cellH = Math.max(2.5, ptNext ? Math.abs(ptNext[1] - pt[1]) + 1.2 : 3.5);
 
           if (userVal && gtVal) {
             // True Positive (Hit) - Emerald Green
@@ -207,22 +207,22 @@ export const MapCanvas: React.FC<MapCanvasProps> = ({
             ctx.fillRect(pt[0] - cellW / 2, pt[1] - cellH / 2, cellW, cellH);
           } else if (userVal && !gtVal) {
             // False Positive (Overestimated) - Amber Orange
-            ctx.fillStyle = "rgba(245, 158, 11, 0.75)";
+            ctx.fillStyle = "rgba(245, 158, 11, 0.8)";
             ctx.fillRect(pt[0] - cellW / 2, pt[1] - cellH / 2, cellW, cellH);
           } else if (!userVal && gtVal) {
             // False Negative (Missed Native Range) - Sky Blue
-            ctx.fillStyle = "rgba(56, 189, 248, 0.75)";
+            ctx.fillStyle = "rgba(56, 189, 248, 0.8)";
             ctx.fillRect(pt[0] - cellW / 2, pt[1] - cellH / 2, cellW, cellH);
           }
         }
       }
     }
 
-    // 8. Re-stroke the outer sphere border
+    // 8. Re-stroke outer sphere outline
     ctx.beginPath();
     pathGenerator({ type: "Sphere" });
     ctx.lineWidth = 1.5;
-    ctx.strokeStyle = "#1E365D";
+    ctx.strokeStyle = "#254677";
     ctx.stroke();
   }, [dimensions, userMask, isSolved, groundTruthMask]);
 
@@ -238,8 +238,9 @@ export const MapCanvas: React.FC<MapCanvasProps> = ({
       if (!canvas) return;
 
       const rect = canvas.getBoundingClientRect();
-      const screenX = e.clientX - rect.left;
-      const screenY = e.clientY - rect.top;
+      // Adjust for possible CSS scale vs canvas logical pixels
+      const screenX = (e.clientX - rect.left) * (dimensions.width / rect.width);
+      const screenY = (e.clientY - rect.top) * (dimensions.height / rect.height);
 
       const { projection } = createRobinsonProjection(dimensions.width, dimensions.height);
       const lonLat = screenToLonLat(projection, screenX, screenY);
@@ -289,8 +290,8 @@ export const MapCanvas: React.FC<MapCanvasProps> = ({
     if (!canvas) return;
 
     const rect = canvas.getBoundingClientRect();
-    const screenX = e.clientX - rect.left;
-    const screenY = e.clientY - rect.top;
+    const screenX = (e.clientX - rect.left) * (dimensions.width / rect.width);
+    const screenY = (e.clientY - rect.top) * (dimensions.height / rect.height);
 
     const { projection } = createRobinsonProjection(dimensions.width, dimensions.height);
     const lonLat = screenToLonLat(projection, screenX, screenY);
@@ -339,7 +340,7 @@ export const MapCanvas: React.FC<MapCanvasProps> = ({
       className="relative w-full overflow-hidden rounded-2xl border border-surface-border bg-surface shadow-2xl"
     >
       {/* Top Legend / Status Bar */}
-      <div className="absolute top-3 left-3 z-10 flex flex-wrap items-center gap-2 text-[11px] font-semibold">
+      <div className="absolute top-3 left-3 z-10 flex flex-wrap items-center gap-2 text-[11px] font-semibold pointer-events-none">
         {!isSolved ? (
           <div className="flex items-center gap-1.5 rounded-lg bg-surface/90 border border-surface-border px-2.5 py-1 text-slate-300 backdrop-blur-md">
             <span className="h-2 w-2 rounded-full bg-cyan-400 animate-pulse" />
@@ -366,7 +367,7 @@ export const MapCanvas: React.FC<MapCanvasProps> = ({
 
       {/* Hover Coordinates & Diagnostic Tag */}
       {hoverInfo && (
-        <div className="absolute bottom-3 left-3 z-10 flex items-center gap-2 rounded-lg bg-surface/85 border border-surface-border px-2.5 py-1 text-[11px] font-mono text-slate-400 backdrop-blur-md">
+        <div className="absolute bottom-3 left-3 z-10 flex items-center gap-2 rounded-lg bg-surface/85 border border-surface-border px-2.5 py-1 text-[11px] font-mono text-slate-400 backdrop-blur-md pointer-events-none">
           <span>
             {hoverInfo.lat >= 0 ? `${hoverInfo.lat}°N` : `${Math.abs(hoverInfo.lat)}°S`},{" "}
             {hoverInfo.lon >= 0 ? `${hoverInfo.lon}°E` : `${Math.abs(hoverInfo.lon)}°W`}
@@ -377,7 +378,7 @@ export const MapCanvas: React.FC<MapCanvasProps> = ({
       )}
 
       {/* Projection Name Stamp */}
-      <div className="absolute bottom-3 right-3 z-10 text-[10px] font-bold uppercase tracking-wider text-slate-600 select-none">
+      <div className="absolute bottom-3 right-3 z-10 text-[10px] font-bold uppercase tracking-wider text-slate-600 select-none pointer-events-none">
         Robinson Projection (1:110m)
       </div>
 
@@ -389,7 +390,7 @@ export const MapCanvas: React.FC<MapCanvasProps> = ({
         onPointerUp={handlePointerUp}
         onPointerCancel={handlePointerUp}
         style={{
-          width: dimensions.width,
+          width: "100%",
           height: dimensions.height,
           cursor: isSolved ? "default" : tool === "brush" ? "crosshair" : "cell",
           touchAction: "none",

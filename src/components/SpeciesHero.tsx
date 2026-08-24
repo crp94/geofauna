@@ -1,8 +1,8 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import { Camera, ExternalLink, Info, MapPin, Sparkles, Tag } from "lucide-react";
+import { Camera, ExternalLink, Info, MapPin, Sparkles, Tag, AlertCircle } from "lucide-react";
 import { Language, Species } from "../types/species";
 import { getTranslation } from "../lib/i18n";
 
@@ -17,7 +17,13 @@ export const SpeciesHero: React.FC<SpeciesHeroProps> = ({
   lang,
   isSolved,
 }) => {
-  const [showCredit, setShowCredit] = React.useState(false);
+  const [showCredit, setShowCredit] = useState(false);
+  const [imgError, setImgError] = useState(false);
+
+  // Reset image error state when species changes
+  useEffect(() => {
+    setImgError(false);
+  }, [species.id]);
 
   const localizedName = species.commonName[lang] || species.commonName.en;
   const clues = species.clues.map((c) => c[lang] || c.en);
@@ -48,15 +54,25 @@ export const SpeciesHero: React.FC<SpeciesHeroProps> = ({
     <section className="relative overflow-hidden rounded-2xl border border-surface-border bg-surface p-4 sm:p-6 shadow-xl">
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-12 lg:items-center">
         {/* Left: Species High-Res Photo */}
-        <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl border border-surface-border bg-surface-subtle sm:aspect-[16/10] lg:col-span-5">
-          <Image
-            src={species.image.url}
-            alt={species.image.alt || localizedName}
-            fill
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
-            className="object-cover transition-transform duration-700 hover:scale-105"
-            priority
-          />
+        <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl border border-surface-border bg-surface-subtle sm:aspect-[16/10] lg:col-span-5 flex items-center justify-center">
+          {!imgError ? (
+            <Image
+              src={species.image.url}
+              alt={species.image.alt || localizedName}
+              fill
+              unoptimized
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
+              className="object-cover transition-transform duration-700 hover:scale-105"
+              priority
+              onError={() => setImgError(true)}
+            />
+          ) : (
+            <div className="flex flex-col items-center justify-center p-6 text-center text-slate-400 space-y-2">
+              <span className="text-5xl">🐾</span>
+              <p className="text-xs font-semibold text-slate-300">{localizedName}</p>
+              <p className="text-[11px] italic text-emerald-400">{species.scientificName}</p>
+            </div>
+          )}
 
           {/* Photo Attribution Button & Overlay */}
           <div className="absolute bottom-2 right-2 z-10">

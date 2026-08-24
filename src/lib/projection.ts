@@ -3,15 +3,16 @@ import { geoRobinson } from "d3-geo-projection";
 
 export function createRobinsonProjection(
   width: number,
-  height: number
+  height: number,
+  context?: CanvasRenderingContext2D | null
 ): {
   projection: GeoProjection;
   pathGenerator: GeoPath;
 } {
   // Robinson projection standard bounding aspect ratio is approx 2.05:1
-  const padding = Math.max(12, Math.min(width, height) * 0.03);
-  const mapWidth = width - padding * 2;
-  const mapHeight = height - padding * 2;
+  const padding = Math.max(10, Math.min(width, height) * 0.03);
+  const mapWidth = Math.max(100, width - padding * 2);
+  const mapHeight = Math.max(50, height - padding * 2);
 
   const projection = geoRobinson()
     .rotate([0, 0, 0])
@@ -20,7 +21,9 @@ export function createRobinsonProjection(
     })
     .translate([width / 2, height / 2]);
 
-  const pathGenerator = geoPath().projection(projection);
+  const pathGenerator = context
+    ? geoPath(projection, context)
+    : geoPath().projection(projection);
 
   return {
     projection,
@@ -36,11 +39,15 @@ export function screenToLonLat(
   screenX: number,
   screenY: number
 ): [number, number] | null {
-  const inverted = projection.invert?.([screenX, screenY]);
-  if (!inverted || isNaN(inverted[0]) || isNaN(inverted[1])) {
+  try {
+    const inverted = projection.invert?.([screenX, screenY]);
+    if (!inverted || isNaN(inverted[0]) || isNaN(inverted[1])) {
+      return null;
+    }
+    return [inverted[0], inverted[1]];
+  } catch {
     return null;
   }
-  return [inverted[0], inverted[1]];
 }
 
 /**
@@ -51,9 +58,13 @@ export function lonLatToScreen(
   lon: number,
   lat: number
 ): [number, number] | null {
-  const coords = projection([lon, lat]);
-  if (!coords || isNaN(coords[0]) || isNaN(coords[1])) {
+  try {
+    const coords = projection([lon, lat]);
+    if (!coords || isNaN(coords[0]) || isNaN(coords[1])) {
+      return null;
+    }
+    return [coords[0], coords[1]];
+  } catch {
     return null;
   }
-  return [coords[0], coords[1]];
 }
