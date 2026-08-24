@@ -1,0 +1,47 @@
+{
+  "name": "geofauna",
+  "version": "1.0.0",
+  "private": true,
+  "description": "GeoFauna — an open-biodiversity species distribution deduction game with Robinson projection mapping and conservation deep-dives.",
+  "author": "Carlos Rodríguez-Pardo <carlos.rodriguezpardo.jimenez@gmail.com> (https://carlosrodriguezpardo.es)",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "data:curate": "tsx src/scripts/buildCuratedSpecies.ts",
+    "check": "npm run data:curate && npm run typecheck"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.4.1",
+    "@vercel/speed-insights": "^1.1.0",
+    "canvas-confetti": "^1.9.4",
+    "clsx": "^2.1.1",
+    "d3-geo": "^3.1.1",
+    "d3-geo-projection": "^4.0.0",
+    "lucide-react": "^0.468.0",
+    "next": "^14.2.15",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.5.4",
+    "topojson-client": "^3.1.0",
+    "world-atlas": "^2.0.2"
+  },
+  "devDependencies": {
+    "@types/canvas-confetti": "^1.9.0",
+    "@types/d3-geo": "^3.1.0",
+    "@types/node": "^20.17.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@types/topojson-client": "^3.1.4",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^14.2.15",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}
