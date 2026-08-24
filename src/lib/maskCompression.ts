@@ -161,4 +161,14 @@ export function paintGeodesicCircle(
       }
     }
   }
+
+  // Grid cell centers are ~111km apart, so a small brush (50/100km) can
+  // legitimately contain zero cell centers within its geodesic radius,
+  // silently painting nothing. Always paint (or erase) the cell directly
+  // under the cursor so every brush size guarantees visible feedback,
+  // respecting land-snap the same way the loop above does.
+  const cIdx = cy * GRID_WIDTH + cx;
+  if (!(value === 1 && snapToLand && landMask && landMask[cIdx] === 0)) {
+    mask[cIdx] = value;
+  }
 }

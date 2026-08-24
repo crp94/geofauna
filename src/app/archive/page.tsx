@@ -3,22 +3,70 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowLeft, BookOpen, ExternalLink, Globe2, Search, Shield, Tag } from "lucide-react";
+import { ArrowLeft, BookOpen, Search } from "lucide-react";
 import speciesCatalog from "../../data/curated-species.json";
-import { IUCNStatus, Language, Species, TaxonClass } from "../../types/species";
-import { getIUCNLabel } from "../../lib/i18n";
+import { HabitatRealm, DifficultyTier, IUCNStatus, Language, Species, TaxonClass } from "../../types/species";
+import { getIUCNLabel, getTranslation } from "../../lib/i18n";
 import { getStoredLanguage } from "../../lib/storage";
+import { trackGameEvent } from "../../lib/analytics";
+
+type I18nKey = Parameters<typeof getTranslation>[1];
+
+type ClassFilter = TaxonClass | "Fish" | "all";
+
+const REALM_LABEL_KEY: Record<HabitatRealm, I18nKey> = {
+  Terrestrial: "realmTerrestrial",
+  Marine: "realmMarine",
+  Freshwater: "realmFreshwater",
+  Coastal: "realmCoastal",
+};
+
+const DIFFICULTY_LABEL_KEY: Record<DifficultyTier, I18nKey> = {
+  iconic: "difficultyIconic",
+  regional: "difficultyRegional",
+  endemic: "difficultyEndemic",
+};
+
+const IUCN_CHIP_CLASSES: Record<IUCNStatus, string> = {
+  LC: "bg-iucn-lc-fill text-iucn-lc-text border-iucn-lc-edge",
+  NT: "bg-iucn-nt-fill text-iucn-nt-text border-iucn-nt-edge",
+  VU: "bg-iucn-vu-fill text-iucn-vu-text border-iucn-vu-edge",
+  EN: "bg-iucn-en-fill text-iucn-en-text border-iucn-en-edge",
+  CR: "bg-iucn-cr-fill text-iucn-cr-text border-iucn-cr-edge",
+  EW: "bg-iucn-ew-fill text-iucn-ew-text border-iucn-ew-edge",
+  EX: "bg-iucn-ex-fill text-iucn-ex-text border-iucn-ex-edge",
+};
 
 export default function ArchivePage() {
   const speciesList = speciesCatalog as unknown as Species[];
   const [search, setSearch] = useState("");
-  const [selectedClass, setSelectedClass] = useState<TaxonClass | "all">("all");
+  const [selectedClass, setSelectedClass] = useState<ClassFilter>("all");
   const [selectedIucn, setSelectedIucn] = useState<IUCNStatus | "all">("all");
   const [lang, setLang] = useState<Language>("en");
 
   React.useEffect(() => {
     setLang(getStoredLanguage());
   }, []);
+
+  // Debounced search/filter analytics: fires ~800ms after the user stops
+  // typing or changes a filter, skipping the initial render.
+  const isFirstSearchEffect = React.useRef(true);
+  React.useEffect(() => {
+    if (isFirstSearchEffect.current) {
+      isFirstSearchEffect.current = false;
+      return;
+    }
+    const timer = setTimeout(() => {
+      trackGameEvent("archive_search_used", {
+        has_query: search.trim().length > 0,
+        class_filter: selectedClass,
+        iucn_filter: selectedIucn,
+      });
+    }, 800);
+    return () => clearTimeout(timer);
+  }, [search, selectedClass, selectedIucn]);
+
+  const t = (key: I18nKey) => getTranslation(lang, key);
 
   const filteredSpecies = speciesList.filter((s) => {
     const locName = s.commonName[lang] || s.commonName.en;
@@ -27,48 +75,33 @@ export default function ArchivePage() {
       s.scientificName.toLowerCase().includes(search.toLowerCase()) ||
       s.order.toLowerCase().includes(search.toLowerCase());
 
-    const matchClass = selectedClass === "all" || s.taxonClass === selectedClass;
+    const matchClass =
+      selectedClass === "all" ||
+      (selectedClass === "Fish"
+        ? s.taxonClass === "Actinopterygii" || s.taxonClass === "Chondrichthyes"
+        : s.taxonClass === selectedClass);
     const matchIucn = selectedIucn === "all" || s.iucnStatus === selectedIucn;
 
     return matchSearch && matchClass && matchIucn;
   });
 
-  const getIucnColor = (status: IUCNStatus) => {
-    switch (status) {
-      case "LC":
-        return "bg-blue-500/20 text-blue-400 border-blue-500/40";
-      case "NT":
-        return "bg-teal-500/20 text-teal-400 border-teal-500/40";
-      case "VU":
-        return "bg-amber-500/20 text-amber-400 border-amber-500/40";
-      case "EN":
-        return "bg-orange-500/20 text-orange-400 border-orange-500/40";
-      case "CR":
-        return "bg-rose-500/20 text-rose-400 border-rose-500/40";
-      case "EW":
-        return "bg-purple-500/20 text-purple-400 border-purple-500/40";
-      case "EX":
-        return "bg-slate-700 text-slate-300 border-slate-600";
-    }
-  };
-
   return (
-    <div className="min-h-screen bg-background text-slate-100 selection:bg-emerald-500 selection:text-slate-950">
+    <div className="min-h-screen bg-paper-base text-ink-900 selection:bg-accent selection:text-paper-raised">
       {/* Top Header */}
-      <header className="sticky top-0 z-40 border-b border-surface-border bg-surface/90 backdrop-blur-md px-4 py-3 sm:px-6">
+      <header className="sticky top-0 z-40 border-b border-rule-strong bg-paper-raised/95 backdrop-blur px-4 py-3 sm:px-6">
         <div className="mx-auto flex max-w-6xl items-center justify-between">
           <Link
             href="/"
-            className="flex items-center gap-2 text-sm font-bold text-slate-300 hover:text-white transition-colors"
+            className="flex items-center gap-2 text-sm font-semibold text-ink-700 transition-colors hover:text-ink-900"
           >
-            <ArrowLeft className="h-4 w-4 text-emerald-400" />
-            <span>Back to Game</span>
+            <ArrowLeft className="h-4 w-4 text-accent" />
+            <span>{t("backToGame")}</span>
           </Link>
 
           <div className="flex items-center gap-2">
-            <BookOpen className="h-4 w-4 text-emerald-400" />
-            <h1 className="text-sm sm:text-base font-black text-white">
-              GeoFauna Species Catalog
+            <BookOpen className="h-4 w-4 text-accent" />
+            <h1 className="font-display text-sm sm:text-base font-semibold text-ink-900">
+              {t("catalogTitle")}
             </h1>
           </div>
         </div>
@@ -77,16 +110,16 @@ export default function ArchivePage() {
       {/* Main Archive Content */}
       <main className="mx-auto max-w-6xl p-4 sm:p-6 space-y-6">
         {/* Intro */}
-        <div className="rounded-3xl border border-surface-border bg-surface p-6 sm:p-8 shadow-xl">
-          <div className="max-w-2xl space-y-2">
-            <span className="rounded-full bg-emerald-500/10 border border-emerald-500/30 px-3 py-1 text-xs font-extrabold uppercase text-emerald-400">
-              Open Biodiversity Database
+        <div className="plate rounded-lg bg-paper-raised p-6 sm:p-8">
+          <div className="max-w-2xl space-y-3">
+            <span className="specimen-label border-accent-line text-accent">
+              {t("catalogEyebrow")}
             </span>
-            <h2 className="text-2xl sm:text-3xl font-black text-white">
-              Earth's Living Species Catalog
+            <h2 className="font-display text-2xl sm:text-3xl text-ink-900">
+              {t("catalogHeading")}
             </h2>
-            <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-              Explore all {speciesList.length} verified animal species curated in GeoFauna. Inspect their taxonomy, IUCN conservation status, high-resolution photography, and global distribution profiles.
+            <p className="text-xs sm:text-sm text-ink-700 leading-relaxed">
+              {t("catalogIntro").replace("{count}", String(speciesList.length))}
             </p>
           </div>
 
@@ -94,44 +127,60 @@ export default function ArchivePage() {
           <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-12">
             {/* Search Input */}
             <div className="relative sm:col-span-6">
-              <Search className="absolute left-3.5 top-3 h-4 w-4 text-slate-400" />
+              <label htmlFor="archive-search" className="sr-only">
+                {t("searchPlaceholder")}
+              </label>
+              <Search className="pointer-events-none absolute left-3.5 top-3 h-4 w-4 text-ink-500" />
               <input
+                id="archive-search"
                 type="text"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                placeholder="Search species by common or scientific name..."
-                className="w-full rounded-xl border border-surface-border bg-surface-subtle py-2.5 pl-10 pr-4 text-xs sm:text-sm text-slate-200 placeholder-slate-500 focus:border-emerald-500 focus:outline-none"
+                placeholder={t("searchPlaceholder")}
+                className="w-full rounded-md border border-rule bg-paper-raised py-2.5 pl-10 pr-4 text-xs sm:text-sm text-ink-900 placeholder-ink-400 focus:border-accent focus:outline-none"
               />
             </div>
 
             {/* Class Filter */}
             <div className="sm:col-span-3">
+              <label htmlFor="archive-class-filter" className="sr-only">
+                {t("filterAllClasses")}
+              </label>
               <select
+                id="archive-class-filter"
                 value={selectedClass}
-                onChange={(e) => setSelectedClass(e.target.value as any)}
-                className="w-full rounded-xl border border-surface-border bg-surface-subtle py-2.5 px-3 text-xs sm:text-sm text-slate-200 focus:border-emerald-500 focus:outline-none"
+                onChange={(e) => setSelectedClass(e.target.value as ClassFilter)}
+                className="w-full rounded-md border border-rule bg-paper-raised py-2.5 px-3 text-xs sm:text-sm text-ink-900 focus:border-accent focus:outline-none"
               >
-                <option value="all">All Taxon Classes</option>
-                <option value="Mammalia">Mammals</option>
-                <option value="Aves">Birds</option>
-                <option value="Reptilia">Reptiles</option>
-                <option value="Amphibia">Amphibians</option>
+                <option value="all">{t("filterAllClasses")}</option>
+                <option value="Mammalia">{t("taxonMammals")}</option>
+                <option value="Aves">{t("taxonBirds")}</option>
+                <option value="Reptilia">{t("taxonReptiles")}</option>
+                <option value="Amphibia">{t("taxonAmphibians")}</option>
+                <option value="Fish">{t("taxonFish")}</option>
+                <option value="Insecta">{t("taxonInsects")}</option>
               </select>
             </div>
 
             {/* IUCN Filter */}
             <div className="sm:col-span-3">
+              <label htmlFor="archive-iucn-filter" className="sr-only">
+                {t("filterAllIucn")}
+              </label>
               <select
+                id="archive-iucn-filter"
                 value={selectedIucn}
-                onChange={(e) => setSelectedIucn(e.target.value as any)}
-                className="w-full rounded-xl border border-surface-border bg-surface-subtle py-2.5 px-3 text-xs sm:text-sm text-slate-200 focus:border-emerald-500 focus:outline-none"
+                onChange={(e) => setSelectedIucn(e.target.value as IUCNStatus | "all")}
+                className="w-full rounded-md border border-rule bg-paper-raised py-2.5 px-3 text-xs sm:text-sm text-ink-900 focus:border-accent focus:outline-none"
               >
-                <option value="all">All IUCN Statuses</option>
-                <option value="LC">Least Concern (LC)</option>
-                <option value="NT">Near Threatened (NT)</option>
-                <option value="VU">Vulnerable (VU)</option>
-                <option value="EN">Endangered (EN)</option>
-                <option value="CR">Critically Endangered (CR)</option>
+                <option value="all">{t("filterAllIucn")}</option>
+                <option value="LC">{t("iucnLC")}</option>
+                <option value="NT">{t("iucnNT")}</option>
+                <option value="VU">{t("iucnVU")}</option>
+                <option value="EN">{t("iucnEN")}</option>
+                <option value="CR">{t("iucnCR")}</option>
+                <option value="EW">{t("iucnEW")}</option>
+                <option value="EX">{t("iucnEX")}</option>
               </select>
             </div>
           </div>
@@ -139,29 +188,36 @@ export default function ArchivePage() {
 
         {/* Species Grid */}
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {filteredSpecies.map((s) => {
+          {filteredSpecies.map((s, index) => {
             const locName = s.commonName[lang] || s.commonName.en;
 
             return (
-              <article
+              <Link
                 key={s.id}
-                className="group relative flex flex-col overflow-hidden rounded-2xl border border-surface-border bg-surface transition-all duration-300 hover:border-emerald-500/50 hover:shadow-xl hover:shadow-emerald-500/5"
+                href={`/species/${s.id}`}
+                onClick={() =>
+                  trackGameEvent("archive_species_clicked", {
+                    species_id: s.id,
+                    position_band: index < 6 ? "top" : index < 18 ? "mid" : "deep",
+                  })
+                }
+                className="plate group flex flex-col overflow-hidden rounded-lg bg-paper-raised transition-all duration-300 hover:border-accent-line hover:shadow-paper hover:-translate-y-0.5"
               >
-                {/* Photo Thumbnail */}
-                <div className="relative aspect-[16/10] w-full overflow-hidden bg-surface-subtle">
-                  <Image
-                    src={s.image.url}
-                    alt={s.image.alt || locName}
-                    fill
-                    unoptimized
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
+                {/* Photo Thumbnail, matted */}
+                <div className="relative aspect-[16/10] w-full overflow-hidden bg-paper-sunken">
+                  <div className="absolute inset-1 overflow-hidden border border-rule-strong">
+                    <Image
+                      src={s.image.url}
+                      alt={s.image.alt || locName}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </div>
                   <div className="absolute top-2.5 right-2.5">
                     <span
-                      className={`rounded-lg border px-2 py-0.5 text-[11px] font-black uppercase backdrop-blur-md ${getIucnColor(
-                        s.iucnStatus
-                      )}`}
+                      title={getIUCNLabel(s.iucnStatus, lang)}
+                      className={`rounded-[3px] border px-2 py-0.5 text-[12px] font-bold uppercase ${IUCN_CHIP_CLASSES[s.iucnStatus]}`}
                     >
                       {s.iucnStatus}
                     </span>
@@ -171,27 +227,29 @@ export default function ArchivePage() {
                 {/* Details */}
                 <div className="flex flex-1 flex-col justify-between p-4 space-y-3">
                   <div>
-                    <span className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">
+                    <span className="text-[12px] uppercase tracking-[0.14em] text-ink-500">
                       {s.taxonClass} · {s.order}
                     </span>
-                    <h3 className="text-lg font-black text-white group-hover:text-emerald-400 transition-colors">
+                    <h3 className="font-display text-xl text-ink-900 transition-colors group-hover:text-accent-ink">
                       {locName}
                     </h3>
-                    <p className="text-xs font-medium italic text-emerald-400/90">
+                    <p className="font-display text-sm italic text-accent-ink">
                       {s.scientificName}
                     </p>
                   </div>
 
-                  <p className="text-xs text-slate-300 leading-relaxed line-clamp-2">
+                  <p className="text-xs text-ink-700 leading-relaxed line-clamp-2">
                     {s.clues[0]?.[lang] || s.clues[0]?.en}
                   </p>
 
-                  <div className="flex items-center justify-between border-t border-surface-border pt-3 text-[11px] text-slate-400">
-                    <span>{s.realm}</span>
-                    <span className="capitalize">{s.difficulty} Tier</span>
+                  <div className="flex items-center justify-between border-t border-rule pt-3 font-mono text-[12px] text-ink-500">
+                    <span>{t(REALM_LABEL_KEY[s.realm])}</span>
+                    <span>
+                      {t(DIFFICULTY_LABEL_KEY[s.difficulty])} {t("tierSuffix")}
+                    </span>
                   </div>
                 </div>
-              </article>
+              </Link>
             );
           })}
         </div>

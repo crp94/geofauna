@@ -1,0 +1,92 @@
+{
+  "taxonKey": 4267319,
+  "retrievedAt": "2026-08-24T15:26:17.655Z",
+  "zoom": 2,
+  "request": {
+    "srs": "EPSG:4326",
+    "basisOfRecord": [
+      "HUMAN_OBSERVATION",
+      "OBSERVATION",
+      "MACHINE_OBSERVATION",
+      "PRESERVED_SPECIMEN",
+      "MATERIAL_SAMPLE",
+      "OCCURRENCE",
+      "MATERIAL_CITATION"
+    ]
+  },
+  "totalRecords": 946,
+  "licenseFacets": {
+    "cc0": 109,
+    "ccBy": 93,
+    "ccByNc": 744,
+    "other": 0
+  },
+  "cells": [
+    [
+      31892,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      32249,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0
+    ],
+    [
+      32609,
+      0,
+      0,
+      0,
+      1,
+      12,
+      69,
+      152,
+      0
+    ],
+    [
+      32610,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      32969,
+      0,
+      0,
+      6,
+      2,
+      55,
+      268,
+      316,
+      1
+    ],
+    [
+      33329,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ]
+  ]
+}

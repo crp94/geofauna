@@ -1,0 +1,54 @@
+emperor-penguin (Marine)
+cells=1660 area=8903208km² components=6
+params: yearMin=1970 threshold=5 closingRadius=2
+evidence agreement: 69.8% (176/252 evidence cells inside mask)
+area ratio vs previous shipped mask: 1.00 (previous=8903208km²)
+realm-consistency violations: 0
+WARNINGS: evidence-agreement: 69.8% of open-license evidence cells (176/252) fall inside the mask (warn floor 75%).
+
+Legend: # = mask only, . = evidence only, O = both, (blank) = neither
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                          .                                                               
+                                                                                          
+                                                                                          
+                           ..                         ##   ##        ###                  
+                                                     ##########O#O#O####                  
+                            .  ...               #############OOOOOO####      ######      
+                            OOOO..            ###########O#O##OOOOO#OOO#O.  O###O####     
+#### ####               . .OO..            ## ##########OO##O#OOOOOOO   O  . . OO#O##     
+####### ##   .... .. ... ..  .          ##. .  ..                                     .O#O
+###O#OOO#..                      .                                                   OOOO#
+   .O  .                                                                                  
+                                                                                          
+                                                                                          

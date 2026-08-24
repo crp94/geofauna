@@ -49,6 +49,62 @@ export type SpeciesRange = {
   nativeContinents: string[];
   nativeBiomes: LocalizedString[];
   elevationRange?: string;
+  provenance: RangeProvenance;
+  evidence?: RangeEvidence;
+  calibration?: ScoreCalibration;
+};
+
+/**
+ * Per-species difficulty calibration anchors, computed at build time against
+ * closed-form trivial-strategy baselines (see src/lib/calibration.ts). Absent
+ * for species not yet migrated onto the GBIF-derived pipeline.
+ */
+export type ScoreCalibration = {
+  version: 1;
+  baselineIoU: number; // 0-1 fraction; best trivial-strategy IoU (mid-C target)
+  attainableIoU: number; // 0-1 fraction; truth dilated by one fine-brush halo (S target)
+  baselines: {
+    bbox: number;
+    continent: number;
+    centroid250: number;
+    centroid500: number;
+    centroid1000: number;
+    centroid2000: number;
+  };
+};
+
+/**
+ * A range mask must say what it represents. A coarse learning extent is useful
+ * for play, but must never be presented as an assessor-produced occurrence map.
+ */
+export type RangeProvenance = {
+  method: "editorial-coarse-extent" | "authoritative-range-polygon" | "gbif-occurrence-derived";
+  confidence: "learning" | "authoritative" | "occurrence-derived";
+  sourceName: string;
+  sourceUrl: string;
+  resolution: string;
+  version: string;
+  retrievedAt?: string;
+  parameters?: Record<string, string | number>;
+  citation?: string;
+  gbifDownloadDoi?: string;
+};
+
+export type RangeEvidence = {
+  sourceName: string;
+  sourceUrl: string;
+  retrievedAt: string;
+  recordCount: number;
+  occupiedCellCount: number;
+  occupiedCellsInsideLearningExtent: number;
+  licenseSummary: string;
+  methodology: string;
+  datasets: Array<{
+    key: string;
+    title: string;
+    license: string;
+    publisherKey?: string;
+  }>;
 };
 
 export type HistoricalRangeContraction = {
@@ -95,9 +151,13 @@ export type ScoreResult = {
   precision: number; // 0 - 100%
   recall: number; // 0 - 100%
   proximityBonus: number; // 0 - 100
+  meanMissDistanceKm: number;
+  rangeAreaRatio: number;
   truePositiveAreaKm2: number;
   falsePositiveAreaKm2: number;
   falseNegativeAreaKm2: number;
+  calibratedIou?: number; // 0 - 100%, present only when calibrationApplied
+  calibrationApplied?: boolean;
 };
 
 export type GameMode = "daily" | "unlimited";
@@ -120,4 +180,6 @@ export type GameStats = {
   averageScore: number;
   gradeCounts: Record<"S" | "A" | "B" | "C" | "D", number>;
   dailyHistory: Record<string, DailyProgress>;
+  practiceGames?: number;
+  practiceAverageScore?: number;
 };

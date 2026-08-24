@@ -1,0 +1,53 @@
+scarlet-macaw (Terrestrial)
+cells=582 area=7103739km² components=5
+params: yearMin=1970 threshold=3 closingRadius=1
+evidence agreement: 96.7% (59/61 evidence cells inside mask)
+area ratio vs previous shipped mask: 1.00 (previous=7103739km²)
+realm-consistency violations: 0
+
+Legend: # = mask only, . = evidence only, O = both, (blank) = neither
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                              #                                           
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                     ##O                                                                  
+                     ###                                                                  
+                       OO O#O#                                                            
+                       OOOOOO##                                                           
+                         #OOO#OO#                                                         
+                         OOO##O##                                                         
+                         #OO#OO###                                                        
+                         ##O##OO#                                                         
+                          #O##O#                                                          
+                           #O###                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          

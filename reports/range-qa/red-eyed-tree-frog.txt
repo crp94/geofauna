@@ -1,0 +1,54 @@
+red-eyed-tree-frog (Terrestrial)
+cells=40 area=481186km² components=2
+params: yearMin=1970 threshold=4 closingRadius=1
+evidence agreement: 64.8% (35/54 evidence cells inside mask)
+area ratio vs previous shipped mask: 1.00 (previous=481186km²)
+realm-consistency violations: 0
+WARNINGS: evidence-agreement: 64.8% of open-license evidence cells (35/54) fall inside the mask (warn floor 75%).
+
+Legend: # = mask only, . = evidence only, O = both, (blank) = neither
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+              .                                                                           
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                  .                                                                       
+                    .OO.                                                                  
+                    O.OO.                                                                 
+                       OO                                                                 
+                       OOO                                                                
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          

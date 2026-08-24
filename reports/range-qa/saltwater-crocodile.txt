@@ -1,0 +1,53 @@
+saltwater-crocodile (Coastal)
+cells=109 area=1307178km² components=9
+params: yearMin=1970 threshold=4 closingRadius=1
+evidence agreement: 89.2% (33/37 evidence cells inside mask)
+area ratio vs previous shipped mask: 1.00 (previous=1307178km²)
+realm-consistency violations: 0
+
+Legend: # = mask only, . = evidence only, O = both, (blank) = neither
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                   O                      
+                                                                   O                      
+                                                                               .          
+                                                                                          
+                                                                O#        O               
+                                                                 O    #  OO               
+                                                                      O.                  
+                                                                       .                  
+                                                                            O   #         
+                                                                            #OOOO         
+                                                                           #OOOO#O        
+                                                                                 O#       
+                                                                                  #       
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          

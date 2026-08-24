@@ -1,0 +1,53 @@
+thorny-devil (Terrestrial)
+cells=233 area=2575031km² components=1
+params: yearMin=1970 threshold=2 closingRadius=1
+evidence agreement: 84.6% (143/169 evidence cells inside mask)
+area ratio vs previous shipped mask: 1.00 (previous=2575031km²)
+realm-consistency violations: 0
+
+Legend: # = mask only, . = evidence only, O = both, (blank) = neither
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                             .            
+                                                                             . .          
+                                                                         O O#OOO          
+                                                                         O.OOOOO          
+                                                                         OOOOOO.          
+                                                                         OOOOOOO...       
+                                                                               O.         
+                                                                                          
+                                                                                 .        
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          

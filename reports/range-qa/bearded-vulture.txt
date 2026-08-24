@@ -1,0 +1,53 @@
+bearded-vulture (Terrestrial)
+cells=663 area=6314468km² components=15
+params: yearMin=1970 threshold=3 closingRadius=1
+evidence agreement: 96.0% (167/174 evidence cells inside mask)
+area ratio vs previous shipped mask: 1.00 (previous=6314468km²)
+realm-consistency violations: 0
+
+Legend: # = mask only, . = evidence only, O = both, (blank) = neither
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                               .                                          
+                                                                                          
+                                              O                                           
+                                               OOO                                        
+                                            ##O#                  O# #                    
+                                             #OOO#                #OO#OO#                 
+                                           OOOOO      #OO     OOO  ####O#                 
+                                           OOO #  # #O#OOOO# OOOO    . .                  
+                                           #O     #O#O #OOOO##OOO   ##O                   
+                                           #         #   .     OOO O#OO                   
+                                                     #          OOOOO#O                   
+                                                                                          
+                                                                                          
+                                                      #                                   
+                                                      O                                   
+                                                      O#                                  
+                                                                                          
+                                                     ##                                   
+                                                     #O                                   
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                   .                                      
+                                                   OO                                     
+                                                   OO                                     
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          

@@ -1,0 +1,53 @@
+golden-poison-frog (Terrestrial)
+cells=4 area=49094km² components=3
+params: yearMin=1970 (all-years fallback) threshold=1 closingRadius=1
+evidence agreement: 100.0% (3/3 evidence cells inside mask)
+area ratio vs previous shipped mask: 1.00 (previous=49094km²)
+realm-consistency violations: 0
+
+Legend: # = mask only, . = evidence only, O = both, (blank) = neither
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                          #                                                               
+                         O                                                                
+                                                                                          
+                                                                                          
+                                                                                          
+                               O                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          

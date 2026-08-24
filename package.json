@@ -12,9 +12,20 @@
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
     "data:curate": "tsx src/scripts/buildCuratedSpecies.ts",
-    "check": "npm run data:curate && npm run typecheck"
+    "data:occurrences": "tsx src/scripts/fetchGbifOccurrenceEvidence.ts",
+    "data:gbif:resolve": "tsx src/scripts/resolveTaxonKeys.ts",
+    "data:gbif:fetch": "tsx src/scripts/fetchGbifDensity.ts",
+    "data:gbif:cube": "tsx src/scripts/fetchGbifCube.ts",
+    "data:gbif:masks": "tsx src/scripts/buildRangeMasks.ts",
+    "data:gbif:qa": "tsx src/scripts/qaRangeMasks.ts",
+    "data:images": "tsx src/scripts/optimizeSpeciesImages.ts",
+    "data:all": "npm run data:gbif:resolve && npm run data:gbif:fetch && npm run data:occurrences && npm run data:gbif:masks && npm run data:gbif:qa && npm run data:curate",
+    "test:logic": "tsx src/scripts/verifyGameLogic.ts",
+    "test:units": "tsx src/scripts/verifyViewTransform.ts && tsx src/scripts/verifyCalibration.ts && tsx src/scripts/verifyGridOps.ts && tsx src/scripts/verifyDailyStats.ts",
+    "check": "npm run data:curate && npm run typecheck && npm run test:logic"
   },
   "dependencies": {
+    "@upstash/redis": "^1.38.2",
     "@vercel/analytics": "^1.4.1",
     "@vercel/speed-insights": "^1.1.0",
     "canvas-confetti": "^1.9.4",
@@ -30,6 +41,7 @@
     "world-atlas": "^2.0.2"
   },
   "devDependencies": {
+    "@mapbox/vector-tile": "^3.0.0",
     "@types/canvas-confetti": "^1.9.0",
     "@types/d3-geo": "^3.1.0",
     "@types/node": "^20.17.0",
@@ -39,7 +51,9 @@
     "autoprefixer": "^10.4.20",
     "eslint": "^8.57.1",
     "eslint-config-next": "^14.2.15",
+    "pbf": "^5.1.2",
     "postcss": "^8.4.47",
+    "sharp": "^0.35.3",
     "tailwindcss": "^3.4.14",
     "tsx": "^4.19.2",
     "typescript": "^5.6.3"

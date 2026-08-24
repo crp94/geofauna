@@ -1,0 +1,53 @@
+magnificent-frigatebird (Coastal)
+cells=805 area=9223177km² components=9
+params: yearMin=1970 threshold=5 closingRadius=1
+evidence agreement: 90.3% (168/186 evidence cells inside mask)
+area ratio vs previous shipped mask: 1.00 (previous=9223177km²)
+realm-consistency violations: 0
+
+Legend: # = mask only, . = evidence only, O = both, (blank) = neither
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+             #           # ##                                                             
+              #          ###                                                              
+              ##         #O                                                               
+               ###  ##OOO#                                                                
+                OO  OOO#OO                                                                
+                OOO # ##OO#                                                               
+                ##O#OOOOOOOOOO                                                            
+                   OOOOO## #OO                                                            
+                    # OOO OO#O.                                                           
+                       OOO## #O##                                                         
+                       .OO    #O#                                                         
+                      . O#       #                                                        
+                        OO        ##O                                                     
+                        ##          O                                                     
+                         #         #                                                      
+                                   #                                                      
+                                  O#                                                      
+                                #OO#                                                      
+                                O                                                         
+                               ##                                                         
+                              #O                                                          
+                              #                                                           
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          

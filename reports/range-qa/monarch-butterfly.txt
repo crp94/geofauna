@@ -1,0 +1,53 @@
+monarch-butterfly (Terrestrial)
+cells=1594 area=15876094km² components=19
+params: yearMin=1970 threshold=5 closingRadius=1
+evidence agreement: 94.8% (289/305 evidence cells inside mask)
+area ratio vs previous shipped mask: 1.00 (previous=15876094km²)
+realm-consistency violations: 0
+
+Legend: # = mask only, . = evidence only, O = both, (blank) = neither
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                           #                                              
+              ######O#                     ####                                           
+              ######OOOOOOO###                                                            
+             #######OOOOOOOO##            ## #                                            
+             #OO##OOOOOO#OOO         .    # ##                                            
+              OOO###OOOOOOO               #O#                                             
+               OOO#OOOOOOO  .           .  #                                              
+                 ##OOOOOO               ..                                                
+     #           #OO#   O#                                                                
+     OO           OOO### ###O.                                                            
+                   #O#O#     .                                                            
+                      #OO ####                                                   .        
+                       OOOO# ##                                                           
+                         #O                                                               
+                        #O                                                                
+                         O                                                  ###           
+                         O#                                                               
+                         O#                                                               
+                                                                                 #       #
+                                                                                 ##      #
+                                                                                  O#      
+                                                                                  OO      
+                                                                         O#    #  OO      
+                                                                          #    O##O     O#
+                                                                                ##     #OO
+                                                                                 #     OO 
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          

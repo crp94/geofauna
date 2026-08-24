@@ -1,0 +1,53 @@
+western-capercaillie (Terrestrial)
+cells=662 area=4347896km² components=10
+params: yearMin=1970 threshold=5 closingRadius=1
+evidence agreement: 97.4% (113/116 evidence cells inside mask)
+area ratio vs previous shipped mask: 1.00 (previous=4347896km²)
+realm-consistency violations: 0
+
+Legend: # = mask only, . = evidence only, O = both, (blank) = neither
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                   #                                      
+                                                OOO#O#                                    
+                                              #OOOO#####                                  
+                                           #  OOOO#######O #                              
+                                           ##  #OO############   ##                       
+                                              ########  # ##     ##                       
+                                              #####O                                      
+                                           #########                                      
+                                                  ##                                      
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          

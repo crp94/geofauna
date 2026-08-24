@@ -1,0 +1,53 @@
+giant-oceanic-manta-ray (Marine)
+cells=245 area=2849343km² components=22
+params: yearMin=1970 threshold=2 closingRadius=2
+evidence agreement: 80.0% (48/60 evidence cells inside mask)
+area ratio vs previous shipped mask: 1.00 (previous=2849343km²)
+realm-consistency violations: 0
+
+Legend: # = mask only, . = evidence only, O = both, (blank) = neither
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                          OO                                                              
+                         #O                                                               
+                        OO                                                                
+                 #      O                            #                                    
+                 #      #                            O                     .              
+     O#         OO#         .#                                                            
+                            .#                                                            
+                       #                                             #                    
+                       #O      #                                     #                    
+                      .OO      ##                              O                          
+                      ##O                                      #             #            
+                        O                                 ##                 O            
+         OO                                             O #              O#               
+#        ##                                             #                                 
+       OO                                              ##                                 
+                                                       #                             ##   
+                                                                         .            O   
+                                                                                   #      
+                                                                                   #      
+                                                                                        O#
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          

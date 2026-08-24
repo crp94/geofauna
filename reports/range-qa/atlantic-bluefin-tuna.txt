@@ -1,0 +1,54 @@
+atlantic-bluefin-tuna (Marine)
+cells=758 area=7510014km² components=11
+params: yearMin=1970 threshold=2 closingRadius=2
+evidence agreement: 65.0% (65/100 evidence cells inside mask)
+area ratio vs previous shipped mask: 1.00 (previous=7510014km²)
+realm-consistency violations: 0
+WARNINGS: evidence-agreement: 65.0% of open-license evidence cells (65/100) fall inside the mask (warn floor 75%).
+
+Legend: # = mask only, . = evidence only, O = both, (blank) = neither
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                .                                         
+                                              O                                           
+                                           O .OO                                          
+                                          OO  OOO                                         
+                                 ##       ##O#O                                           
+                             #O# ###       OO                                             
+                           OOOO####         ##OO##                                        
+                          OOO#####   ##   . #O#O####                                      
+                         OO##         ##   #### O  #.                        .            
+                        OO##                                                 .            
+                    ##########                                                            
+                     #########                                            .               
+                 .   # O### ####                                                          
+                       ##   ##                                           .                
+                                                                                          
+                         .                                                                
+                        ..                 .                                              
+                                                                                          
+                                                                                          
+                                                          .                               
+                                                                                          
+                                                                                          
+                                                         .                                
+                                                       .                                  
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          

@@ -1,0 +1,53 @@
+greater-flamingo (Coastal)
+cells=1009 area=10213761km² components=22
+params: yearMin=1970 threshold=5 closingRadius=1
+evidence agreement: 87.8% (159/181 evidence cells inside mask)
+area ratio vs previous shipped mask: 1.00 (previous=10213761km²)
+realm-consistency violations: 0
+
+Legend: # = mask only, . = evidence only, O = both, (blank) = neither
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                              ## #                                        
+                                               ###                                        
+                                            O#O                                           
+                                            ###O##  ##   ##                               
+                                          OOOOOOO# OO####OO                               
+                                          OOOOOOOOOO#O###O                #               
+                                          OOO#OOO OOOO# ###             .                 
+                                          OO . # #   O  ##                 #              
+                                         OO        ###  #O##                              
+                                        #O           ##  OO###OO           #              
+                                        ##            ##  ##  #O#                         
+                                        O             #O  O    #O#    #                   
+                                        ##             ##      #O#    #                   
+                                                                ##                        
+                                                                                          
+                                                      O                                   
+                                                     .O#                                  
+                                                #     #                                   
+                                                #                                         
+                                                    .   #                                 
+                                                O# . O                                    
+                                  .             O#  O#                                    
+                                                O# .OO                                    
+                                                 OOO#                                     
+                                                 OOO                                      
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          

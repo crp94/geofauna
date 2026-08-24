@@ -1,0 +1,53 @@
+hoatzin (Freshwater)
+cells=362 area=4431144km² components=3
+params: yearMin=1970 threshold=3 closingRadius=1
+evidence agreement: 100.0% (84/84 evidence cells inside mask)
+area ratio vs previous shipped mask: 1.00 (previous=4431144km²)
+realm-consistency violations: 0
+
+Legend: # = mask only, . = evidence only, O = both, (blank) = neither
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                             #                                                            
+                           OOOO                                                           
+                          OOOO#O                                                          
+                         OO# O# #                                                         
+                         OOOOOOOO                                                         
+                         OOO#OOOO                                                         
+                          OOOOO O                                                         
+                           #OO# #                                                         
+                             #                                                            
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          

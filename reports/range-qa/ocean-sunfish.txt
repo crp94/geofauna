@@ -1,0 +1,53 @@
+ocean-sunfish (Marine)
+cells=808 area=7384635km² components=15
+params: yearMin=1970 threshold=2 closingRadius=2
+evidence agreement: 90.4% (75/83 evidence cells inside mask)
+area ratio vs previous shipped mask: 1.00 (previous=7384635km²)
+realm-consistency violations: 0
+
+Legend: # = mask only, . = evidence only, O = both, (blank) = neither
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                              #O                                          
+                                          ### .O                                          
+           #                            ##### #OO                                         
+           #O#              ##           #O###O                                           
+            ###            ###OO         ###O#                                            
+             O             OOOO           O##OOO#                                         
+             #O           OOO #           O #O#####                                       
+             #OO         #O#          .   #OO # #                                         
+             #OO        O#                                                                
+               #     ####                                                                 
+                       ##                                                                 
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                      .                                                                   
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                 ##       
+                                                                                   #      
+                                                                        #          ##     
+                                                                        ##         ###    
+                               .                 O#                     ##        ####    
+                                                 O##                     #O#  ##  ##    ##
+                                                                                ###     # 
+                                                                                 #      # 
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          

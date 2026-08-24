@@ -1,0 +1,54 @@
+red-panda (Terrestrial)
+cells=35 area=381105km² components=12
+params: yearMin=1970 (all-years fallback) threshold=1 closingRadius=1
+evidence agreement: 57.1% (16/28 evidence cells inside mask)
+area ratio vs previous shipped mask: 1.00 (previous=381105km²)
+realm-consistency violations: 0
+WARNINGS: evidence-agreement: 57.1% of open-license evidence cells (16/28) fall inside the mask (warn floor 75%).
+
+Legend: # = mask only, . = evidence only, O = both, (blank) = neither
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                .                                         
+                                                                                          
+              O                                                                           
+                                                                                          
+                    .  .                                                                  
+              ..  O      .                                                                
+                                                                #     #.                  
+                    .                                           #OOOO##                   
+                                                                OO ##O                    
+                                                                O    .                    
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          

@@ -1,0 +1,53 @@
+harpy-eagle (Terrestrial)
+cells=270 area=3298430km² components=10
+params: yearMin=1970 threshold=2 closingRadius=1
+evidence agreement: 89.3% (92/103 evidence cells inside mask)
+area ratio vs previous shipped mask: 1.00 (previous=3298430km²)
+realm-consistency violations: 0
+
+Legend: # = mask only, . = evidence only, O = both, (blank) = neither
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                      O#                                                                  
+                       O#                                                                 
+                        #OO  OO                                                           
+                         #O# OOOO                                                         
+                         OO#OOO#O                                                         
+                          OO#OOOO#                                                        
+                         ### OOOO                                                         
+                          .OO#OO.                                                         
+                           #O.OO   O                                                      
+                             .O   O                                                       
+                            O                                                             
+                               .                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          

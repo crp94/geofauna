@@ -308,5 +308,157 @@
     "taxonKey": 5787030,
     "occurrenceCount": 62,
     "url": "https://www.gbif.org/species/5787030"
+  },
+  "dugong": {
+    "taxonKey": 9729967,
+    "url": "https://www.gbif.org/species/9729967"
+  },
+  "maned-wolf": {
+    "taxonKey": 2434450,
+    "url": "https://www.gbif.org/species/2434450"
+  },
+  "musk-ox": {
+    "taxonKey": 2441108,
+    "url": "https://www.gbif.org/species/2441108"
+  },
+  "aye-aye": {
+    "taxonKey": 5219587,
+    "url": "https://www.gbif.org/species/5219587"
+  },
+  "wandering-albatross": {
+    "taxonKey": 5229302,
+    "url": "https://www.gbif.org/species/5229302"
+  },
+  "secretary-bird": {
+    "taxonKey": 5229409,
+    "url": "https://www.gbif.org/species/5229409"
+  },
+  "bald-eagle": {
+    "taxonKey": 2480446,
+    "url": "https://www.gbif.org/species/2480446"
+  },
+  "king-penguin": {
+    "taxonKey": 2481660,
+    "url": "https://www.gbif.org/species/2481660"
+  },
+  "bearded-vulture": {
+    "taxonKey": 2480649,
+    "url": "https://www.gbif.org/species/2480649"
+  },
+  "toco-toucan": {
+    "taxonKey": 2478765,
+    "url": "https://www.gbif.org/species/2478765"
+  },
+  "scarlet-macaw": {
+    "taxonKey": 5959227,
+    "url": "https://www.gbif.org/species/5959227"
+  },
+  "superb-lyrebird": {
+    "taxonKey": 2488980,
+    "url": "https://www.gbif.org/species/2488980"
+  },
+  "greater-flamingo": {
+    "taxonKey": 4352332,
+    "url": "https://www.gbif.org/species/4352332"
+  },
+  "magnificent-frigatebird": {
+    "taxonKey": 2480189,
+    "url": "https://www.gbif.org/species/2480189"
+  },
+  "green-sea-turtle": {
+    "taxonKey": 2442225,
+    "url": "https://www.gbif.org/species/2442225"
+  },
+  "king-cobra": {
+    "taxonKey": 2469850,
+    "url": "https://www.gbif.org/species/2469850"
+  },
+  "green-anaconda": {
+    "taxonKey": 5225712,
+    "url": "https://www.gbif.org/species/5225712"
+  },
+  "panther-chameleon": {
+    "taxonKey": 5221988,
+    "url": "https://www.gbif.org/species/5221988"
+  },
+  "thorny-devil": {
+    "taxonKey": 2466435,
+    "url": "https://www.gbif.org/species/2466435"
+  },
+  "red-eyed-tree-frog": {
+    "taxonKey": 2428197,
+    "url": "https://www.gbif.org/species/2428197"
+  },
+  "hellbender": {
+    "taxonKey": 2432031,
+    "url": "https://www.gbif.org/species/2432031"
+  },
+  "olm": {
+    "taxonKey": 2432042,
+    "url": "https://www.gbif.org/species/2432042"
+  },
+  "fire-salamander": {
+    "taxonKey": 2431776,
+    "url": "https://www.gbif.org/species/2431776"
+  },
+  "darwins-frog": {
+    "taxonKey": 5217388,
+    "url": "https://www.gbif.org/species/5217388"
+  },
+  "panamanian-golden-frog": {
+    "taxonKey": 5216695,
+    "url": "https://www.gbif.org/species/5216695"
+  },
+  "whale-shark": {
+    "taxonKey": 2417522,
+    "url": "https://www.gbif.org/species/2417522"
+  },
+  "great-white-shark": {
+    "taxonKey": 2420694,
+    "url": "https://www.gbif.org/species/2420694"
+  },
+  "giant-oceanic-manta-ray": {
+    "taxonKey": 9548142,
+    "url": "https://www.gbif.org/species/9548142"
+  },
+  "ocean-sunfish": {
+    "taxonKey": 5213725,
+    "url": "https://www.gbif.org/species/5213725"
+  },
+  "atlantic-bluefin-tuna": {
+    "taxonKey": 2373980,
+    "url": "https://www.gbif.org/species/2373980"
+  },
+  "greenland-shark": {
+    "taxonKey": 2421162,
+    "url": "https://www.gbif.org/species/2421162"
+  },
+  "european-eel": {
+    "taxonKey": 5212973,
+    "url": "https://www.gbif.org/species/5212973"
+  },
+  "electric-eel": {
+    "taxonKey": 2401958,
+    "url": "https://www.gbif.org/species/2401958"
+  },
+  "apollo-butterfly": {
+    "taxonKey": 1938810,
+    "url": "https://www.gbif.org/species/1938810"
+  },
+  "rosalia-longicorn": {
+    "taxonKey": 7569075,
+    "url": "https://www.gbif.org/species/7569075"
+  },
+  "rusty-patched-bumblebee": {
+    "taxonKey": 1340481,
+    "url": "https://www.gbif.org/species/1340481"
+  },
+  "periodical-cicada": {
+    "taxonKey": 5792026,
+    "url": "https://www.gbif.org/species/5792026"
+  },
+  "richmond-birdwing": {
+    "taxonKey": 1937474,
+    "url": "https://www.gbif.org/species/1937474"
   }
 }

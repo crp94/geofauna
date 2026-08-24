@@ -1,0 +1,53 @@
+andean-condor (Terrestrial)
+cells=284 area=3002039km² components=4
+params: yearMin=1970 threshold=5 closingRadius=1
+evidence agreement: 100.0% (105/105 evidence cells inside mask)
+area ratio vs previous shipped mask: 1.00 (previous=3002039km²)
+realm-consistency violations: 0
+
+Legend: # = mask only, . = evidence only, O = both, (blank) = neither
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                          O                                                               
+                          O#                                                              
+                         OO                                                               
+                         O                                                                
+                        #O                                                                
+                        #O                                                                
+                         OO#                                                              
+                         #OO#                                                             
+                           OOO                                                            
+                           OO#                                                            
+                           OO                                                             
+                           OO#                                                            
+                           O                                                              
+                          #O#                                                             
+                          OO                                                              
+                          OO                                                              
+                          OOO                                                             
+                           OO                                                             
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          

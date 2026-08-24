@@ -1,0 +1,55 @@
+axolotl (Freshwater)
+cells=4 area=46546km² components=1
+params: yearMin=1970 (all-years fallback) threshold=1 closingRadius=1
+overrides applied: clampTo
+evidence agreement: 30.0% (3/10 evidence cells inside mask)
+area ratio vs previous shipped mask: 1.00 (previous=46546km²)
+realm-consistency violations: 0
+WAIVED: evidence-agreement (The open-license evidence snapshot suffers the exact same worldwide captive/lab-specimen contamination as the density data this mask is derived from (7 of its 10 evidence cells are Ontario, Massachusetts, England, Germany x2, Ukraine, and a second non-Valley-of-Mexico Mexican point) — axolotls are one of the most widely bred lab/pet animals globally. The clampTo override deliberately restricts the mask to the species' real wild range (Valley of Mexico), which necessarily disagrees with contaminated evidence outside that valley; the 3 evidence cells that DO fall within Mexico's Valley all match the mask exactly (100% agreement on genuine-range evidence).)
+
+Legend: # = mask only, . = evidence only, O = both, (blank) = neither
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                .                                         
+                                               .    .                                     
+                          .                                                               
+                                                                                          
+                                                                                          
+                                                                                          
+                  .                                                                       
+                   .                                                                      
+                   OO                                                                     
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          

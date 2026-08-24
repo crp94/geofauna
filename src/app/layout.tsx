@@ -1,11 +1,32 @@
 import type { Metadata, Viewport } from "next";
+import { Fraunces, Source_Sans_3, IBM_Plex_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  style: ["normal", "italic"],
+  variable: "--font-display",
+  display: "swap",
+});
+
+const sourceSans = Source_Sans_3({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  display: "swap",
+});
+
+const plexMono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  variable: "--font-mono",
+  display: "swap",
+});
+
 export const viewport: Viewport = {
-  themeColor: "#060A11",
-  colorScheme: "dark",
+  themeColor: "#F5F1E6",
+  colorScheme: "light",
   width: "device-width",
   initialScale: 1,
   maximumScale: 1,
@@ -14,13 +35,17 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://geofauna.carlosrodriguezpardo.es"),
   title: {
-    default: "GeoFauna · The Species Distribution Game",
+    default: "GeoFauna — The Species Range Game",
     template: "%s · GeoFauna",
   },
   description:
-    "An open-biodiversity species distribution deduction game. Paint and deduce where Earth's animal species roam on an interactive Robinson projection map, exploring IUCN Red List conservation status and 2050 climate vulnerability.",
+    "Paint a species' range on a zoomable Robinson projection map. GeoFauna scores you against occurrence-derived open data from GBIF, with IUCN conservation context alongside every reveal. Play the daily expedition or the unlimited catalogue in English, Español, or Italiano.",
   keywords: [
     "GeoFauna",
+    "GBIF",
+    "species range",
+    "daily game",
+    "naturalist",
     "Species distribution",
     "Biodiversity game",
     "Animal guessing game",
@@ -49,20 +74,28 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://geofauna.carlosrodriguezpardo.es",
     siteName: "GeoFauna",
-    title: "GeoFauna · The Species Distribution Game",
+    title: "GeoFauna — The Species Range Game",
     description:
-      "Deduce where Earth's species naturally roam on an interactive Robinson projection map, with IUCN conservation trajectories and 2050 climate insights.",
+      "A naturalist's atlas of a game: paint species ranges on a zoomable Robinson map, scored against occurrence-derived GBIF data with honest, transparent provenance.",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "GeoFauna on a Robinson projection" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "GeoFauna · The Species Distribution Game",
+    title: "GeoFauna — The Species Range Game",
     description:
-      "Deduce where Earth's species naturally roam on an interactive Robinson projection map, with IUCN conservation trajectories and 2050 climate insights.",
+      "A naturalist's atlas of a game: paint species ranges on a zoomable Robinson map, scored against occurrence-derived GBIF data with honest, transparent provenance.",
     creator: "@carlosrodriguezp",
+    images: ["/twitter-image"],
   },
   manifest: "/manifest.webmanifest",
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/brand/geofauna-favicon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/brand/geofauna-favicon.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: "/brand/geofauna-favicon-192.png",
+    shortcut: "/brand/geofauna-favicon-192.png",
   },
 };
 
@@ -94,16 +127,28 @@ export default function RootLayout({
       priceCurrency: "EUR",
     },
   };
+  const websiteJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "GeoFauna",
+    url: "https://geofauna.carlosrodriguezpardo.es",
+    inLanguage: ["en", "es", "it"],
+    description: "An open-source biogeography learning game with transparent range provenance.",
+  };
 
   return (
-    <html lang="en" className="dark">
+    <html lang="en" className={`${fraunces.variable} ${sourceSans.variable} ${plexMono.variable}`}>
       <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
       </head>
-      <body className="antialiased bg-background min-h-screen text-slate-100">
+      <body className="antialiased bg-paper-base min-h-screen text-ink-900">
         {children}
         <Analytics />
         <SpeedInsights />

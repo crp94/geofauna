@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import { paper, ink, rule, accent, terracotta, ochre, danger, iucn, paint } from "./src/lib/theme";
 
 const config: Config = {
   content: [
@@ -9,45 +10,88 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#060A11",
+        // Transitional aliases — kept so unrestyled components stay usable
+        // until later waves adopt the new tokens directly. A final sweep
+        // will remove these once every component consumes `paper`/`surface`
+        // via the new naming.
+        background: paper.base,
         surface: {
-          DEFAULT: "#0A111E",
-          subtle: "#0F192C",
-          elevated: "#16233C",
-          border: "#1E3050",
+          DEFAULT: paper.raised,
+          subtle: paper.sunken,
+          elevated: paper.deep,
+          border: rule.DEFAULT,
         },
-        fauna: {
-          DEFAULT: "#10B981",
-          light: "#34D399",
-          dark: "#059669",
-          muted: "rgba(16, 185, 129, 0.15)",
+
+        paper: {
+          base: paper.base,
+          raised: paper.raised,
+          sunken: paper.sunken,
+          deep: paper.deep,
+        },
+        ink: {
+          900: ink[900],
+          700: ink[700],
+          500: ink[500],
+          400: ink[400],
+        },
+        rule: {
+          DEFAULT: rule.DEFAULT,
+          strong: rule.strong,
+        },
+        accent: {
+          DEFAULT: accent.DEFAULT,
+          ink: accent.ink,
+          soft: accent.soft,
+          line: accent.line,
+        },
+        terracotta: {
+          DEFAULT: terracotta.DEFAULT,
+          ink: terracotta.ink,
+          soft: terracotta.soft,
+        },
+        ochre: {
+          DEFAULT: ochre.DEFAULT,
+          soft: ochre.soft,
+        },
+        danger: {
+          DEFAULT: danger.DEFAULT,
+          soft: danger.soft,
         },
         iucn: {
-          lc: "#60A5FA", // Least Concern (Blue/Teal)
-          nt: "#34D399", // Near Threatened (Green-Teal)
-          vu: "#FBBF24", // Vulnerable (Yellow/Amber)
-          en: "#FB923C", // Endangered (Orange)
-          cr: "#EF4444", // Critically Endangered (Red)
-          ew: "#8B5CF6", // Extinct in the Wild (Purple)
-          ex: "#1F2937", // Extinct (Charcoal/Black)
+          lc: { text: iucn.LC.text, fill: iucn.LC.fill, edge: iucn.LC.edge },
+          nt: { text: iucn.NT.text, fill: iucn.NT.fill, edge: iucn.NT.edge },
+          vu: { text: iucn.VU.text, fill: iucn.VU.fill, edge: iucn.VU.edge },
+          en: { text: iucn.EN.text, fill: iucn.EN.fill, edge: iucn.EN.edge },
+          cr: { text: iucn.CR.text, fill: iucn.CR.fill, edge: iucn.CR.edge },
+          ew: { text: iucn.EW.text, fill: iucn.EW.fill, edge: iucn.EW.edge },
+          ex: { text: iucn.EX.text, fill: iucn.EX.fill, edge: iucn.EX.edge },
         },
         paint: {
-          brush: "#06B6D4",      // Cyan for user guess
-          brushMuted: "rgba(6, 182, 212, 0.4)",
-          overlap: "#10B981",    // Emerald for True Positive
-          overestimate: "#F59E0B", // Amber/Orange for False Positive
-          missed: "#38BDF8",     // Blue for False Negative (GT missed)
+          brush: paint.brush,
+          eraserPreview: paint.eraserPreview,
+          overlap: paint.overlap,
+          overestimate: paint.overestimate,
+          missed: paint.missed,
+          overlapInk: paint.overlapInk,
+          overestimateInk: paint.overestimateInk,
+          missedInk: paint.missedInk,
         },
       },
       fontFamily: {
-        sans: ["var(--font-inter)", "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "sans-serif"],
-        mono: ["var(--font-jetbrains)", "ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "monospace"],
+        display: ["var(--font-display)", "Georgia", "Times New Roman", "serif"],
+        sans: ["var(--font-sans)", "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "sans-serif"],
+        mono: ["var(--font-mono)", "ui-monospace", "Menlo", "Monaco", "Consolas", "monospace"],
+      },
+      boxShadow: {
+        paper: "0 1px 2px rgba(43,37,25,0.07), 0 3px 10px rgba(43,37,25,0.05)",
+        lift: "0 2px 6px rgba(43,37,25,0.10), 0 8px 24px rgba(43,37,25,0.07)",
       },
       animation: {
         "pulse-subtle": "pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite",
         "fade-in": "fadeIn 0.25s ease-out forwards",
         "slide-up": "slideUp 0.3s ease-out forwards",
         "scale-in": "scaleIn 0.2s ease-out forwards",
+        "stamp-in": "stampIn 0.35s cubic-bezier(0.22, 1, 0.36, 1) forwards",
       },
       keyframes: {
         fadeIn: {
@@ -61,6 +105,10 @@ const config: Config = {
         scaleIn: {
           "0%": { transform: "scale(0.96)", opacity: "0" },
           "100%": { transform: "scale(1)", opacity: "1" },
+        },
+        stampIn: {
+          "0%": { transform: "scale(1.15) rotate(-6deg)", opacity: "0" },
+          "100%": { transform: "scale(1) rotate(-3deg)", opacity: "1" },
         },
       },
     },

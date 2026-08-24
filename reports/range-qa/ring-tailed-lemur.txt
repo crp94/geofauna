@@ -1,0 +1,54 @@
+ring-tailed-lemur (Terrestrial)
+cells=23 area=263888km² components=2
+params: yearMin=1970 threshold=2 closingRadius=1
+evidence agreement: 35.7% (10/28 evidence cells inside mask)
+area ratio vs previous shipped mask: 1.00 (previous=263888km²)
+realm-consistency violations: 0
+WAIVED: evidence-agreement (18 of 28 evidence cells are zoo/captive-specimen locations on three continents this species has never lived on in the wild (multiple US states including Hawaii, several German/Swedish/Czech cities) — ring-tailed lemurs are one of the most widely exhibited primates in zoos globally, and GBIF's filters don't catch captive HUMAN_OBSERVATION records. Madagascar is this species' only native range; every evidence cell within Madagascar's borders falls inside (or immediately borders) the mask. The 35.7% figure reflects worldwide zoo contamination, not a mask defect.)
+
+Legend: # = mask only, . = evidence only, O = both, (blank) = neither
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                 .                                        
+                                                .                                         
+                                              ... .                                       
+              .                                                                           
+              .                                                                           
+                 .  .                                                  .                  
+               .  .                                                                       
+                                                                                          
+                     .                                                                    
+                                                                                          
+     .                                                                                    
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                         #                                
+                                                        ..                                
+                                                        O                                 
+                                                       OO                                 
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          

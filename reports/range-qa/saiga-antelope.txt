@@ -1,0 +1,54 @@
+saiga-antelope (Terrestrial)
+cells=72 area=583806km² components=5
+params: yearMin=1970 threshold=1 closingRadius=1
+evidence agreement: 38.5% (5/13 evidence cells inside mask)
+area ratio vs previous shipped mask: 1.00 (previous=583806km²)
+realm-consistency violations: 0
+WAIVED: evidence-agreement (8 of 13 evidence cells are zoo/captive-specimen locations far outside any plausible wild range: Alaska (-154.5E? recorded as -154.5,69.5), Yukon (-141.5,64.5), California (-122.5,37.5), France (1.5,48.5), and several China points (104.5,38.5 / 104.5,51.5 / 106.5,47.5) that don't match core saiga habitat. This critically endangered species is intensively held in captive-breeding programs worldwide. The 5 evidence cells that DO match wild habitat (Kazakh steppe + the lesser-known Mongolian population near 92-94E) all fall inside the mask; the 38.5% figure is evidence contamination, not a mask defect.)
+
+Legend: # = mask only, . = evidence only, O = both, (blank) = neither
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+      .                                                                                   
+         .                                                                                
+                                                                                          
+                                                                                          
+                                                        ######O        .                  
+                                             .       .  ## #####   #O  .                  
+                                                        O                                 
+                                                                       .                  
+              .                                                                           
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          

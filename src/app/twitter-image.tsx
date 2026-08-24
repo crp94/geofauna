@@ -1,102 +1,191 @@
 import { ImageResponse } from "next/og";
+import { paper, ink, rule, accent, ochre } from "@/lib/theme";
 
 export const runtime = "edge";
-export const alt = "GeoFauna — The Species Distribution Game";
+export const alt = "GeoFauna — a naturalist's atlas of living species";
 export const size = {
   width: 1200,
   height: 630,
 };
 export const contentType = "image/png";
 
+async function loadFrauncesFont(): Promise<ArrayBuffer> {
+  const res = await fetch(new URL("./fonts/fraunces-600.ttf", import.meta.url));
+  return res.arrayBuffer();
+}
+
+/**
+ * See opengraph-image.tsx for why this is wrapped in a fallback: /public
+ * isn't part of this module's graph the way ./fonts is, so the relative
+ * fetch(new URL(...)) traversal can fail once bundled for edge — in that
+ * case we render a wordmark-only composition instead of erroring the route.
+ */
+async function loadLogoDataUri(): Promise<string | null> {
+  try {
+    const res = await fetch(new URL("../../public/brand/geofauna-logo.png", import.meta.url));
+    if (!res.ok) return null;
+    const buf = await res.arrayBuffer();
+    const bytes = new Uint8Array(buf);
+    let binary = "";
+    for (let i = 0; i < bytes.byteLength; i++) {
+      binary += String.fromCharCode(bytes[i]);
+    }
+    return `data:image/png;base64,${btoa(binary)}`;
+  } catch {
+    return null;
+  }
+}
+
 export default async function TwitterImage() {
+  const [fontData, logoDataUri] = await Promise.all([loadFrauncesFont(), loadLogoDataUri()]);
+
   return new ImageResponse(
     (
       <div
         style={{
-          background: "linear-gradient(135deg, #060A11 0%, #0A1424 50%, #0F1F38 100%)",
           width: "100%",
           height: "100%",
           display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-          fontFamily: "system-ui, sans-serif",
-          color: "white",
-          padding: "60px",
+          position: "relative",
+          background: paper.base,
         }}
       >
+        {/* outer ink rule */}
         <div
           style={{
+            position: "absolute",
+            top: 24,
+            left: 24,
+            right: 24,
+            bottom: 24,
             display: "flex",
-            alignItems: "center",
-            gap: "16px",
-            marginBottom: "24px",
+            border: `3px solid ${ink[700]}`,
+          }}
+        />
+        {/* inner hairline rule */}
+        <div
+          style={{
+            position: "absolute",
+            top: 34,
+            left: 34,
+            right: 34,
+            bottom: 34,
+            display: "flex",
+            border: `1px solid ${rule.strong}`,
+          }}
+        />
+
+        {/* corner stamp */}
+        <div
+          style={{
+            position: "absolute",
+            top: 58,
+            right: 62,
+            display: "flex",
+            padding: 4,
+            border: `1px solid ${ochre.DEFAULT}`,
+            transform: "rotate(-3deg)",
           }}
         >
           <div
             style={{
-              width: "56px",
-              height: "56px",
-              borderRadius: "16px",
-              background: "rgba(16, 185, 129, 0.2)",
-              border: "2px solid rgba(16, 185, 129, 0.6)",
               display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontSize: "32px",
+              padding: "6px 14px",
+              border: `1px solid ${ochre.DEFAULT}`,
+              color: ochre.DEFAULT,
+              fontSize: 14,
+              letterSpacing: "2px",
+              fontWeight: 600,
             }}
           >
-            🐾
+            DAILY EXPEDITION
           </div>
-          <span
-            style={{
-              fontSize: "64px",
-              fontWeight: 900,
-              letterSpacing: "-0.03em",
-            }}
-          >
-            Geo<span style={{ color: "#10B981" }}>Fauna</span>
-          </span>
         </div>
 
-        <p
-          style={{
-            fontSize: "28px",
-            fontWeight: 600,
-            color: "#94A3B8",
-            textAlign: "center",
-            maxWidth: "800px",
-            lineHeight: 1.4,
-            marginBottom: "36px",
-          }}
-        >
-          Deduce where Earth's species roam on an interactive Robinson projection map.
-        </p>
-
+        {/* content */}
         <div
           style={{
+            position: "absolute",
+            inset: 0,
+            width: "100%",
+            height: "100%",
             display: "flex",
-            gap: "16px",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            padding: "60px 100px",
           }}
         >
+          {logoDataUri ? (
+            <img
+              src={logoDataUri}
+              width={140}
+              height={140}
+              style={{ marginBottom: 28 }}
+            />
+          ) : null}
+
           <div
             style={{
-              padding: "10px 24px",
-              borderRadius: "999px",
-              background: "rgba(16, 185, 129, 0.15)",
-              border: "1px solid rgba(16, 185, 129, 0.4)",
-              color: "#34D399",
-              fontSize: "18px",
-              fontWeight: 700,
+              display: "flex",
+              fontSize: 72,
+              fontWeight: 600,
+              color: ink[900],
             }}
           >
-            Daily & Unlimited Modes
+            Geo<span style={{ color: accent.DEFAULT }}>Fauna</span>
+          </div>
+
+          <div
+            style={{
+              display: "flex",
+              fontSize: 26,
+              color: ink[700],
+              marginTop: 18,
+              transform: "rotate(-1.5deg)",
+            }}
+          >
+            Paint the range. Reveal the science.
+          </div>
+
+          <div
+            style={{
+              display: "flex",
+              width: 420,
+              height: 1,
+              background: rule.strong,
+              marginTop: 32,
+              marginBottom: 32,
+            }}
+          />
+
+          <div
+            style={{
+              display: "flex",
+              padding: "10px 18px",
+              border: `1px solid ${accent.DEFAULT}`,
+              background: accent.soft,
+              color: accent.DEFAULT,
+              fontSize: 16,
+              letterSpacing: "2px",
+              fontWeight: 600,
+            }}
+          >
+            DAILY &amp; UNLIMITED EXPEDITIONS
           </div>
         </div>
       </div>
     ),
     {
       ...size,
+      fonts: [
+        {
+          name: "Fraunces",
+          data: fontData,
+          weight: 600,
+          style: "normal",
+        },
+      ],
     }
   );
 }

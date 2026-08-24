@@ -31,8 +31,12 @@ export function setStoredLanguage(lang: Language): void {
   localStorage.setItem(LANG_KEY, lang);
 }
 
-export function getStoredStats(): GameStats {
-  const defaultStats: GameStats = {
+/** SSR-safe empty stats. Use as the initial React state so the first client
+ * render matches the server HTML; hydrate real localStorage values in an
+ * effect (reading localStorage in a useState initializer causes hydration
+ * mismatches once a streak exists). */
+export function getDefaultStats(): GameStats {
+  return {
     gamesPlayed: 0,
     gamesCompleted: 0,
     currentStreak: 0,
@@ -41,6 +45,10 @@ export function getStoredStats(): GameStats {
     gradeCounts: { S: 0, A: 0, B: 0, C: 0, D: 0 },
     dailyHistory: {},
   };
+}
+
+export function getStoredStats(): GameStats {
+  const defaultStats = getDefaultStats();
 
   if (typeof window === "undefined") return defaultStats;
 
@@ -54,6 +62,20 @@ export function getStoredStats(): GameStats {
   }
 }
 
+/** Local (not UTC) calendar date as "YYYY-MM-DD", so the streak/date math
+ * follows the player's own midnight rather than UTC's. */
+function toLocalDateKey(date: Date): string {
+  const y = date.getFullYear();
+  const m = String(date.getMonth() + 1).padStart(2, "0");
+  const d = String(date.getDate()).padStart(2, "0");
+  return `${y}-${m}-${d}`;
+}
+
+function yesterdayLocalDateKey(from: Date = new Date()): string {
+  const yesterday = new Date(from.getFullYear(), from.getMonth(), from.getDate() - 1);
+  return toLocalDateKey(yesterday);
+}
+
 export function recordGameResult(
   dateKey: string,
   speciesId: string,
@@ -63,6 +85,25 @@ export function recordGameResult(
 ): GameStats {
   const stats = getStoredStats();
 
+  // Unlimited-mode ("practice") plays are unlimited by design, so they must
+  // never inflate the daily-only counters (gamesPlayed/averageScore/
+  // gradeCounts/streaks) — they get their own small additive tally instead.
+  if (!isDaily) {
+    const previousPracticeGames = stats.practiceGames ?? 0;
+    const previousPracticeAverage = stats.practiceAverageScore ?? 0;
+    const practiceGames = previousPracticeGames + 1;
+    const totalPracticeScore = previousPracticeAverage * previousPracticeGames + scoreResult.score;
+
+    stats.practiceGames = practiceGames;
+    stats.practiceAverageScore = Math.round(totalPracticeScore / practiceGames);
+
+    if (typeof window !== "undefined") {
+      localStorage.setItem(STATS_KEY, JSON.stringify(stats));
+    }
+
+    return stats;
+  }
+
   stats.gamesPlayed += 1;
   stats.gamesCompleted += 1;
   stats.gradeCounts[scoreResult.grade] = (stats.gradeCounts[scoreResult.grade] || 0) + 1;
@@ -71,27 +112,24 @@ export function recordGameResult(
   const totalScore = stats.averageScore * (stats.gamesCompleted - 1) + scoreResult.score;
   stats.averageScore = Math.round(totalScore / stats.gamesCompleted);
 
-  if (isDaily) {
-    const today = new Date().toISOString().slice(0, 10);
-    const yesterday = new Date(Date.now() - 86400000).toISOString().slice(0, 10);
+  const yesterday = yesterdayLocalDateKey();
 
-    if (stats.dailyHistory[yesterday]?.completed) {
-      stats.currentStreak += 1;
-    } else {
-      stats.currentStreak = 1;
-    }
-    stats.maxStreak = Math.max(stats.maxStreak, stats.currentStreak);
-
-    stats.dailyHistory[dateKey] = {
-      dayNumber: Object.keys(stats.dailyHistory).length + 1,
-      dateKey,
-      speciesId,
-      completed: true,
-      scoreResult,
-      drawnMaskRle,
-      timestamp: Date.now(),
-    };
+  if (stats.dailyHistory[yesterday]?.completed) {
+    stats.currentStreak += 1;
+  } else {
+    stats.currentStreak = 1;
   }
+  stats.maxStreak = Math.max(stats.maxStreak, stats.currentStreak);
+
+  stats.dailyHistory[dateKey] = {
+    dayNumber: Object.keys(stats.dailyHistory).length + 1,
+    dateKey,
+    speciesId,
+    completed: true,
+    scoreResult,
+    drawnMaskRle,
+    timestamp: Date.now(),
+  };
 
   if (typeof window !== "undefined") {
     localStorage.setItem(STATS_KEY, JSON.stringify(stats));

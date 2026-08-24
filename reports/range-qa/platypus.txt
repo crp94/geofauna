@@ -1,0 +1,53 @@
+platypus (Freshwater)
+cells=109 area=1134832km² components=3
+params: yearMin=1970 threshold=5 closingRadius=1
+evidence agreement: 96.2% (75/78 evidence cells inside mask)
+area ratio vs previous shipped mask: 1.00 (previous=1134832km²)
+realm-consistency violations: 0
+
+Legend: # = mask only, . = evidence only, O = both, (blank) = neither
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                 O        
+                                                                                 #O       
+                                                                                 #O#      
+                                                                                  OO      
+                                                                                 .OO      
+                                                                                OOO       
+                                                                                OOO       
+                                                                                 O        
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          

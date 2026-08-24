@@ -1,0 +1,1956 @@
+{
+  "generatedAt": "2026-08-24T17:42:53.035Z",
+  "totalSpecies": 100,
+  "hardFailCount": 0,
+  "warnCount": 21,
+  "waivedCount": 7,
+  "species": {
+    "iberian-lynx": {
+      "id": "iberian-lynx",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 24,
+        "areaKm2": 232576,
+        "componentCount": 1,
+        "evidenceAgreement": 0.875,
+        "evidenceCellsInsideMask": 14,
+        "evidenceCellsTotal": 16,
+        "previousAreaKm2": 232576,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "snow-leopard": {
+      "id": "snow-leopard",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 90,
+        "areaKm2": 865624,
+        "componentCount": 9,
+        "evidenceAgreement": 0.7727272727272727,
+        "evidenceCellsInsideMask": 17,
+        "evidenceCellsTotal": 22,
+        "previousAreaKm2": 865624,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "giant-panda": {
+      "id": "giant-panda",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 41,
+        "areaKm2": 442879,
+        "componentCount": 10,
+        "evidenceAgreement": 0.7777777777777778,
+        "evidenceCellsInsideMask": 7,
+        "evidenceCellsTotal": 9,
+        "previousAreaKm2": 442879,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "jaguar": {
+      "id": "jaguar",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 232,
+        "areaKm2": 2764628,
+        "componentCount": 17,
+        "evidenceAgreement": 0.8048780487804879,
+        "evidenceCellsInsideMask": 33,
+        "evidenceCellsTotal": 41,
+        "previousAreaKm2": 2764628,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "polar-bear": {
+      "id": "polar-bear",
+      "realm": "Marine",
+      "metrics": {
+        "cellCount": 644,
+        "areaKm2": 2480034,
+        "componentCount": 14,
+        "evidenceAgreement": 0.8095238095238095,
+        "evidenceCellsInsideMask": 17,
+        "evidenceCellsTotal": 21,
+        "previousAreaKm2": 2480034,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "koala": {
+      "id": "koala",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 169,
+        "areaKm2": 1806529,
+        "componentCount": 2,
+        "evidenceAgreement": 1,
+        "evidenceCellsInsideMask": 7,
+        "evidenceCellsTotal": 7,
+        "previousAreaKm2": 1806529,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "mountain-gorilla": {
+      "id": "mountain-gorilla",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 7,
+        "areaKm2": 86527,
+        "componentCount": 2,
+        "evidenceAgreement": 1,
+        "evidenceCellsInsideMask": 1,
+        "evidenceCellsTotal": 1,
+        "previousAreaKm2": 86527,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "cheetah": {
+      "id": "cheetah",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 209,
+        "areaKm2": 2410756,
+        "componentCount": 7,
+        "evidenceAgreement": 0.8863636363636364,
+        "evidenceCellsInsideMask": 39,
+        "evidenceCellsTotal": 44,
+        "previousAreaKm2": 2410756,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "capybara": {
+      "id": "capybara",
+      "realm": "Freshwater",
+      "metrics": {
+        "cellCount": 583,
+        "areaKm2": 6761460,
+        "componentCount": 13,
+        "evidenceAgreement": 0.9358288770053476,
+        "evidenceCellsInsideMask": 175,
+        "evidenceCellsTotal": 187,
+        "previousAreaKm2": 6761460,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "tasmanian-devil": {
+      "id": "tasmanian-devil",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 16,
+        "areaKm2": 147277,
+        "componentCount": 1,
+        "evidenceAgreement": 0.7894736842105263,
+        "evidenceCellsInsideMask": 15,
+        "evidenceCellsTotal": 19,
+        "previousAreaKm2": 147277,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "bengal-tiger": {
+      "id": "bengal-tiger",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 54,
+        "areaKm2": 612935,
+        "componentCount": 6,
+        "evidenceAgreement": 0.9545454545454546,
+        "evidenceCellsInsideMask": 21,
+        "evidenceCellsTotal": 22,
+        "previousAreaKm2": 612935,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "african-bush-elephant": {
+      "id": "african-bush-elephant",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 346,
+        "areaKm2": 4072604,
+        "componentCount": 6,
+        "evidenceAgreement": 0.9666666666666667,
+        "evidenceCellsInsideMask": 29,
+        "evidenceCellsTotal": 30,
+        "previousAreaKm2": 4072604,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "red-panda": {
+      "id": "red-panda",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 35,
+        "areaKm2": 381105,
+        "componentCount": 12,
+        "evidenceAgreement": 0.5714285714285714,
+        "evidenceCellsInsideMask": 16,
+        "evidenceCellsTotal": 28,
+        "previousAreaKm2": 381105,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [
+        {
+          "metric": "evidence-agreement",
+          "detail": "57.1% of open-license evidence cells (16/28) fall inside the mask (warn floor 75%)."
+        }
+      ],
+      "waived": []
+    },
+    "platypus": {
+      "id": "platypus",
+      "realm": "Freshwater",
+      "metrics": {
+        "cellCount": 109,
+        "areaKm2": 1134832,
+        "componentCount": 3,
+        "evidenceAgreement": 0.9615384615384616,
+        "evidenceCellsInsideMask": 75,
+        "evidenceCellsTotal": 78,
+        "previousAreaKm2": 1134832,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "red-kangaroo": {
+      "id": "red-kangaroo",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 424,
+        "areaKm2": 4678875,
+        "componentCount": 3,
+        "evidenceAgreement": 0.9803921568627451,
+        "evidenceCellsInsideMask": 100,
+        "evidenceCellsTotal": 102,
+        "previousAreaKm2": 4678875,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "okapi": {
+      "id": "okapi",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 15,
+        "areaKm2": 176119,
+        "componentCount": 6,
+        "evidenceAgreement": 1,
+        "evidenceCellsInsideMask": 8,
+        "evidenceCellsTotal": 8,
+        "previousAreaKm2": 176119,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "ring-tailed-lemur": {
+      "id": "ring-tailed-lemur",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 23,
+        "areaKm2": 263888,
+        "componentCount": 2,
+        "evidenceAgreement": 0.35714285714285715,
+        "evidenceCellsInsideMask": 10,
+        "evidenceCellsTotal": 28,
+        "previousAreaKm2": 263888,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": [
+        {
+          "metric": "evidence-agreement",
+          "detail": "Only 35.7% of open-license evidence cells (10/28) fall inside the mask (hard floor 50%).",
+          "reason": "18 of 28 evidence cells are zoo/captive-specimen locations on three continents this species has never lived on in the wild (multiple US states including Hawaii, several German/Swedish/Czech cities) — ring-tailed lemurs are one of the most widely exhibited primates in zoos globally, and GBIF's filters don't catch captive HUMAN_OBSERVATION records. Madagascar is this species' only native range; every evidence cell within Madagascar's borders falls inside (or immediately borders) the mask. The 35.7% figure reflects worldwide zoo contamination, not a mask defect."
+        }
+      ]
+    },
+    "blue-whale": {
+      "id": "blue-whale",
+      "realm": "Marine",
+      "metrics": {
+        "cellCount": 865,
+        "areaKm2": 7869462,
+        "componentCount": 27,
+        "evidenceAgreement": 0.6683673469387755,
+        "evidenceCellsInsideMask": 131,
+        "evidenceCellsTotal": 196,
+        "previousAreaKm2": 7869462,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [
+        {
+          "metric": "evidence-agreement",
+          "detail": "66.8% of open-license evidence cells (131/196) fall inside the mask (warn floor 75%)."
+        }
+      ],
+      "waived": []
+    },
+    "bornean-orangutan": {
+      "id": "bornean-orangutan",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 43,
+        "areaKm2": 531108,
+        "componentCount": 1,
+        "evidenceAgreement": 0.5666666666666667,
+        "evidenceCellsInsideMask": 17,
+        "evidenceCellsTotal": 30,
+        "previousAreaKm2": 531108,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [
+        {
+          "metric": "evidence-agreement",
+          "detail": "56.7% of open-license evidence cells (17/30) fall inside the mask (warn floor 75%)."
+        }
+      ],
+      "waived": []
+    },
+    "sea-otter": {
+      "id": "sea-otter",
+      "realm": "Marine",
+      "metrics": {
+        "cellCount": 125,
+        "areaKm2": 928965,
+        "componentCount": 5,
+        "evidenceAgreement": 0.8055555555555556,
+        "evidenceCellsInsideMask": 29,
+        "evidenceCellsTotal": 36,
+        "previousAreaKm2": 928965,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "saiga-antelope": {
+      "id": "saiga-antelope",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 72,
+        "areaKm2": 583806,
+        "componentCount": 5,
+        "evidenceAgreement": 0.38461538461538464,
+        "evidenceCellsInsideMask": 5,
+        "evidenceCellsTotal": 13,
+        "previousAreaKm2": 583806,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": [
+        {
+          "metric": "evidence-agreement",
+          "detail": "Only 38.5% of open-license evidence cells (5/13) fall inside the mask (hard floor 50%).",
+          "reason": "8 of 13 evidence cells are zoo/captive-specimen locations far outside any plausible wild range: Alaska (-154.5E? recorded as -154.5,69.5), Yukon (-141.5,64.5), California (-122.5,37.5), France (1.5,48.5), and several China points (104.5,38.5 / 104.5,51.5 / 106.5,47.5) that don't match core saiga habitat. This critically endangered species is intensively held in captive-breeding programs worldwide. The 5 evidence cells that DO match wild habitat (Kazakh steppe + the lesser-known Mongolian population near 92-94E) all fall inside the mask; the 38.5% figure is evidence contamination, not a mask defect."
+        }
+      ]
+    },
+    "ethiopian-wolf": {
+      "id": "ethiopian-wolf",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 10,
+        "areaKm2": 121849,
+        "componentCount": 2,
+        "evidenceAgreement": 1,
+        "evidenceCellsInsideMask": 4,
+        "evidenceCellsTotal": 4,
+        "previousAreaKm2": 121849,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "fossa": {
+      "id": "fossa",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 47,
+        "areaKm2": 539928,
+        "componentCount": 3,
+        "evidenceAgreement": 0.6363636363636364,
+        "evidenceCellsInsideMask": 7,
+        "evidenceCellsTotal": 11,
+        "previousAreaKm2": 539928,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [
+        {
+          "metric": "evidence-agreement",
+          "detail": "63.6% of open-license evidence cells (7/11) fall inside the mask (warn floor 75%)."
+        }
+      ],
+      "waived": []
+    },
+    "sunda-pangolin": {
+      "id": "sunda-pangolin",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 199,
+        "areaKm2": 2415797,
+        "componentCount": 6,
+        "evidenceAgreement": 0.881578947368421,
+        "evidenceCellsInsideMask": 67,
+        "evidenceCellsTotal": 76,
+        "previousAreaKm2": 2415797,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "giant-anteater": {
+      "id": "giant-anteater",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 285,
+        "areaKm2": 3385086,
+        "componentCount": 9,
+        "evidenceAgreement": 0.9487179487179487,
+        "evidenceCellsInsideMask": 74,
+        "evidenceCellsTotal": 78,
+        "previousAreaKm2": 3385086,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "quokka": {
+      "id": "quokka",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 10,
+        "areaKm2": 102843,
+        "componentCount": 1,
+        "evidenceAgreement": 0.5263157894736842,
+        "evidenceCellsInsideMask": 10,
+        "evidenceCellsTotal": 19,
+        "previousAreaKm2": 102843,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [
+        {
+          "metric": "evidence-agreement",
+          "detail": "52.6% of open-license evidence cells (10/19) fall inside the mask (warn floor 75%)."
+        }
+      ],
+      "waived": []
+    },
+    "chimpanzee": {
+      "id": "chimpanzee",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 125,
+        "areaKm2": 1536080,
+        "componentCount": 7,
+        "evidenceAgreement": 0.6666666666666666,
+        "evidenceCellsInsideMask": 30,
+        "evidenceCellsTotal": 45,
+        "previousAreaKm2": 1536080,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [
+        {
+          "metric": "evidence-agreement",
+          "detail": "66.7% of open-license evidence cells (30/45) fall inside the mask (warn floor 75%)."
+        }
+      ],
+      "waived": []
+    },
+    "walrus": {
+      "id": "walrus",
+      "realm": "Marine",
+      "metrics": {
+        "cellCount": 486,
+        "areaKm2": 2477363,
+        "componentCount": 17,
+        "evidenceAgreement": 0.7518248175182481,
+        "evidenceCellsInsideMask": 103,
+        "evidenceCellsTotal": 137,
+        "previousAreaKm2": 2477363,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "narwhal": {
+      "id": "narwhal",
+      "realm": "Marine",
+      "metrics": {
+        "cellCount": 194,
+        "areaKm2": 709601,
+        "componentCount": 20,
+        "evidenceAgreement": 0.5844155844155844,
+        "evidenceCellsInsideMask": 45,
+        "evidenceCellsTotal": 77,
+        "previousAreaKm2": 709601,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [
+        {
+          "metric": "evidence-agreement",
+          "detail": "58.4% of open-license evidence cells (45/77) fall inside the mask (warn floor 75%)."
+        }
+      ],
+      "waived": []
+    },
+    "european-bison": {
+      "id": "european-bison",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 124,
+        "areaKm2": 933467,
+        "componentCount": 6,
+        "evidenceAgreement": null,
+        "evidenceCellsInsideMask": 0,
+        "evidenceCellsTotal": 0,
+        "previousAreaKm2": 933467,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "american-bison": {
+      "id": "american-bison",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 361,
+        "areaKm2": 3124666,
+        "componentCount": 12,
+        "evidenceAgreement": 1,
+        "evidenceCellsInsideMask": 7,
+        "evidenceCellsTotal": 7,
+        "previousAreaKm2": 3124666,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "sloth-bear": {
+      "id": "sloth-bear",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 57,
+        "areaKm2": 663750,
+        "componentCount": 5,
+        "evidenceAgreement": 0.6111111111111112,
+        "evidenceCellsInsideMask": 22,
+        "evidenceCellsTotal": 36,
+        "previousAreaKm2": 663750,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [
+        {
+          "metric": "evidence-agreement",
+          "detail": "61.1% of open-license evidence cells (22/36) fall inside the mask (warn floor 75%)."
+        }
+      ],
+      "waived": []
+    },
+    "spectacled-bear": {
+      "id": "spectacled-bear",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 82,
+        "areaKm2": 1004425,
+        "componentCount": 2,
+        "evidenceAgreement": 0.9130434782608695,
+        "evidenceCellsInsideMask": 21,
+        "evidenceCellsTotal": 23,
+        "previousAreaKm2": 1004425,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "gray-wolf": {
+      "id": "gray-wolf",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 4879,
+        "areaKm2": 45961879,
+        "componentCount": 52,
+        "evidenceAgreement": 0.9325153374233128,
+        "evidenceCellsInsideMask": 304,
+        "evidenceCellsTotal": 326,
+        "previousAreaKm2": 45961879,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "wild-yak": {
+      "id": "wild-yak",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 27,
+        "areaKm2": 264101,
+        "componentCount": 8,
+        "evidenceAgreement": 0.6666666666666666,
+        "evidenceCellsInsideMask": 2,
+        "evidenceCellsTotal": 3,
+        "previousAreaKm2": 264101,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [
+        {
+          "metric": "evidence-agreement",
+          "detail": "66.7% of open-license evidence cells (2/3) fall inside the mask (warn floor 75%)."
+        }
+      ],
+      "waived": []
+    },
+    "dugong": {
+      "id": "dugong",
+      "realm": "Coastal",
+      "metrics": {
+        "cellCount": 151,
+        "areaKm2": 1768362,
+        "componentCount": 6,
+        "evidenceAgreement": 0.8205128205128205,
+        "evidenceCellsInsideMask": 32,
+        "evidenceCellsTotal": 39,
+        "previousAreaKm2": 1768362,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "maned-wolf": {
+      "id": "maned-wolf",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 164,
+        "areaKm2": 1879732,
+        "componentCount": 7,
+        "evidenceAgreement": 0.821917808219178,
+        "evidenceCellsInsideMask": 60,
+        "evidenceCellsTotal": 73,
+        "previousAreaKm2": 1879732,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "musk-ox": {
+      "id": "musk-ox",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 199,
+        "areaKm2": 803985,
+        "componentCount": 16,
+        "evidenceAgreement": 0.7916666666666666,
+        "evidenceCellsInsideMask": 19,
+        "evidenceCellsTotal": 24,
+        "previousAreaKm2": 803985,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "aye-aye": {
+      "id": "aye-aye",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 25,
+        "areaKm2": 295595,
+        "componentCount": 1,
+        "evidenceAgreement": 0.5714285714285714,
+        "evidenceCellsInsideMask": 4,
+        "evidenceCellsTotal": 7,
+        "previousAreaKm2": 295595,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [
+        {
+          "metric": "evidence-agreement",
+          "detail": "57.1% of open-license evidence cells (4/7) fall inside the mask (warn floor 75%)."
+        }
+      ],
+      "waived": []
+    },
+    "emperor-penguin": {
+      "id": "emperor-penguin",
+      "realm": "Marine",
+      "metrics": {
+        "cellCount": 1660,
+        "areaKm2": 8903208,
+        "componentCount": 6,
+        "evidenceAgreement": 0.6984126984126984,
+        "evidenceCellsInsideMask": 176,
+        "evidenceCellsTotal": 252,
+        "previousAreaKm2": 8903208,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [
+        {
+          "metric": "evidence-agreement",
+          "detail": "69.8% of open-license evidence cells (176/252) fall inside the mask (warn floor 75%)."
+        }
+      ],
+      "waived": []
+    },
+    "andean-condor": {
+      "id": "andean-condor",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 284,
+        "areaKm2": 3002039,
+        "componentCount": 4,
+        "evidenceAgreement": 1,
+        "evidenceCellsInsideMask": 105,
+        "evidenceCellsTotal": 105,
+        "previousAreaKm2": 3002039,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "california-condor": {
+      "id": "california-condor",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 26,
+        "areaKm2": 259202,
+        "componentCount": 4,
+        "evidenceAgreement": 0.8333333333333334,
+        "evidenceCellsInsideMask": 15,
+        "evidenceCellsTotal": 18,
+        "previousAreaKm2": 259202,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "harpy-eagle": {
+      "id": "harpy-eagle",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 270,
+        "areaKm2": 3298430,
+        "componentCount": 10,
+        "evidenceAgreement": 0.8932038834951457,
+        "evidenceCellsInsideMask": 92,
+        "evidenceCellsTotal": 103,
+        "previousAreaKm2": 3298430,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "shoebill": {
+      "id": "shoebill",
+      "realm": "Freshwater",
+      "metrics": {
+        "cellCount": 31,
+        "areaKm2": 381805,
+        "componentCount": 3,
+        "evidenceAgreement": 0.7727272727272727,
+        "evidenceCellsInsideMask": 17,
+        "evidenceCellsTotal": 22,
+        "previousAreaKm2": 381805,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "southern-cassowary": {
+      "id": "southern-cassowary",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 34,
+        "areaKm2": 410885,
+        "componentCount": 7,
+        "evidenceAgreement": 0.8125,
+        "evidenceCellsInsideMask": 13,
+        "evidenceCellsTotal": 16,
+        "previousAreaKm2": 410885,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "north-island-brown-kiwi": {
+      "id": "north-island-brown-kiwi",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 21,
+        "areaKm2": 203907,
+        "componentCount": 1,
+        "evidenceAgreement": 0.95,
+        "evidenceCellsInsideMask": 19,
+        "evidenceCellsTotal": 20,
+        "previousAreaKm2": 203907,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "kakapo": {
+      "id": "kakapo",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 26,
+        "areaKm2": 236371,
+        "componentCount": 3,
+        "evidenceAgreement": 0.8125,
+        "evidenceCellsInsideMask": 13,
+        "evidenceCellsTotal": 16,
+        "previousAreaKm2": 236371,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "atlantic-puffin": {
+      "id": "atlantic-puffin",
+      "realm": "Marine",
+      "metrics": {
+        "cellCount": 1084,
+        "areaKm2": 7060272,
+        "componentCount": 6,
+        "evidenceAgreement": 0.8980891719745223,
+        "evidenceCellsInsideMask": 141,
+        "evidenceCellsTotal": 157,
+        "previousAreaKm2": 7060272,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "resplendent-quetzal": {
+      "id": "resplendent-quetzal",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 34,
+        "areaKm2": 407886,
+        "componentCount": 1,
+        "evidenceAgreement": 1,
+        "evidenceCellsInsideMask": 14,
+        "evidenceCellsTotal": 14,
+        "previousAreaKm2": 407886,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "hoatzin": {
+      "id": "hoatzin",
+      "realm": "Freshwater",
+      "metrics": {
+        "cellCount": 362,
+        "areaKm2": 4431144,
+        "componentCount": 3,
+        "evidenceAgreement": 1,
+        "evidenceCellsInsideMask": 84,
+        "evidenceCellsTotal": 84,
+        "previousAreaKm2": 4431144,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "western-capercaillie": {
+      "id": "western-capercaillie",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 662,
+        "areaKm2": 4347896,
+        "componentCount": 10,
+        "evidenceAgreement": 0.9741379310344828,
+        "evidenceCellsInsideMask": 113,
+        "evidenceCellsTotal": 116,
+        "previousAreaKm2": 4347896,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "peregrine-falcon": {
+      "id": "peregrine-falcon",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 6495,
+        "areaKm2": 62204748,
+        "componentCount": 72,
+        "evidenceAgreement": 0.9333333333333333,
+        "evidenceCellsInsideMask": 28,
+        "evidenceCellsTotal": 30,
+        "previousAreaKm2": 62204748,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "snowy-owl": {
+      "id": "snowy-owl",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 1121,
+        "areaKm2": 8829418,
+        "componentCount": 29,
+        "evidenceAgreement": 0.9102564102564102,
+        "evidenceCellsInsideMask": 142,
+        "evidenceCellsTotal": 156,
+        "previousAreaKm2": 8829418,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "kea": {
+      "id": "kea",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 24,
+        "areaKm2": 214116,
+        "componentCount": 1,
+        "evidenceAgreement": 0.95,
+        "evidenceCellsInsideMask": 19,
+        "evidenceCellsTotal": 20,
+        "previousAreaKm2": 214116,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "wandering-albatross": {
+      "id": "wandering-albatross",
+      "realm": "Marine",
+      "metrics": {
+        "cellCount": 10006,
+        "areaKm2": 82183000,
+        "componentCount": 5,
+        "evidenceAgreement": 0.9891304347826086,
+        "evidenceCellsInsideMask": 182,
+        "evidenceCellsTotal": 184,
+        "previousAreaKm2": 82183000,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "secretary-bird": {
+      "id": "secretary-bird",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 328,
+        "areaKm2": 3730755,
+        "componentCount": 3,
+        "evidenceAgreement": 0.9774436090225563,
+        "evidenceCellsInsideMask": 130,
+        "evidenceCellsTotal": 133,
+        "previousAreaKm2": 3730755,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "bald-eagle": {
+      "id": "bald-eagle",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 2183,
+        "areaKm2": 17301799,
+        "componentCount": 11,
+        "evidenceAgreement": 0.9859154929577465,
+        "evidenceCellsInsideMask": 280,
+        "evidenceCellsTotal": 284,
+        "previousAreaKm2": 17301799,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "king-penguin": {
+      "id": "king-penguin",
+      "realm": "Marine",
+      "metrics": {
+        "cellCount": 1465,
+        "areaKm2": 10461381,
+        "componentCount": 4,
+        "evidenceAgreement": 0.7592592592592593,
+        "evidenceCellsInsideMask": 41,
+        "evidenceCellsTotal": 54,
+        "previousAreaKm2": 10461381,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "bearded-vulture": {
+      "id": "bearded-vulture",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 663,
+        "areaKm2": 6314468,
+        "componentCount": 15,
+        "evidenceAgreement": 0.9597701149425287,
+        "evidenceCellsInsideMask": 167,
+        "evidenceCellsTotal": 174,
+        "previousAreaKm2": 6314468,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "toco-toucan": {
+      "id": "toco-toucan",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 404,
+        "areaKm2": 4745126,
+        "componentCount": 6,
+        "evidenceAgreement": 0.9859154929577465,
+        "evidenceCellsInsideMask": 140,
+        "evidenceCellsTotal": 142,
+        "previousAreaKm2": 4745126,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "scarlet-macaw": {
+      "id": "scarlet-macaw",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 582,
+        "areaKm2": 7103739,
+        "componentCount": 5,
+        "evidenceAgreement": 0.9672131147540983,
+        "evidenceCellsInsideMask": 59,
+        "evidenceCellsTotal": 61,
+        "previousAreaKm2": 7103739,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "superb-lyrebird": {
+      "id": "superb-lyrebird",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 52,
+        "areaKm2": 528322,
+        "componentCount": 2,
+        "evidenceAgreement": 1,
+        "evidenceCellsInsideMask": 32,
+        "evidenceCellsTotal": 32,
+        "previousAreaKm2": 528322,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "greater-flamingo": {
+      "id": "greater-flamingo",
+      "realm": "Coastal",
+      "metrics": {
+        "cellCount": 1009,
+        "areaKm2": 10213761,
+        "componentCount": 22,
+        "evidenceAgreement": 0.8784530386740331,
+        "evidenceCellsInsideMask": 159,
+        "evidenceCellsTotal": 181,
+        "previousAreaKm2": 10213761,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "magnificent-frigatebird": {
+      "id": "magnificent-frigatebird",
+      "realm": "Coastal",
+      "metrics": {
+        "cellCount": 805,
+        "areaKm2": 9223177,
+        "componentCount": 9,
+        "evidenceAgreement": 0.9032258064516129,
+        "evidenceCellsInsideMask": 168,
+        "evidenceCellsTotal": 186,
+        "previousAreaKm2": 9223177,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "komodo-dragon": {
+      "id": "komodo-dragon",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 3,
+        "areaKm2": 36685,
+        "componentCount": 1,
+        "evidenceAgreement": 0.3333333333333333,
+        "evidenceCellsInsideMask": 1,
+        "evidenceCellsTotal": 3,
+        "previousAreaKm2": 36685,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": [
+        {
+          "metric": "evidence-agreement",
+          "detail": "Only 33.3% of open-license evidence cells (1/3) fall inside the mask (hard floor 50%).",
+          "reason": "The open-license evidence snapshot has only 3 occupied cells total, and 2 of the 3 (~8.5E,50.5N in Germany; ~103.5E,1.5N in Singapore) are zoo specimens, not wild sightings — this species is a popular zoo animal and GBIF's basisOfRecord/establishmentMeans filters don't distinguish captive individuals logged as HUMAN_OBSERVATION from wild ones. The one real-habitat evidence cell (119.5E,-8.5S, Komodo Island itself) IS inside the mask; the 33% agreement figure is a small-sample artifact of zoo contamination, not a mask defect."
+        }
+      ]
+    },
+    "marine-iguana": {
+      "id": "marine-iguana",
+      "realm": "Coastal",
+      "metrics": {
+        "cellCount": 12,
+        "areaKm2": 148349,
+        "componentCount": 1,
+        "evidenceAgreement": 1,
+        "evidenceCellsInsideMask": 6,
+        "evidenceCellsTotal": 6,
+        "previousAreaKm2": 148349,
+        "areaRatio": 1,
+        "realmViolationCells": 12
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": [
+        {
+          "metric": "realm-consistency",
+          "detail": "12 cell(s) fall outside the Coastal realm mask (e.g. Terrestrial/Freshwater cells on pure ocean, or Marine cells on pure land).",
+          "reason": "Galapagos coastline is real land/coast, but is absent from the bundled 1:110m Natural Earth polygons, so landTouch/oceanTouch/coastal all read 0 there. The `add` override bypasses that broken realm mask (clipToRealm:false) to restore GBIF-evidenced coverage; the realm-consistency gate would otherwise flag those cells as 'coastal species with no coastline', which is a land-mask data gap, not a range error."
+        }
+      ]
+    },
+    "galapagos-giant-tortoise": {
+      "id": "galapagos-giant-tortoise",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 12,
+        "areaKm2": 148349,
+        "componentCount": 1,
+        "evidenceAgreement": 1,
+        "evidenceCellsInsideMask": 4,
+        "evidenceCellsTotal": 4,
+        "previousAreaKm2": 148349,
+        "areaRatio": 1,
+        "realmViolationCells": 12
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": [
+        {
+          "metric": "realm-consistency",
+          "detail": "12 cell(s) fall outside the Terrestrial realm mask (e.g. Terrestrial/Freshwater cells on pure ocean, or Marine cells on pure land).",
+          "reason": "The archipelago is legitimately land (and the tortoise's entire native range), but is absent from the bundled 1:110m Natural Earth land polygons, so this pipeline's own landTouch/oceanTouch realm masks incorrectly read it as open ocean. The `add` override above intentionally bypasses that broken realm mask (clipToRealm:false) to restore real GBIF-evidenced coverage; the realm-consistency gate would otherwise flag exactly those cells as 'terrestrial species on pure ocean', which is a land-mask data gap, not a range error."
+        }
+      ]
+    },
+    "leatherback-sea-turtle": {
+      "id": "leatherback-sea-turtle",
+      "realm": "Marine",
+      "metrics": {
+        "cellCount": 2503,
+        "areaKm2": 26838872,
+        "componentCount": 28,
+        "evidenceAgreement": 0.8172043010752689,
+        "evidenceCellsInsideMask": 76,
+        "evidenceCellsTotal": 93,
+        "previousAreaKm2": 26838872,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "nile-crocodile": {
+      "id": "nile-crocodile",
+      "realm": "Freshwater",
+      "metrics": {
+        "cellCount": 322,
+        "areaKm2": 3830426,
+        "componentCount": 11,
+        "evidenceAgreement": 0.8321678321678322,
+        "evidenceCellsInsideMask": 119,
+        "evidenceCellsTotal": 143,
+        "previousAreaKm2": 3830426,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "saltwater-crocodile": {
+      "id": "saltwater-crocodile",
+      "realm": "Coastal",
+      "metrics": {
+        "cellCount": 109,
+        "areaKm2": 1307178,
+        "componentCount": 9,
+        "evidenceAgreement": 0.8918918918918919,
+        "evidenceCellsInsideMask": 33,
+        "evidenceCellsTotal": 37,
+        "previousAreaKm2": 1307178,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "tuatara": {
+      "id": "tuatara",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 10,
+        "areaKm2": 96562,
+        "componentCount": 2,
+        "evidenceAgreement": 0.5,
+        "evidenceCellsInsideMask": 3,
+        "evidenceCellsTotal": 6,
+        "previousAreaKm2": 96562,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [
+        {
+          "metric": "evidence-agreement",
+          "detail": "50.0% of open-license evidence cells (3/6) fall inside the mask (warn floor 75%)."
+        }
+      ],
+      "waived": []
+    },
+    "gila-monster": {
+      "id": "gila-monster",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 39,
+        "areaKm2": 407290,
+        "componentCount": 1,
+        "evidenceAgreement": 0.72,
+        "evidenceCellsInsideMask": 36,
+        "evidenceCellsTotal": 50,
+        "previousAreaKm2": 407290,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [
+        {
+          "metric": "evidence-agreement",
+          "detail": "72.0% of open-license evidence cells (36/50) fall inside the mask (warn floor 75%)."
+        }
+      ],
+      "waived": []
+    },
+    "green-sea-turtle": {
+      "id": "green-sea-turtle",
+      "realm": "Marine",
+      "metrics": {
+        "cellCount": 2595,
+        "areaKm2": 29780456,
+        "componentCount": 44,
+        "evidenceAgreement": 0.8888888888888888,
+        "evidenceCellsInsideMask": 32,
+        "evidenceCellsTotal": 36,
+        "previousAreaKm2": 29780456,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "king-cobra": {
+      "id": "king-cobra",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 251,
+        "areaKm2": 2891434,
+        "componentCount": 9,
+        "evidenceAgreement": 0.7373737373737373,
+        "evidenceCellsInsideMask": 73,
+        "evidenceCellsTotal": 99,
+        "previousAreaKm2": 2891434,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [
+        {
+          "metric": "evidence-agreement",
+          "detail": "73.7% of open-license evidence cells (73/99) fall inside the mask (warn floor 75%)."
+        }
+      ],
+      "waived": []
+    },
+    "green-anaconda": {
+      "id": "green-anaconda",
+      "realm": "Freshwater",
+      "metrics": {
+        "cellCount": 171,
+        "areaKm2": 2074024,
+        "componentCount": 10,
+        "evidenceAgreement": 0.6448598130841121,
+        "evidenceCellsInsideMask": 69,
+        "evidenceCellsTotal": 107,
+        "previousAreaKm2": 2074024,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [
+        {
+          "metric": "evidence-agreement",
+          "detail": "64.5% of open-license evidence cells (69/107) fall inside the mask (warn floor 75%)."
+        }
+      ],
+      "waived": []
+    },
+    "panther-chameleon": {
+      "id": "panther-chameleon",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 25,
+        "areaKm2": 292138,
+        "componentCount": 2,
+        "evidenceAgreement": 0.625,
+        "evidenceCellsInsideMask": 15,
+        "evidenceCellsTotal": 24,
+        "previousAreaKm2": 292138,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [
+        {
+          "metric": "evidence-agreement",
+          "detail": "62.5% of open-license evidence cells (15/24) fall inside the mask (warn floor 75%)."
+        }
+      ],
+      "waived": []
+    },
+    "thorny-devil": {
+      "id": "thorny-devil",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 233,
+        "areaKm2": 2575031,
+        "componentCount": 1,
+        "evidenceAgreement": 0.8461538461538461,
+        "evidenceCellsInsideMask": 143,
+        "evidenceCellsTotal": 169,
+        "previousAreaKm2": 2575031,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "axolotl": {
+      "id": "axolotl",
+      "realm": "Freshwater",
+      "metrics": {
+        "cellCount": 4,
+        "areaKm2": 46546,
+        "componentCount": 1,
+        "evidenceAgreement": 0.3,
+        "evidenceCellsInsideMask": 3,
+        "evidenceCellsTotal": 10,
+        "previousAreaKm2": 46546,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": [
+        {
+          "metric": "evidence-agreement",
+          "detail": "Only 30.0% of open-license evidence cells (3/10) fall inside the mask (hard floor 50%).",
+          "reason": "The open-license evidence snapshot suffers the exact same worldwide captive/lab-specimen contamination as the density data this mask is derived from (7 of its 10 evidence cells are Ontario, Massachusetts, England, Germany x2, Ukraine, and a second non-Valley-of-Mexico Mexican point) — axolotls are one of the most widely bred lab/pet animals globally. The clampTo override deliberately restricts the mask to the species' real wild range (Valley of Mexico), which necessarily disagrees with contaminated evidence outside that valley; the 3 evidence cells that DO fall within Mexico's Valley all match the mask exactly (100% agreement on genuine-range evidence)."
+        }
+      ]
+    },
+    "golden-poison-frog": {
+      "id": "golden-poison-frog",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 4,
+        "areaKm2": 49094,
+        "componentCount": 3,
+        "evidenceAgreement": 1,
+        "evidenceCellsInsideMask": 3,
+        "evidenceCellsTotal": 3,
+        "previousAreaKm2": 49094,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "chinese-giant-salamander": {
+      "id": "chinese-giant-salamander",
+      "realm": "Freshwater",
+      "metrics": {
+        "cellCount": 24,
+        "areaKm2": 258851,
+        "componentCount": 7,
+        "evidenceAgreement": 1,
+        "evidenceCellsInsideMask": 13,
+        "evidenceCellsTotal": 13,
+        "previousAreaKm2": 258851,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "red-eyed-tree-frog": {
+      "id": "red-eyed-tree-frog",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 40,
+        "areaKm2": 481186,
+        "componentCount": 2,
+        "evidenceAgreement": 0.6481481481481481,
+        "evidenceCellsInsideMask": 35,
+        "evidenceCellsTotal": 54,
+        "previousAreaKm2": 481186,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [
+        {
+          "metric": "evidence-agreement",
+          "detail": "64.8% of open-license evidence cells (35/54) fall inside the mask (warn floor 75%)."
+        }
+      ],
+      "waived": []
+    },
+    "hellbender": {
+      "id": "hellbender",
+      "realm": "Freshwater",
+      "metrics": {
+        "cellCount": 75,
+        "areaKm2": 731760,
+        "componentCount": 1,
+        "evidenceAgreement": 0.8135593220338984,
+        "evidenceCellsInsideMask": 48,
+        "evidenceCellsTotal": 59,
+        "previousAreaKm2": 731760,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "olm": {
+      "id": "olm",
+      "realm": "Freshwater",
+      "metrics": {
+        "cellCount": 16,
+        "areaKm2": 138262,
+        "componentCount": 2,
+        "evidenceAgreement": 0.4,
+        "evidenceCellsInsideMask": 2,
+        "evidenceCellsTotal": 5,
+        "previousAreaKm2": 138262,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": [
+        {
+          "metric": "evidence-agreement",
+          "detail": "Only 40.0% of open-license evidence cells (2/5) fall inside the mask (hard floor 50%).",
+          "reason": "Only 5 open-license evidence cells exist for this species — too small a sample for a percentage gate to be meaningful. 2/5 fall inside the mask (Slovenia/Croatia border, the species' real range). Of the 3 that don't: one (12.5E,42.5N) is immediately adjacent to the mask's southern boundary; one (12.5E,49.5N, Czech Republic) has no known wild population and most plausibly reflects an ex-situ/show-cave specimen of this widely studied cave-biology model organism; one is recorded at decimalLongitude=45.5/decimalLatitude=14.5 (Arabian Sea, south of Yemen) — swapping those two coordinates back lands at 14.5E,45.5N, directly on the Croatia/Slovenia border and adjacent to the matched cells, strongly indicating a lat/lon transposition error upstream in GBIF rather than a real record. The 40% figure is a small-sample artifact plus upstream data-quality noise, not a mask defect."
+        }
+      ]
+    },
+    "fire-salamander": {
+      "id": "fire-salamander",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 372,
+        "areaKm2": 3222237,
+        "componentCount": 1,
+        "evidenceAgreement": 1,
+        "evidenceCellsInsideMask": 148,
+        "evidenceCellsTotal": 148,
+        "previousAreaKm2": 3222237,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "darwins-frog": {
+      "id": "darwins-frog",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 35,
+        "areaKm2": 332489,
+        "componentCount": 2,
+        "evidenceAgreement": 0.9375,
+        "evidenceCellsInsideMask": 15,
+        "evidenceCellsTotal": 16,
+        "previousAreaKm2": 332489,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "panamanian-golden-frog": {
+      "id": "panamanian-golden-frog",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 6,
+        "areaKm2": 71174,
+        "componentCount": 2,
+        "evidenceAgreement": 1,
+        "evidenceCellsInsideMask": 4,
+        "evidenceCellsTotal": 4,
+        "previousAreaKm2": 71174,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "whale-shark": {
+      "id": "whale-shark",
+      "realm": "Marine",
+      "metrics": {
+        "cellCount": 1022,
+        "areaKm2": 12207901,
+        "componentCount": 23,
+        "evidenceAgreement": 0.9066666666666666,
+        "evidenceCellsInsideMask": 68,
+        "evidenceCellsTotal": 75,
+        "previousAreaKm2": 12207901,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "great-white-shark": {
+      "id": "great-white-shark",
+      "realm": "Marine",
+      "metrics": {
+        "cellCount": 400,
+        "areaKm2": 4002076,
+        "componentCount": 18,
+        "evidenceAgreement": 0.6716417910447762,
+        "evidenceCellsInsideMask": 45,
+        "evidenceCellsTotal": 67,
+        "previousAreaKm2": 4002076,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [
+        {
+          "metric": "evidence-agreement",
+          "detail": "67.2% of open-license evidence cells (45/67) fall inside the mask (warn floor 75%)."
+        }
+      ],
+      "waived": []
+    },
+    "giant-oceanic-manta-ray": {
+      "id": "giant-oceanic-manta-ray",
+      "realm": "Marine",
+      "metrics": {
+        "cellCount": 245,
+        "areaKm2": 2849343,
+        "componentCount": 22,
+        "evidenceAgreement": 0.8,
+        "evidenceCellsInsideMask": 48,
+        "evidenceCellsTotal": 60,
+        "previousAreaKm2": 2849343,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "ocean-sunfish": {
+      "id": "ocean-sunfish",
+      "realm": "Marine",
+      "metrics": {
+        "cellCount": 808,
+        "areaKm2": 7384635,
+        "componentCount": 15,
+        "evidenceAgreement": 0.9036144578313253,
+        "evidenceCellsInsideMask": 75,
+        "evidenceCellsTotal": 83,
+        "previousAreaKm2": 7384635,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "atlantic-bluefin-tuna": {
+      "id": "atlantic-bluefin-tuna",
+      "realm": "Marine",
+      "metrics": {
+        "cellCount": 758,
+        "areaKm2": 7510014,
+        "componentCount": 11,
+        "evidenceAgreement": 0.65,
+        "evidenceCellsInsideMask": 65,
+        "evidenceCellsTotal": 100,
+        "previousAreaKm2": 7510014,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [
+        {
+          "metric": "evidence-agreement",
+          "detail": "65.0% of open-license evidence cells (65/100) fall inside the mask (warn floor 75%)."
+        }
+      ],
+      "waived": []
+    },
+    "greenland-shark": {
+      "id": "greenland-shark",
+      "realm": "Marine",
+      "metrics": {
+        "cellCount": 334,
+        "areaKm2": 1386427,
+        "componentCount": 17,
+        "evidenceAgreement": 0.745945945945946,
+        "evidenceCellsInsideMask": 138,
+        "evidenceCellsTotal": 185,
+        "previousAreaKm2": 1386427,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [
+        {
+          "metric": "evidence-agreement",
+          "detail": "74.6% of open-license evidence cells (138/185) fall inside the mask (warn floor 75%)."
+        }
+      ],
+      "waived": []
+    },
+    "european-eel": {
+      "id": "european-eel",
+      "realm": "Freshwater",
+      "metrics": {
+        "cellCount": 597,
+        "areaKm2": 4664239,
+        "componentCount": 7,
+        "evidenceAgreement": 0.9444444444444444,
+        "evidenceCellsInsideMask": 85,
+        "evidenceCellsTotal": 90,
+        "previousAreaKm2": 4664239,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "electric-eel": {
+      "id": "electric-eel",
+      "realm": "Freshwater",
+      "metrics": {
+        "cellCount": 236,
+        "areaKm2": 2906698,
+        "componentCount": 8,
+        "evidenceAgreement": 0.8829787234042553,
+        "evidenceCellsInsideMask": 83,
+        "evidenceCellsTotal": 94,
+        "previousAreaKm2": 2906698,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "monarch-butterfly": {
+      "id": "monarch-butterfly",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 1594,
+        "areaKm2": 15876094,
+        "componentCount": 19,
+        "evidenceAgreement": 0.9475409836065574,
+        "evidenceCellsInsideMask": 289,
+        "evidenceCellsTotal": 305,
+        "previousAreaKm2": 15876094,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "apollo-butterfly": {
+      "id": "apollo-butterfly",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 309,
+        "areaKm2": 2548199,
+        "componentCount": 14,
+        "evidenceAgreement": 0.7818181818181819,
+        "evidenceCellsInsideMask": 43,
+        "evidenceCellsTotal": 55,
+        "previousAreaKm2": 2548199,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "rosalia-longicorn": {
+      "id": "rosalia-longicorn",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 248,
+        "areaKm2": 2141226,
+        "componentCount": 4,
+        "evidenceAgreement": 0.9436619718309859,
+        "evidenceCellsInsideMask": 67,
+        "evidenceCellsTotal": 71,
+        "previousAreaKm2": 2141226,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "rusty-patched-bumblebee": {
+      "id": "rusty-patched-bumblebee",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 155,
+        "areaKm2": 1426973,
+        "componentCount": 2,
+        "evidenceAgreement": 0.9354838709677419,
+        "evidenceCellsInsideMask": 29,
+        "evidenceCellsTotal": 31,
+        "previousAreaKm2": 1426973,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "periodical-cicada": {
+      "id": "periodical-cicada",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 110,
+        "areaKm2": 1045651,
+        "componentCount": 1,
+        "evidenceAgreement": 0.9841269841269841,
+        "evidenceCellsInsideMask": 62,
+        "evidenceCellsTotal": 63,
+        "previousAreaKm2": 1045651,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [],
+      "waived": []
+    },
+    "richmond-birdwing": {
+      "id": "richmond-birdwing",
+      "realm": "Terrestrial",
+      "metrics": {
+        "cellCount": 9,
+        "areaKm2": 97639,
+        "componentCount": 2,
+        "evidenceAgreement": 0.6666666666666666,
+        "evidenceCellsInsideMask": 6,
+        "evidenceCellsTotal": 9,
+        "previousAreaKm2": 97639,
+        "areaRatio": 1,
+        "realmViolationCells": 0
+      },
+      "hardFailures": [],
+      "warnings": [
+        {
+          "metric": "evidence-agreement",
+          "detail": "66.7% of open-license evidence cells (6/9) fall inside the mask (warn floor 75%)."
+        }
+      ],
+      "waived": []
+    }
+  }
+}

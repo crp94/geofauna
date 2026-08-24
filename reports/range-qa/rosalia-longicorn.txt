@@ -1,0 +1,53 @@
+rosalia-longicorn (Terrestrial)
+cells=248 area=2141226km² components=4
+params: yearMin=1970 threshold=3 closingRadius=1
+evidence agreement: 94.4% (67/71 evidence cells inside mask)
+area ratio vs previous shipped mask: 1.00 (previous=2141226km²)
+realm-consistency violations: 0
+
+Legend: # = mask only, . = evidence only, O = both, (blank) = neither
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                         O#O                              
+                                             #. O        # #                              
+                                           #OOOOOOOO                                      
+                                           #OOO##OO#                                      
+                                             O #####    #                                 
+                                                #                                         
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          

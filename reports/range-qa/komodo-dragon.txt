@@ -1,0 +1,55 @@
+komodo-dragon (Terrestrial)
+cells=3 area=36685km² components=1
+params: yearMin=1970 threshold=1 closingRadius=1
+overrides applied: params.threshold
+evidence agreement: 33.3% (1/3 evidence cells inside mask)
+area ratio vs previous shipped mask: 1.00 (previous=36685km²)
+realm-consistency violations: 0
+WAIVED: evidence-agreement (The open-license evidence snapshot has only 3 occupied cells total, and 2 of the 3 (~8.5E,50.5N in Germany; ~103.5E,1.5N in Singapore) are zoo specimens, not wild sightings — this species is a popular zoo animal and GBIF's basisOfRecord/establishmentMeans filters don't distinguish captive individuals logged as HUMAN_OBSERVATION from wild ones. The one real-habitat evidence cell (119.5E,-8.5S, Komodo Island itself) IS inside the mask; the 33% agreement figure is a small-sample artifact of zoo contamination, not a mask defect.)
+
+Legend: # = mask only, . = evidence only, O = both, (blank) = neither
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                               .                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                      .                   
+                                                                                          
+                                                                          O#              
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          

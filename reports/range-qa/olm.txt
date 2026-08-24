@@ -1,0 +1,54 @@
+olm (Freshwater)
+cells=16 area=138262km² components=2
+params: yearMin=1970 threshold=1 closingRadius=1
+evidence agreement: 40.0% (2/5 evidence cells inside mask)
+area ratio vs previous shipped mask: 1.00 (previous=138262km²)
+realm-consistency violations: 0
+WAIVED: evidence-agreement (Only 5 open-license evidence cells exist for this species — too small a sample for a percentage gate to be meaningful. 2/5 fall inside the mask (Slovenia/Croatia border, the species' real range). Of the 3 that don't: one (12.5E,42.5N) is immediately adjacent to the mask's southern boundary; one (12.5E,49.5N, Czech Republic) has no known wild population and most plausibly reflects an ex-situ/show-cave specimen of this widely studied cave-biology model organism; one is recorded at decimalLongitude=45.5/decimalLatitude=14.5 (Arabian Sea, south of Yemen) — swapping those two coordinates back lands at 14.5E,45.5N, directly on the Croatia/Slovenia border and adjacent to the matched cells, strongly indicating a lat/lon transposition error upstream in GBIF rather than a real record. The 40% figure is a small-sample artifact plus upstream data-quality noise, not a mask defect.)
+
+Legend: # = mask only, . = evidence only, O = both, (blank) = neither
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                               #                                          
+                                                O                                         
+                                                O#                                        
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                        .                                 
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          

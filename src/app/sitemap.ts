@@ -1,10 +1,12 @@
 import { MetadataRoute } from "next";
+import speciesCatalog from "../data/curated-species.json";
+import type { Species } from "../types/species";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://geofauna.carlosrodriguezpardo.es";
   const lastModified = new Date();
 
-  return [
+  const staticPages: MetadataRoute.Sitemap = [
     {
       url: baseUrl,
       lastModified,
@@ -24,4 +26,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     },
   ];
+  const speciesPages: MetadataRoute.Sitemap = (speciesCatalog as unknown as Species[]).map((species) => ({
+    url: `${baseUrl}/species/${species.id}`,
+    lastModified,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+  return [...staticPages, ...speciesPages];
 }

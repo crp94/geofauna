@@ -1,0 +1,55 @@
+galapagos-giant-tortoise (Terrestrial)
+cells=12 area=148349km² components=1
+params: yearMin=1970 threshold=3 closingRadius=1
+overrides applied: add
+evidence agreement: 100.0% (4/4 evidence cells inside mask)
+area ratio vs previous shipped mask: 1.00 (previous=148349km²)
+realm-consistency violations: 12
+WAIVED: realm-consistency (The archipelago is legitimately land (and the tortoise's entire native range), but is absent from the bundled 1:110m Natural Earth land polygons, so this pipeline's own landTouch/oceanTouch realm masks incorrectly read it as open ocean. The `add` override above intentionally bypasses that broken realm mask (clipToRealm:false) to restore real GBIF-evidenced coverage; the realm-consistency gate would otherwise flag exactly those cells as 'terrestrial species on pure ocean', which is a land-mask data gap, not a range error.)
+
+Legend: # = mask only, . = evidence only, O = both, (blank) = neither
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                      O                                                                   
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          

@@ -1,0 +1,53 @@
+dugong (Coastal)
+cells=151 area=1768362km² components=6
+params: yearMin=1970 threshold=4 closingRadius=1
+evidence agreement: 82.1% (32/39 evidence cells inside mask)
+area ratio vs previous shipped mask: 1.00 (previous=1768362km²)
+realm-consistency violations: 0
+
+Legend: # = mask only, . = evidence only, O = both, (blank) = neither
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                     .                                    
+                                                     .                                    
+                                                                                          
+                                                                        .                 
+                                                                      .                   
+                                                                       .                  
+                                                                                          
+                                                                                          
+                                                                                          
+                                                        .                   #   #         
+                                                                            #OOOOO    #   
+                                                                           ###OOOO    ##  
+                                                                         O##     OO  #O#  
+                                                                         O        ##  #   
+                                                                         O         O      
+                                                                                  ##      
+                                                                                  O       
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          

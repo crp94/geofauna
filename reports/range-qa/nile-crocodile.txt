@@ -1,0 +1,53 @@
+nile-crocodile (Freshwater)
+cells=322 area=3830426km² components=11
+params: yearMin=1970 threshold=2 closingRadius=1
+evidence agreement: 83.2% (119/143 evidence cells inside mask)
+area ratio vs previous shipped mask: 1.00 (previous=3830426km²)
+realm-consistency violations: 0
+
+Legend: # = mask only, . = evidence only, O = both, (blank) = neither
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                     .                                    
+                                                     .                                    
+                                                     .                                    
+                                         OO                                               
+                                        OOO                                               
+                                        OO  .O                                            
+                                            .O       #OO                                  
+                                              .     O#O                                   
+                                               .  . OOO                                   
+                                               .    OOO                                   
+                                                    OOO                                   
+                                                .  #OO## .                                
+                                                #OOOOOO O                                 
+                                                .#OOOO  O. .                              
+                                                 O OO#  .                                 
+                                                    OO                                    
+                                                   O                                      
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          

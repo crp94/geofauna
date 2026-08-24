@@ -1,0 +1,54 @@
+great-white-shark (Marine)
+cells=400 area=4002076km² components=18
+params: yearMin=1970 threshold=2 closingRadius=2
+evidence agreement: 67.2% (45/67 evidence cells inside mask)
+area ratio vs previous shipped mask: 1.00 (previous=4002076km²)
+realm-consistency violations: 0
+WARNINGS: evidence-agreement: 67.2% of open-license evidence cells (45/67) fall inside the mask (warn floor 75%).
+
+Legend: # = mask only, . = evidence only, O = both, (blank) = neither
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+            .                                                                             
+             O               ..                                                           
+             #.            OO#.               O#                                          
+              O           OO#                                                             
+              O#         OO                                                               
+               O#      .OO                                                   .            
+               #        #                                                                 
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                  #       
+##                                                                       #       #### ##  
+##                              #                                        #        OO# #   
+#                               #                   ##                             O  ####
+##                              #                # #O                             OO  ##  
+#                                                #O#                      .   #O  O     O#
+##                                                                              O##  #  ##
+##                                                                               #O   ####
+                                                              .                       OO #
+                                                                                     #O#  
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
